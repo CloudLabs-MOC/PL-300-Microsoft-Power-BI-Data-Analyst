@@ -42,9 +42,14 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
-### **Task 1: Save the Power BI Desktop file**
+### **Task 1: Get started with Power BI Desktop**
 
-In this task you will first save the Power BI Desktop file.
+In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
+
+- Data Load > Import relationships from data sources on first load
+- Data Load > Autodetect new relationships after data is loaded
+
+*Note: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.*
 
 1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
 
@@ -72,37 +77,9 @@ In this task you will first save the Power BI Desktop file.
 
 	Tip: You can also save the file by click the **Save** icon located at the top-left.
 
-	![Picture 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png)
+	![Picture 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image6.png
 
-### **Task 2: Set Power BI Desktop options**
-
-In this task you will set Power BI Desktop options.
-
-1. In Power BI Desktop, click the **File** ribbon tab to open the backstage view.
-
-1. At the left, select **Options and Settings**, and then select **Options**.
-
- 	![Picture 1](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image7.png)
-
-1. In the **Options** window, at the left, in the **Current File** group, select **Data Load**.
-
-    ![Picture 5](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image8.png)
-
-    The **Data Load** settings for the current file allow setting options that determine default behaviors when modeling.
-
-1. In the **Relationships** group, uncheck the two options that are already checked.
-
-	![Picture 7](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image9.png)
-
-    While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you are adding each one.
-
-1. Click **OK**.
-
-    ![Picture 9](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image10.png)
-
-1. Save the Power BI Desktop file.
-
-### **Task 3: Get data from SQL Server**
+### **Task 2: Get data from SQL Server**
 
 In this task you will create queries based on SQL Server tables.
 
@@ -156,7 +133,7 @@ In this task you will create queries based on SQL Server tables.
 
 	![Picture 30](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image19.png)
 
-### **Task 4: Preview SQL Server queries**
+### **Task 3: Preview Data in Power Query Editor**
 
 In this task you will preview the data of the SQL Server queries. First, you will learn relevant information about the data. You will also use column quality, column distribution, and column profile tools to understand the data and to assess data quality.
 
@@ -266,7 +243,7 @@ In this task you will preview the data of the SQL Server queries. First, you wil
 
 25. Close the **Power Query Editor** window. Select **Not now**, to return to the **Power BI Desktop**.
 
-### **Task 5: Get data from a CSV file**
+### **Task 4: Get data from a CSV file**
 
 In this task you will create a query based on a CSV file.
 
@@ -303,17 +280,7 @@ In this task you will create a query based on a CSV file.
 
 	You’ll apply many transformations to achieve a different shaped result consisting of only three columns: **Date**, **EmployeeKey**, and **TargetAmount** in the **Load Data in Power BI Desktop** lab.
 
-### **Task 6: Get additional data from a CSV file**
-
-In this task you will create an additional query based on a different CSV file.
-
-1. Use the steps in the previous task to create a query based on the **C:\Allfiles\Resources\ColorFormats.csv** file.
-
-	![Picture 75](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image39.png)
-
-	The **ColorFormats** CSV file contains one row per product color. Each row records the HEX codes to format background and font colors. You’ll integrate this data with the **DimProduct** query data in the **Load Data in Power BI Desktop** lab.
-
-### **Task 7: Finish up**
+### **Task 5: Finish up**
 
 In this task you will complete the lab.
 
