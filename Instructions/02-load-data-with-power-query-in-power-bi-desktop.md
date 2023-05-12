@@ -63,7 +63,7 @@ In this task you will setup the environment for the lab.
 
     ![Picture 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
-1. In the **Open** window, navigate to the **C:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** folder.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** folder.
 
 1. Select the **Sales Analysis** file.
 
@@ -90,7 +90,7 @@ In this task you will setup the environment for the lab.
 
     ![Picture 22](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image8.png)
 
-1. In the **Save As** window, navigate to the **C:\Allfiles\MySolution** folder.
+1. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
 
 1. Click **Save**.
 
@@ -118,7 +118,7 @@ In this task you will setup the environment for the lab.
 
 	![Picture 2038](Linked_image_Files/new-source.png)
 
-1. Now navigate to **C:\Allfiles\Resources** and select the **ResellerSalesTargets.csv** file and **Open**. Repeat this step and add **ColorFormats**.
+1. Now navigate to **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Resources** and select the **ResellerSalesTargets.csv** file and **Open**. Repeat this step and add **ColorFormats**.
 
 	![Picture 2012](Linked_image_Files/select-csv.png)
 
