@@ -51,7 +51,7 @@ In this task you will setup the environment for the lab.
 
 1. To close the getting started window, at the top-left of the window, click **X**.
 
-    ![Picture 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image2.png)
+    ![Picture 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img2.png)
 
 1. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
 
@@ -63,13 +63,13 @@ In this task you will setup the environment for the lab.
 
     ![Picture 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
-1. In the **Open** window, navigate to the **C:\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** folder.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** folder.
 
 1. Select the **Sales Analysis** file.
 
 1. Click **Open**.
 
-	![Picture 12](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image5.png)
+	![Picture 12](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img5.png)
 
 1. Close any informational windows that may open.
 
@@ -79,7 +79,7 @@ In this task you will setup the environment for the lab.
 
 1. To dismiss the warning message, at the right of the yellow warning message, click **X**.
 
-	![Picture 13](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image6.png)
+	![Picture 13](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img6.png)
 1. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
 
 1. Select **Save As**.
@@ -88,9 +88,9 @@ In this task you will setup the environment for the lab.
 
 1. If prompted to apply changes, click **Apply Later**.
 
-    ![Picture 22](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image8.png)
+    ![Picture 22](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img8.png)
 
-1. In the **Save As** window, navigate to the **C:\Allfiles\MySolution** folder.
+1. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
 
 1. Click **Save**.
 
@@ -98,7 +98,7 @@ In this task you will setup the environment for the lab.
 
 1. To open the **Power Query Editor** window, on the **Home** ribbon tab, from inside the **Queries** group, click the **Transform Data** icon.
 
-	![Picture 20](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image10.png)
+	![Picture 20](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img10.png)
 
 1. In the Power Query Editor window, in the Queries pane. If you see that the **ResellerSalesTargets** and **ColorFormats** are showing a warning. 
 
@@ -118,7 +118,7 @@ In this task you will setup the environment for the lab.
 
 	![Picture 2038](Linked_image_Files/new-source.png)
 
-1. Now navigate to **C:\Allfiles\Resources** and select the **ResellerSalesTargets.csv** file and **Open**. Repeat this step and add **ColorFormats**.
+1. Now navigate to **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Resources** and select the **ResellerSalesTargets.csv** file and **Open**. Repeat this step and add **ColorFormats**.
 
 	![Picture 2012](Linked_image_Files/select-csv.png)
 
@@ -133,7 +133,7 @@ In this task you will configure the **Salesperson** query.
 
 1. In the **Power Query Editor** window, in the **Queries** pane, select the **DimEmployee** query.
 
-	![Picture 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image11.png)
+	![Picture 1](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img11.png)
 
 2. To rename the query, in the **Query Settings** pane (located at the right), in the **Name** box, replace the text with **Salesperson**, and then press **Enter**.
 
@@ -141,43 +141,43 @@ In this task you will configure the **Salesperson** query.
 
 3. In the **Queries** pane, verify that the query name has updated.
 
-	![Picture 87](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image12.png)
+	![Picture 87](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img12.png)
 
 	*You’ll now filter the query rows to retrieve only employees who are salespeople.*
 
 4. To locate a specific column, on the **Home** ribbon tab, click the **Manage Columns** down-arrow, click the **Choose Columns** down-arrow, and then select **Go to Column**.
 
-	![Picture 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image13.png)
+	![Picture 88](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img13.png)
 
 	*Tip: This technique is useful when a query contains many columns. If there’s not too many columns, you can simply horizontally scroll to locate the column of interest.*
 
 5. In the **Go to Column** window, to order the list by column name, click the **AZ** sort button, and then select **Name**.
 
-	![Picture 94](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image14.png)
+	![Picture 94](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img14.png)
 
 6. Select the **SalesPersonFlag** column, and then click **OK**.
 
 7. To filter the query, in the **SalesPersonFlag** column header, click the down-arrow, and then uncheck **FALSE**.
 
-	![Picture 95](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image15.png)
+	![Picture 95](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img15.png)
 
 8. Click **OK**.
 
-	![Picture 96](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image16.png)
+	![Picture 96](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img16.png)
 
 9. In the **Query Settings** pane, in the **Applied Steps** list, notice the addition of the **Filtered Rows** step.
 
-	![Picture 98](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image17.png)
+	![Picture 98](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img17.png)
 
 	*Each transformation you create results in additional step logic. It’s possible to edit or delete steps. It’s also possible to select a step to preview the query results at that stage of the query transformation.*
 
 10. To remove columns, on the **Home** ribbon tab, click the **Manage Columns** group, click the **Choose Columns** icon.
 
-	![Picture 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image18.png)
+	![Picture 99](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img18.png)
 
 11. In the **Choose Columns** window, to uncheck all columns, uncheck the **(Select All Columns)** item.
 
-	![Picture 102](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image19.png)
+	![Picture 102](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img19.png)
 
 12. To include columns, check the following six columns:
 
@@ -195,7 +195,7 @@ In this task you will configure the **Salesperson** query.
 
 13. Click **OK**.
 
-	![Picture 104](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image20.png)
+	![Picture 104](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img20.png)
 
 14. In the **Applied Steps** list, notice the addition of another query step.
 
@@ -203,13 +203,13 @@ In this task you will configure the **Salesperson** query.
 
 15. To create a single name column, first select the **FirstName** column header.
 
-16. While pressing the **Ctrl** key, select the **LastName** column.
+16. While pressing the **Ctrl** key and **Click** on this, then select the **LastName** column.
 
-	![Picture 116](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
+	![Picture 116](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img22.png)
 
 17. Right-click either of the select column headers, and then in the context menu, select **Merge Columns**.
 
-	![Picture 117](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image23.png)
+	![Picture 117](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img23.png)
 
 	*Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note, however, more transformations are available in the ribbon.*
 
@@ -217,7 +217,7 @@ In this task you will configure the **Salesperson** query.
 
 19. In the **New Column Name** box, replace the text with **Salesperson**.
 
-	![Picture 119](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image24.png)
+	![Picture 119](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img24.png)
 
 20. Click **OK**.
 
@@ -235,7 +235,7 @@ In this task you will configure the **Salesperson** query.
 
 24. At the bottom-left, in the status bar, verify that the query has five columns and 18 rows.
 
-	![Picture 5638](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image26.png)
+	![Picture 5638](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img26.png)
 
 	*Important: It’s important that you do not proceed if your query does not produce the correct result—it won’t be possible to complete later labs. If the query columns or rows don’t match, refer back to the steps in this task to fix any problems.*
 
@@ -245,13 +245,13 @@ In this task you will configure the **SalespersonRegion** query.
 
 1. In the **Queries** pane, select the **DimEmployeeSalesTerritory** query.
 
-	![Picture 5639](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image27.png)
+	![Picture 5639](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img27.png)
 
 2. In the **Query Settings** pane, rename the query to **SalespersonRegion**.
 
 3. To remove the last two columns, first select the **DimEmployee** column header.
 
-4. While pressing the **Ctrl** key, select the **DimSalesTerritory** column header.
+4. While pressing the **Ctrl** key and **Click** on this, then select the **DimSalesTerritory** column header.
 
 5. Right-click either of the select column headers, and then in the context menu, select **Remove Columns**.
 
@@ -259,7 +259,7 @@ In this task you will configure the **SalespersonRegion** query.
 
 6. In the status bar, verify that the query has two columns and 39 rows.
 
-	![Picture 5641](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image29.png)
+	![Picture 5641](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_img29.png)
 
 ### **Task 4: Configure the Product query**
 
