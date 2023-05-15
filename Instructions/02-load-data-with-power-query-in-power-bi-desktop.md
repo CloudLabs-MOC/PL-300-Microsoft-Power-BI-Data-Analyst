@@ -203,7 +203,7 @@ In this task you will configure the **Salesperson** query.
 
 15. To create a single name column, first select the **FirstName** column header.
 
-16. While pressing the **Ctrl** key, select the **LastName** column.
+16. While pressing the **Ctrl** key and **Click** on this, then select the **LastName** column.
 
 	![Picture 116](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image22.png)
 
@@ -251,7 +251,7 @@ In this task you will configure the **SalespersonRegion** query.
 
 3. To remove the last two columns, first select the **DimEmployee** column header.
 
-4. While pressing the **Ctrl** key, select the **DimSalesTerritory** column header.
+4. While pressing the **Ctrl** key and **Click** on this, then select the **DimSalesTerritory** column header.
 
 5. Right-click either of the select column headers, and then in the context menu, select **Remove Columns**.
 
