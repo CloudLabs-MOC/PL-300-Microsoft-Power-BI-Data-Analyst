@@ -497,7 +497,7 @@ In this task you will create additional measures that use more complex formulas.
 
 4. Rename the **Targets \| Target** column as **Targets \| TargetAmount**.
 
-	*Tip: There are several ways to rename the column in Report view: In the **Fields** pane, you can right-click the column, and then select **Rename**—or, double-click the column, or press **F2**.*
+   **Tip**: *There are several ways to rename the column in Report view: In the **Fields** pane, you can right-click the column, and then select **Rename**—or, double-click the column, or press* **F2**.
 
 	*You’re about to create a measure named **Target**. It’s not possible to have a column and measure in the same table with the same name.*
 
