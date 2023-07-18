@@ -115,7 +115,7 @@ In this task you will create a matrix visual to support testing your new measure
 
 3. Resize the matrix visual to fill the entire page.
 
-4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region \| Region** hierarchy, and drop it inside the visual.
+4. To configure the matrix visual fields, from the **Fields** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
 
     *The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.*
 
