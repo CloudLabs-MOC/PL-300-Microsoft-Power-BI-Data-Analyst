@@ -135,7 +135,7 @@ In this task you will create a matrix visual to support testing your new measure
 
 9. Set the **Stepped Layout** property to **Off**.
 
-    ![Picture 49](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image14.png)
+    ![Picture 49](images/img2.png)
 
 10. Verify that the matrix visual now has four column headers.
 
