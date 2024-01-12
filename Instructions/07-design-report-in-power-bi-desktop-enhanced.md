@@ -188,13 +188,6 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 2](Linked_image_Files/Lab7-image(12).png)
 
-       > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 3: Sync slicers
 
 In this task you will sync the **Year** and **Region** slicers.
@@ -253,7 +246,7 @@ In this task you will create a new page and configure it as a drill through page
 
 	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.
 
-	![Picture 96](Linked_image_Files/lab7-image(20).png)
+	![Picture 96](Linked_image_Files/M7E2T1S3.png)
 
 4. To test the drill through page, in the drill through filter card, select **Bikes**.
 
@@ -275,11 +268,11 @@ In this task you will create a new page and configure it as a drill through page
 
 8. Configure the format options for the visual, and then turn the **Category Label** property to **Off**.
 
-	![Picture 103](Linked_image_Files/lab7-image-(25).png)
+	![Picture 103](Linked_image_Files/M7E2T1S8.png)
 
-9. Set the **Background Color** property to a light shade of gray.
+9. Set the **Effects > Background color** property to a light shade of gray such as **White, 20% darker**.
 
-	![Picture 103](Linked_image_Files/background.png)
+	![Picture 103](Linked_image_Files/M7E2T1S9.png)
 
 10. Add a **Table** visual to the page, and then resize and position it so it sits beneath the card visual and fills the remaining space on the page.
 
@@ -303,7 +296,7 @@ In this task you will create a new page and configure it as a drill through page
 
 12. Configure the format options for the visual, and in the **Values** section, set the **Text Size** property to **20pt**.
 
-    ![Picture 103](Linked_image_Files/textsize.png)
+    ![Picture 103](Linked_image_Files/M7E2T1S12.png)
 
 	>**Note**: The design of the drill through page is almost complete. You’ll enhance the page with conditional formatting in the next exercise.
 
@@ -351,7 +344,7 @@ In this task you will enhance the drill through page with conditional formatting
 
 	- In the sixth control, select **Number**
 
-	![Picture 110](Linked_image_Files/Lab7-image(32).png)
+	![Picture 110](Linked_image_Files/M7E3T1S6.png)
 
 	>**Note**: The rules can be interpreted as follows: display a red diamond if the profit margin value is less than 0; otherwise if the value is great or equal to zero, display a green circle.
 
@@ -457,27 +450,21 @@ In this task you will add two buttons, and assign bookmark actions to each.
 
 2. Position the button directly beneath the **Year** slicer.
 
-3. Select the button, and then in the **Format button** pane, turn the **Title** property to **On**.
+3. In the **Format button** pane, select **Button** expand **Style** section and turn the **Text** property to **On**. Then in the **Text** box, enter **Bar Chart**.
 
-	![Picture 126](Linked_image_Files/lab7-image(49).png)
+	![Picture 126](Linked_image_Files/M7E4T2S3.png)
 
-4. Expand the **Title** section, and then in the **Title Text** box, enter **Bar Chart**.
+4. Expand the **Fill** section, and then set a fill color using a complementary color.
 
-	![](Linked_image_Files/barchart.png)
+5. Expand **Action** section and turn the **Action** property to **On**.
 
-5. Expand the **Fill** section, and then set a fill color using a complementary color.
+	![Picture 127](Linked_image_Files/M7E4T2S6.png)
 
-6. Expand **Action** section and turn the **Action** property to **On**.
+6. Expand the **Action** section, and then set the **Type** dropdown list to **Bookmark**. In the **Bookmark** dropdown list, select **Bar Chart ON**.
 
-	![Picture 127](Linked_image_Files/lab7-image(50).png)
+	![Picture 128](Linked_image_Files/M7E4T2S8.png)
 
-7. Expand the **Action** section, and then set the **Type** dropdown list to **Bookmark**.
-
-8. In the **Bookmark** dropdown list, select **Bar Chart ON**.
-
-	![Picture 128](Linked_image_Files/lab7-image(51).png)
-
-9. Create a copy of the button by using copy and paste, and then configure the new button as follows:
+7. Create a copy of the button by using copy and paste, and then configure the new button as follows:
 
 	**Tip:** The shortcut commands for copy and paste are **Ctrl+C** followed by **Ctrl+V**.
 
@@ -520,6 +507,13 @@ In this task you will publish the report.
 10. Close Power BI Desktop.
 
 	>**Note**: You’ll explore the report in the Power BI service in the next exercise.
+
+ 	> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Exercise 5: Explore the Report
 

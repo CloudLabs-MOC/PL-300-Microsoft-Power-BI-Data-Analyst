@@ -130,27 +130,18 @@ In this task you will create the **Sales Exploration** report.
 
 	![Picture 1](Linked_image_Files/pl300-08.1.png)
 
-9. To create a live connection to the **Sales Analysis** dataset, on the **Home** ribbon tab, from inside the **Data** group, click **Power BI Datasets**.
+9. To create a live connection to the **Sales Analysis** dataset, on the **Home** ribbon tab, from inside the **Data** group, click **OneLake Data hub** and from drop down select **PowerBI Datasets**.
 
-	![Picture 15](Linked_image_Files/pl300-09.png)
+	![Picture 15](Linked_image_Files/M8E1T3S9.png)
 
-10. In the **Select a Dataset to Create a Report** window, select the **Sales Analysis** dataset.
+10. In the **OneLake Data hub window**, select the **Sales Analysis** dataset and click **Connect**.
 
-11. Click **Create**.
-
-	![Picture 17](Linked_image_Files/pl300-10.png)
+	![Picture 17](Linked_image_Files/M8E1T3S10.png)
 
 12. Save the Power BI Desktop file.
 
 	>**Note**: You’ll now create two report pages, and on each page you’ll work with a different visual to analyze and explore data.
  
-	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ## Exercise 2: Create a Scatter Chart
 
 In this exercise you will create a scatter chart that can be animated.
@@ -295,6 +286,13 @@ In this task you will complete the lab.
 	![Picture 23](Linked_image_Files/pl300-26.png)
 
 4.  Close Power BI Desktop.
+
+   	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Review
 In this lab, you have completed the following :
