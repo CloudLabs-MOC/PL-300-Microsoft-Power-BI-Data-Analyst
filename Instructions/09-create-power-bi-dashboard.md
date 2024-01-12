@@ -12,7 +12,7 @@ In this lab you learn how to:
 
 ### **Lab story**
 
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
+This lab is one of many in a series of labs designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
 
 1. Prepare Data in Power BI Desktop
 
@@ -48,7 +48,7 @@ In this lab, you will perform:
 
 ## Exercise 1: Create a Dashboard
 
-In this exercise you will create the **Sales Monitoring** dashboard. The completed dashboard will look like the following:
+In this exercise, you will create the **Sales Monitoring** dashboard. The completed dashboard will look like the following:
 
 ![Image of the completed dashboard, comprising three tiles.](Linked_image_Files/module9.1.png)
 
@@ -176,7 +176,7 @@ In this task you will setup the environment for the lab by opening the starter r
 
 ### Task 3: Get started – Publish the report
 
-In this task you will setup the environment for the lab by creating a dataset.
+In this task you will setup the environment for the lab by creating a Semantic model.
 
 **Important**: If you have already published the report in the **Design a Report in Power BI Desktop, Part 2** lab, continue from the next task.
 
@@ -188,7 +188,7 @@ In this task you will setup the environment for the lab by creating a dataset.
 
 1. Select the **Sales Analysis.pbix** file, and then click **Open**.
 
-1. If prompted to replace the dataset, click **Replace it**.
+1. If prompted to replace the Semantic model, click **Replace it**.
 
 ### Task 4: Create a dashboard
 
@@ -338,9 +338,9 @@ In this task you will edit the details of two tiles.
 8. Notice that the tile describes the last refresh time (which done when loading the data model in Power BI Desktop).
 
 
-   >**Note**: *You’ll refresh the dataset in the next exercise. Typically, this would be achieved by using scheduled refresh, in which case Power BI would use a gateway to connect to the SQL Server database. However, due to constraints in the classroom setup, there is no gateway. So, you’ll open Power BI Desktop, perform a manual data refresh, and then upload the file to your workspace.
+   >**Note**: *You’ll refresh the Semantic model in the next exercise. Typically, this would be achieved by using scheduled refresh, in which case Power BI would use a gateway to connect to the SQL Server database. However, due to constraints in the classroom setup, there is no gateway. So, you’ll open Power BI Desktop, perform a manual data refresh, and then upload the file to your workspace.
 
-## Exercise 2: Refresh the Dataset
+## Exercise 2: Refresh the Semantic model
 
 In this exercise you will first load sales order data for June 2020 into the **AdventureWorksDW2020** database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
 
@@ -372,11 +372,11 @@ In this task you will open the **Sales Analysis** Power BI Desktop file, perform
 
     ![Picture 59](Linked_image_Files/module09publish.png)
 
-4. When prompted to replace the dataset, click **Replace**.
+4. When prompted to replace the Semantic model, click **Replace**.
 
     ![Picture 31](Linked_image_Files/module09.29.png)
 
-    >**Note**: The dataset in the Power BI service now has June 2020 sales data.
+    >**Note**: The Semantic model in the Power BI service now has June 2020 sales data.
 
 5. Close Power BI Desktop.
 
@@ -401,7 +401,7 @@ In this task you will review the dashboard to notice updated sales.
 ## Review
  In this lab, you have completed the following :
 - Create a Dashboard
-- Refresh the Dataset
+- Refresh the Semantic model
 - Review the Dashboard
 
 ## You have successfully completed the lab
