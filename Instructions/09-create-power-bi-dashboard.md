@@ -85,7 +85,16 @@ In this task you will setup the environment for the lab by signing in to Power B
 
     **Important**: Be sure to record your new password.
 
-6. Complete the sign in process.
+6. Complete the sign in process by clicking on **Continue**.
+
+   ![](Linked_image_Files/lab6-image-T01.png)
+
+1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
+   
+   ![](Linked_image_Files/lab6-image-(T02).png)
+   
+   ![](Linked_image_Files/lab6-image-(T003).png)
+
 
 7. If prompted by Microsoft Edge to stay signed in, click **Yes**.
 
@@ -115,6 +124,20 @@ In this task you will setup the environment for the lab by opening the starter r
 
 4. Complete the sign in process using the same account used to sign in to the Power BI service.
 
+5. Enter the Lab username in **Enter your email address** page.
+    * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+    
+      ![](Linked_image_Files/lab7-image1.png)
+
+    * Complete the sign up process by selecting the username
+  
+      ![](Linked_image_Files/lab7-image2.png)
+  
+6. Enter the password.
+    * Azure Password: <inject key="AzureAdUserPassword"></inject>
+         
+       ![](Linked_image_Files/lab7-image3.png)
+       
 5. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
 
 6. Select **Open Report**.
