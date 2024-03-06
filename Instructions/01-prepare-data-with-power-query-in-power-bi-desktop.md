@@ -334,18 +334,20 @@ In this task you will complete the lab.
 	![](images/validation.png)
 
 6. To upload the recently saved Power BI Desktop file within the **CloudLabs Projects** sharepoint private group, perform the following steps:
-	- Click on the **+ New (1)** button and then select **Folder (2)**
- 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `First Name`> **(3)** .
-
-	![](images/new-folder.png)
+	- Click on the **+ New (1)** button and then select **Folder (2)**.
+ 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `First Name`> **(3)**.
+	- Click on the **Create (4)** button.
+	
+ 	![](images/new-folder.png)
 
 	![](images/new-folder-1.png)
 
 7. Click on the newly created folder with your name.
 
 8. Ensuring that you are within the newly created folder, perform the following steps to create a sub folder:
-	- Click on the **+ New (1)** button and then select **Folder (2)**
- 	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**
+	- Click on the **+ New (1)** button and then select **Folder (2)**.
+ 	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**.
+  	- Click on   
   	- Select the newly created folder.
 
 	![](images/new-folder-2.png)
