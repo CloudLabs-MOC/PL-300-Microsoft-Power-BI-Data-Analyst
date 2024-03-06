@@ -347,7 +347,7 @@ In this task you will complete the lab.
 
 7. Click on the newly created folder with your name.
 
-8. Ensuring that you are within the newly created folder, perform the following steps to create a sub folder:
+8. Ensuring that you are within the newly created folder (on your name), perform the following steps to create a sub folder:
 	- Click on the **+ New (1)** button and then select **Folder (2)**.
  	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**.
   	- Click on   
