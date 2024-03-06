@@ -627,7 +627,7 @@ In this task you will complete the lab.
 3. After you have successfully saved the Power BI Desktop file, navigate to the following `https://bit.ly/uploadreports` within your LabVM environment.
 
 4. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access the private sharepoint directory:
-	- Within the **Enter password (1)** field, type in the following password: `RRCCollegeReports@1`
+	- Within the **Enter password (1)** field, enter the password provided by your instructor.
  	- Click on the **Verify (2)** button.
 
 	![](images/validation.png)
