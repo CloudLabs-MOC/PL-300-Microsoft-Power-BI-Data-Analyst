@@ -421,6 +421,49 @@ In this task you will review the dashboard to notice updated sales.
 
     ![Picture 33](Linked_image_Files/module9.30.png)
 
+## Exercise 4: Finish Up
+
+1. Save the Power BI Desktop file.
+
+2. After you have successfully saved the Power BI Desktop file, navigate to the following `https://bit.ly/uploadreports` within your LabVM environment.
+
+3. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access the private sharepoint directory:
+	- Within the **Enter password (1)** field, type in the following password: `RRCCollegeReports@1`
+ 	- Click on the **Verify (2)** button.
+
+	![](images/validation.png)
+
+4. To upload the recently saved Power BI Desktop file within the **CloudLabs Projects** sharepoint private group, perform the following steps:
+
+	>**Note:** If you have already created a folder based on your name, you can ignore this step and resume execution from **Step 6**.
+ 
+ 	- Click on the **+ New (1)** button and then select **Folder (2)**.
+ 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `First Name`> **(3)**.
+	- Click on the **Create (4)** button.
+	
+ 	![](images/new-folder.png)
+
+	![](images/new-folder-1.png)
+
+5. Click on the newly created folder with your name.
+
+6. Ensuring that you are within the newly created folder (on your name), perform the following steps to create a sub folder:
+	- Click on the **+ New (1)** button and then select **Folder (2)**.
+ 	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**.
+  	- Click on the **Create (4)** button.  
+  	- Select the newly created folder.
+
+	![](images/new-folder-2.png)
+
+	![](images/new-folder-3.png)
+
+7. To upload the Power BI Desktop file within the newly created sub folder, perform the following steps:
+	- Click on **Upload (1)**.
+ 	- Select **Files (2)** from the dropdown list.
+ 	- Navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder and upload the **Sales Analysis.pbix** file.
+	
+ 	![](images/new-folder-4.png)
+
 ## Review
  In this lab, you have completed the following :
 - Create a Dashboard
