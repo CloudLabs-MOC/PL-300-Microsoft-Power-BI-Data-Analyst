@@ -582,7 +582,7 @@ In this task you will complete the lab.
 	>**Note:** If you have already created a folder based on your name, you can ignore this step and resume execution from **Step 7**.
  
  	- Click on the **+ New (1)** button and then select **Folder (2)**.
- 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `First Name`> **(3)**.
+ 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `Last Name`> **(3)**.
 	- Click on the **Create (4)** button.
 	
  	![](images/new-folder.png)
