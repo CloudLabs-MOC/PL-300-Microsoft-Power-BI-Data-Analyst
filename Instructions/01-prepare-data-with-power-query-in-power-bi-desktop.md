@@ -334,7 +334,10 @@ In this task you will complete the lab.
 	![](images/validation.png)
 
 6. To upload the recently saved Power BI Desktop file within the **CloudLabs Projects** sharepoint private group, perform the following steps:
-	- Click on the **+ New (1)** button and then select **Folder (2)**.
+
+	>**Note:** If you have already created a folder based on your name, you can ignore this step and resume execution from **Step 8**.
+ 
+ 	- Click on the **+ New (1)** button and then select **Folder (2)**.
  	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `First Name`> **(3)**.
 	- Click on the **Create (4)** button.
 	
