@@ -325,7 +325,7 @@ In this task you will complete the lab.
 
 	> **Note**: Applying the queries will load their data to the data model. You’re not ready to do that, as there are many transformations that must be applied first.
 
-4. After you have successfully saved the Power BI Desktop file, ask your instructor for your personal SharePoint. Make sure to use the browser in your LabVM environment to access this confidential link in order to upload the **Sales Analysis.pbix** file.
+4. After you have successfully saved the Power BI Desktop file, ask your instructor for your personal SharePoint URL. Make sure to use the browser in your LabVM environment to access this confidential link in order to upload the **Sales Analysis.pbix** file.
 
 5. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access your private sharepoint directory:
 	- Within the **Enter password (1)** field, enter the password provided by your instructor against your personal SharePoint URL.
