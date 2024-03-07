@@ -774,39 +774,29 @@ In this task you will complete the lab.
 
 4. Save the Power BI Desktop file.
 
-5. After you have successfully saved the Power BI Desktop file, navigate to the following `https://bit.ly/uploadreports` within your LabVM environment.
+5. After you have successfully saved the Power BI Desktop file, ask your instructor for your personal SharePoint URL. Make sure to use the browser in your LabVM environment to access this confidential link in order to upload the **Sales Analysis.pbix** file.
 
-6. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access the private sharepoint directory:
-	- Within the **Enter password (1)** field, enter the password provided by your instructor.
+6. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access your private sharepoint directory:
+	- Within the **Enter password (1)** field, enter the password provided by your instructor against your personal SharePoint URL.
  	- Click on the **Verify (2)** button.
 
-	![](images/validation.png)
+	>**Note:** The confidentiality of this SharePoint link and its password must be strictly maintained, and under no circumstances should it be shared with anyone.
+
+	![](images/validation-new.png)
 
 7. To upload the recently saved Power BI Desktop file within the **CloudLabs Projects** sharepoint private group, perform the following steps:
-
-	>**Note:** If you have already created a folder based on your name, you can ignore this step and resume execution from **Step 9**.
  
- 	- Click on the **+ New (1)** button and then select **Folder (2)**.
- 	- On the **Create a folder** dialog-box, enter a name for the folder in the following format: <`First Name` `Last Name`> **(3)**.
-	- Click on the **Create (4)** button.
-	
- 	![](images/new-folder.png)
-
-	![](images/new-folder-1.png)
-
-8. Click on the newly created folder with your name.
-
-9. Ensuring that you are within the newly created folder (on your name), perform the following steps to create a sub folder:
-	- Click on the **+ New (1)** button and then select **Folder (2)**.
+ 	- Once authentication is successful, verify that you can access the SharePoint directory associated with your name.
+	- Click on the **+ New (1)** button and then select **Folder (2)** to create a sub folder.
  	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**.
-  	- Click on the **Create (4)** button.  
-  	- Select the newly created folder.
+	- Click on the **Create (4)** button.
+	- Select the newly created folder.
 
 	![](images/new-folder-2.png)
 
 	![](images/new-folder-3.png)
 
-10. To upload the Power BI Desktop file within the newly created sub folder, perform the following steps:
+8. To upload the Power BI Desktop file within the newly created sub folder, perform the following steps:
 	- Click on **Upload (1)**.
  	- Select **Files (2)** from the dropdown list.
  	- Navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder and upload the **Sales Analysis.pbix** file.
