@@ -626,7 +626,7 @@ In this task you will complete the lab.
 
 1. To return to your workspace, click on **My Workspace**.
 
-	![Picture 99](Linked_image_Files/07-design-report-in-power-bi-desktop_image72.png)
+	![Picture 99](Linked_image_Files/07-design-report-in-power-bi-desktop_imagea72.png)
 
 2. Leave the Microsoft Edge browser window open.
 
