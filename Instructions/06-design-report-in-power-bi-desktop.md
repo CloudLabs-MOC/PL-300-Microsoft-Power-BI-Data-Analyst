@@ -357,6 +357,10 @@ In this task you will design the second report page. When you’ve completed the
 
 3. Add a slicer based on the **Region \| Region** field.
 
+1. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
+
+	![Picture 49](Linked_image_Files/image(18).png)
+
 4. Use the **Visualizations > Format visual > Visual > Slicer Settings > Selection** pane to enable the “**Select All**” option.
 
 	![Picture 43](images/M6-T5-S4.png)
@@ -435,6 +439,10 @@ In this task you will design the third—and final—report page. When you’ve 
 
 	![Picture 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
 
+1. To convert the slicer from a list to a dropdown, navigate to Visualizations > Format visual > Visual > Slicer Settings > Style, and then select Dropdown from the dropdown menu.
+
+	![Picture 18](Linked_image_Files/06_slicer_style-1.png)
+	
 1. In the slicer, set the page to filter by **FY2019**.
 
 	![Picture 71](Linked_image_Files/image(50).png)
@@ -459,9 +467,9 @@ In this task you will design the third—and final—report page. When you’ve 
    
    ![Picture 3](Linked_image_Files/formatvisual.png)
 
-	- In the **Callout values** group, increase the **Text Size** property to **28pt**
+	- In the **Values** group, increase the **Size** to **28**
 
-	- In the **Cards** expand style set the **Background** group **Color** to a light gray color
+	-  Set the **Background** group **Color** to a light gray color
 
 	  ![Picture 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
 
@@ -479,7 +487,7 @@ In this task you will design the third—and final—report page. When you’ve 
 
 	![Picture 80](Linked_image_Files/image(56).png)
 
-1. To create a copy of the visual, press **Ctrl+C**, and then press **Ctrl+V**.
+1. To create a copy of the visual, press **Ctrl+C**, and then press **Ctrl+V** and drag him to the side.
 
 1. Position the new visual to the right of the original visual.
 
@@ -616,9 +624,9 @@ In this task you will explore the report that was published to Power BI.
 
 In this task you will complete the lab.
 
-1. To return to your workspace, in the banner across the window web page, click **My Workspace**.
+1. To return to your workspace, click on **My Workspace**.
 
-	![Picture 99](Linked_image_Files/07-design-report-in-power-bi-desktop_image72.png)
+	![Picture 99](Linked_image_Files/07-design-report-in-power-bi-desktop_imagea72.png)
 
 2. Leave the Microsoft Edge browser window open.
 
