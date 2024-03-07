@@ -531,9 +531,9 @@ In this task you will explore the report that was published to Power BI.
 
 1. In the Microsoft Edge browser window, in the Power BI service, in the **Navigation** pane (located at the left, and it could be collapsed), Select **My Workspace**.
 
-2. Review the contents of the workspace, noticing the **Sales Analysis** report and dataset.
+2. Review the contents of the workspace, noticing the **Sales Analysis** report and Semantic models.
 
-	>**Note**: When you published the Power BI Desktop file, the data model was published as a dataset.
+	>**Note**: When you published the Power BI Desktop file, the data model was published as a Semantic models.
 
 	>**Note**: If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.
 
