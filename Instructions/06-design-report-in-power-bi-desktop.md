@@ -184,12 +184,6 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 4](Linked_image_Files/image(11).png)
 
-       > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Task 4: Design page 1
 
@@ -537,9 +531,9 @@ In this task you will explore the report that was published to Power BI.
 
 1. In the Microsoft Edge browser window, in the Power BI service, in the **Navigation** pane (located at the left, and it could be collapsed), Select **My Workspace**.
 
-2. Review the contents of the workspace, noticing the **Sales Analysis** report and dataset.
+2. Review the contents of the workspace, noticing the **Sales Analysis** report and Semantic models.
 
-	>**Note**: When you published the Power BI Desktop file, the data model was published as a dataset.
+	>**Note**: When you published the Power BI Desktop file, the data model was published as a Semantic models.
 
 	>**Note**: If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.
 
@@ -613,13 +607,6 @@ In this task you will explore the report that was published to Power BI.
 
     ![Picture 91](Linked_image_Files/image(71).png)
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ### Task 2: Finish up
 
 In this task you will complete the lab.
@@ -631,6 +618,13 @@ In this task you will complete the lab.
 2. Leave the Microsoft Edge browser window open.
 
    >**Note**: You will enhance the report design with advanced features in the **Enhance a Report in Power BI Desktop** lab.
+
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	
+    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
   
 ## Review
  In this lab, you have completed the following :
