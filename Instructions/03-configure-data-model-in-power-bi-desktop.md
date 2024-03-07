@@ -705,7 +705,7 @@ In this task you will complete the lab.
 	- Within the **Enter password (1)** field, enter the password provided by your instructor against your personal SharePoint URL.
  	- Click on the **Verify (2)** button.
 
-	>**Note:** The confidentiality of this SharePoint link and its password must be strictly maintained, and under no circumstances should it be shared with anyone.
+		>**Note:** The confidentiality of this SharePoint link and its password must be strictly maintained, and under no circumstances should it be shared with anyone.
 
 	![](images/validation-new.png)
 
