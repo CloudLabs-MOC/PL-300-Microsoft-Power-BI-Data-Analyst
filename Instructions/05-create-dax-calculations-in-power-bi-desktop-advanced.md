@@ -410,7 +410,7 @@ In this task you will complete the lab.
  
  	- Once authentication is successful, verify that you can access the SharePoint directory associated with your name.
 	- Click on the **+ New (1)** button and then select **Folder (2)** to create a sub folder.
- 	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject> (3)**.
+ 	- On the **Create a folder** dialog-box, name the folder with the following name based on the value of the Deployment ID: **<inject key="Deployment ID"></inject>-2 (3)**.
 	- Click on the **Create (4)** button.
 	- Select the newly created folder.
 

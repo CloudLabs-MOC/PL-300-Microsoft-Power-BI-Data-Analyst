@@ -1,0 +1,21 @@
+[
+  {
+    "Name": "Module 04 & 05 - Create DAX Calculations in Power BI Desktop",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/tree/RRCCollege",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/LabIntro(v2).md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/04-create-dax-calculations-in-power-bi-desktop.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/05-create-dax-calculations-in-power-bi-desktop-advanced.md",
+        "Order": 3
+      }
+    ]
+  }
+]
