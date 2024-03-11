@@ -1,4 +1,4 @@
-# PL-300 Module 4: Create DAX Calculations in Power BI Desktop, Part 1
+# PL-300 Module 4: Create DAX Calculations in Power BI Desktop - Part 1
 
 ## Lab scenario
 In this lab you will create calculated tables, calculated columns, and simple measures using Data Analysis Expressions (DAX).
