@@ -439,6 +439,8 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	>**Note**: In this case, the number of orders is calculated by counting the distinct **SalesOrderNumber** column values, while the number of order lines is simply the number of table rows (each row is a line of an order).
 
+	![Picture 32](images/L4E2T1S9.png)
+
 10. Switch to Model view, and then multi-select the four price measures: **Avg Price**, **Max Price**, **Median Price**, and **Min Price**.
 
 11. For the multi-selection of measures, configure the following requirements:
@@ -447,7 +449,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	- Assign to a display folder named **Pricing**
 
-       ![Picture 33](Linked_image_Files/upd-8.png)
+       ![Picture 33](Linked_image_Files/L4E2T1S11.png)
         
 
 12. Hide the **Unit Price** column.
@@ -460,7 +462,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	- Assign to a display folder named **Counts**
 
-	![Picture 36](Linked_image_Files/upd-9.png)
+	![Picture 36](Linked_image_Files/L4E2T1S13.png)
 
 14. In Report view, in the **Values** well/area of the matrix visual, for the **Unit Price** field, click **X** to remove it.
 
@@ -482,7 +484,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 17. Verify that the results looks sensible and are correctly formatted.
 
-	![Picture 39](images/orderlines.png)
+	![Picture 39](images/L4E2T1S17.png)
 
 ### Task 2: Create additional measures
 
@@ -524,38 +526,44 @@ In this task you will create additional measures that use more complex formulas.
 7. Hide the **TargetAmount** column.
 
 	**Tip**: You can right-click the column in the **Data** pane, and then select **Hide**.
+  	 ![Picture 42](images/L4E2T2S7.png)
 
-8. Switch to the **Report View** and add the **Target** measure to the table visual.
+9. Switch to the **Report View** and add the **Target** measure to the table visual.
 
-9. Notice that the **Target** column total is now BLANK.
+10. Notice that the **Target** column total is now BLANK.
 
 	![Picture 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
 
-10. Use the snippets file definitions to create the following two measures for the **Targets** table:
+11. Use the snippets file definitions to create the following two measures for the **Targets** table:
 
 	- Variance
 
 	- Variance Margin
 
-11. Format the **Variance** measure for zero decimal places.
 
-12. Format the **Variance Margin** measure as percentage with two decimal places.
+12. Format the **Variance** measure for zero decimal places.
 
-13. Add the **Variance** and **Variance Margin** measures to the table visual.
+	![Picture 42](images/L4E2T2S11.png)
 
-14. Resize the table visual so all columns and rows can be seen.
+13. Format the **Variance Margin** measure as percentage with two decimal places.
 
-	![Picture 44](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image48.png)
+	![Picture 42](images/L4E2T2S12.png)
+
+14. Add the **Variance** and **Variance Margin** measures to the table visual.
+
+15. Resize the table visual so all columns and rows can be seen.
+
+	![Picture 44](Linked_image_Files/L4E2T2S14.png)
 
 	>**Note**: While it appears all salespeople are not meeting target, remember that the table visual isn’t yet filtered by a specific time period. You’ll produce sales performance reports that filter by a user-selected time period in the **Design a Report in Power BI Desktop, Part 1** lab.
 
-15. At the top-right corner of the **Data** pane, collapse and then expand open the pane.
+16. At the top-right corner of the **Data** pane, collapse and then expand open the pane.
 
 	![Picture 45](images/fields.png)
 
 	>**Note**: Collapsing and re-opening the pane resets the content.
 
-16. Notice that the **Targets** table now appears at the top of the list.
+17. Notice that the **Targets** table now appears at the top of the list.
 
 	![Picture 46](images/fields.png)
 
