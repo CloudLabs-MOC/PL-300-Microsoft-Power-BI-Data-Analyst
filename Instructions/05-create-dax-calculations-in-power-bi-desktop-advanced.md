@@ -425,8 +425,6 @@ In this task you will complete the lab.
 	
  	![](images/new-folder-4.png)
 
-    >**Note**: You’ll create a report based on the data model in the **Design a Report in Power BI Desktop, Part 1** lab.
-
     > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
 	
 	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
