@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Module 09 - Create a Power BI Dashboard",
+    "Language": "English",
+    "BaseURL": "https://github.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/tree/RRCCollege",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/LabIntro(v2).md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/09-create-power-bi-dashboard.md",
+        "Order": 2
+      }
+    ]
+  }
+]
