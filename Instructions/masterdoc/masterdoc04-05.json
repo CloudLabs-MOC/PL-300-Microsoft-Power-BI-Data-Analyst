@@ -11,6 +11,10 @@
       {
         "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/04-create-dax-calculations-in-power-bi-desktop.md",
         "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/RRCCollege/Instructions/05-create-dax-calculations-in-power-bi-desktop-advanced.md",
+        "Order": 3
       }
     ]
   }
