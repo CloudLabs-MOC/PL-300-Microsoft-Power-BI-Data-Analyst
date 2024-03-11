@@ -289,7 +289,7 @@ In this task you will complete the lab.
 
 5. After you have successfully saved the Power BI Desktop file, ask your instructor for your personal SharePoint URL. Make sure to use the browser in your LabVM environment to access this confidential link in order to upload the **Sales Analysis.pbix** file.
 
-6. Once you are directed to the Sharing Link Validation browser page, perform the following steps to access your private sharepoint directory:
+6. Navigate to the private SharePoint link shared by the instructor in the Lab VM and proceed with the following steps to reach your personal SharePoint directory:
 	- Within the **Enter password (1)** field, enter the password provided by your instructor against your personal SharePoint URL.
  	- Click on the **Verify (2)** button.
 
