@@ -67,10 +67,10 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Enter the account details 
 
-   - Enter the Lab username in **Enter your email address** page.
+   - Enter the Lab username on the **Enter your email address** page.
      * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
      
-   - Complete the sign up process by selecting the username
+   - Complete the signup process by selecting the username
 
    - Enter the password 
    
