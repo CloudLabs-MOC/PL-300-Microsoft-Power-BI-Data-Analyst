@@ -140,47 +140,60 @@ In this task you will setup the environment for the lab by opening the starter r
 
 	![Picture 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
 
-4. Complete the sign in process using the same account used to sign in to the Power BI service. (**Note:** Select Work or school account if asked, and complete the sign in process)
+5. Enter the account details 
 
-5. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
+   - Enter the Lab username on the **Enter your email address** page.
+     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+     
+   - Complete the signup process by selecting the username
 
-6. Select **Open Report**.
+   - Enter the password 
+   
+     * Azure Password: <inject key="AzureAdUserPassword"></inject>
+ 
+6.  If prompted, choose the "Work or school account" option.
+
+7. Follow the prompts to complete the sign-in process.
+
+8. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
+
+9. Select **Open Report**.
 
 	![Picture 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(3).png)
 
-7. Click **Browse Reports**.
+10. Click **Browse Reports**.
 
 	![Picture 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
 
-8. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** folder.
+11. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** folder.
 
-9. Select the **Sales Analysis** file.
+12. Select the **Sales Analysis** file.
 
-10. Click **Open**.
+13. Click **Open**.
 
 	![Picture 16](Linked_image_Files/image(8).png)
 
-11. Close any informational windows that may open.
+14. Close any informational windows that may open.
 
-12. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
+15. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
 
 	![Picture 8](Linked_image_Files/discard-changes-(1).png)
 
-13. Now you will see another pop up as shown below, select **Discard**.
+16. Now you will see another pop up as shown below, select **Discard**.
 
 	![Picture 8](Linked_image_Files/discard.png)
 
-14. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
+17. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
 
-15. Select **Save As**.
+18. Select **Save As**.
 
 	![Picture 8](Linked_image_Files/07-design-report-in-power-bi-desktop_image9.png)
 
-16. If prompted to apply changes, click **Apply Later**.
+19. If prompted to apply changes, click **Apply Later**.
 
-17. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
+20. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
 
-18. Click **Save**.
+21. Click **Save**.
 
 	![Picture 4](Linked_image_Files/image(11).png)
 
