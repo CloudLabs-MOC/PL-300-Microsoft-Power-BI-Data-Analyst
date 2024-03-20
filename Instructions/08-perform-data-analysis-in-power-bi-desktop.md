@@ -68,8 +68,8 @@ In this task you will setup the environment for the lab by signing in to Power B
  	![Picture 5](Linked_image_Files/pl300-02.png)
 
 1. Enter the account details provided to you.
-   * Username/Email:  <inject key="Username"></inject>
-   * Password:  <inject key="Password"></inject>
+   * Username/Email:  <inject key="AzureAdUserEmail"></inject>
+   * Password:  <inject key="AzureAdUserPassword"></inject>
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
    **Important**: Be sure to record your new password.
