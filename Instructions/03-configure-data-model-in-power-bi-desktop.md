@@ -400,7 +400,7 @@ In this task you will configure the **Sales** table.
 
 In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
-1. In the **Data** pane, select the **Product \| ProductKey** column.
+1. From the **Model view** > **Data** pane, select the **Product \| ProductKey** column.
 
 2. While pressing the **Ctrl** key, select the following 13 columns (spanning multiple tables):
 
