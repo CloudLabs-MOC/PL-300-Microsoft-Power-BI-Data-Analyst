@@ -92,7 +92,7 @@ In this task, you'll set up the environment for the lab by creating a dataset. I
 
 2. Select **Upload > Browse**.
 
-3. Navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\08-create-power-bi-dashboard\Starter** folder.
+3. Navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\08-perform-data-analysis-in-power-bi-desktop\Starter** folder.
 
 4. Select the **Sales Analysis.pbix** file, and then click **Open**.
 
