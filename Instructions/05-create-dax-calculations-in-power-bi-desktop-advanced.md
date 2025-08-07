@@ -1,4 +1,4 @@
-# PL-300 Module 5: Create DAX Calculations in Power BI Desktop, Part 2
+# Lab 05: Create DAX Calculations in Power BI Desktop, Part 2
 
 ## Lab scenario
 

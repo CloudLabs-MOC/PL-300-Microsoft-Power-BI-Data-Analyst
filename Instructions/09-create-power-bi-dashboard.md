@@ -1,4 +1,4 @@
-# PL-300 Module 9: Create a Power BI Dashboard
+# Lab 09: Create a Power BI Dashboard
 
 ## Lab scenario
  

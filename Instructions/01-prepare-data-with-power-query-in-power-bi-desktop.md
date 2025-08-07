@@ -1,4 +1,4 @@
-# PL-300 Module 1: Prepare Data in Power BI Desktop
+# Lab 01: Prepare Data in Power BI Desktop
 
 ## Lab scenario 
 In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.

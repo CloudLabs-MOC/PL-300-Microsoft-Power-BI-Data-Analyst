@@ -1,4 +1,4 @@
-# PL-300 Module 3: Model Data in Power BI Desktop
+# Lab 03: Model Data in Power BI Desktop
 
 ## Lab scenario
 

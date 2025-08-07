@@ -1,4 +1,4 @@
-# **PL-300 Module 7: Enhance a Report in Power BI Desktop**
+# Lab 07: Enhance a Report in Power BI Desktop
 
 ## Lab scenario
 In this lab you will enhance the **Sales Analysis** with advanced design features.
