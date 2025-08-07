@@ -1,4 +1,4 @@
-# **PL-300 Module 8: Perform Data Analysis in Power BI Desktop**
+# Lab 08: Perform Data Analysis in Power BI Desktop
 
 ## Lab scenario
 In this lab you will create the **Sales Exploration** report.
