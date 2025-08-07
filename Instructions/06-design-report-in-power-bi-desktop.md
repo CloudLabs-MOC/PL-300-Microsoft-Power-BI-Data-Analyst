@@ -1,4 +1,4 @@
-# PL-300 Module 6: Design a Report in Power BI Desktop
+# Lab 06: Design a Report in Power BI Desktop
 
 ## Lab scenario
 In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
