@@ -1,4 +1,4 @@
-# PL-300 Module 2: Load Data in Power BI Desktop
+# Lab 02: Load Data in Power BI Desktop
 
 ## Lab scenario
 In this lab you will commence apply transformations to each of the queries created in the previous lab. You will then apply the queries to load each as a table to the data model.
