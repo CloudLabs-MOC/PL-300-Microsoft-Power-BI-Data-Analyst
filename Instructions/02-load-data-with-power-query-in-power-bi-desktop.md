@@ -8,37 +8,8 @@ In this lab you learn how to:
 - Apply various data transformations.
 
 - Load queries to the semantic model.
-
-## Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. Prepare Data in Power BI Desktop
-
-2. **Clean, transform, and load data in Power BI**
-
-3. Model Data in Power BI Desktop
-
-4. Create DAX Calculations in Power BI Desktop, Part 1
-
-5. Create DAX Calculations in Power BI Desktop, Part 2
-
-6. Design a Report in Power BI Desktop, Part 1
-
-7. Design a Report in Power BI Desktop, Part 2
-
-8. Create a Power BI Dashboard
-
-8. Perform Data Analysis in Power BI Desktop
-
-10. Enforce Row-Level Security
-
-## Lab objectives
-In this lab, you will perform:
-- Apply various data transformations.
-- Load queries to the semantic model.
   
-## Estimated timing: 60 Minutes  
+## Estimated timing: 90 Minutes  
 
 ## Architecture Diagram
 
@@ -70,34 +41,15 @@ In this task you will setup the environment for the lab.
 
     ![Picture 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
 
-1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Starter** folder.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-transform-data** folder.
 
-1. Select the **Sales Analysis** file.
+1. Select the **02-Starter-Sales Analysis** file.
 
 1. Click **Open**.
 
 	![Picture 12](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image5.png)
 
 1. Close any informational windows that may open.
-
-1. Notice the yellow warning message beneath the ribbon.
-
-	>**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.*
-
-1. To dismiss the warning message, at the right of the yellow warning message, click **X**.
-
-	![Picture 13](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image6.png)
-1. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-1. Select **Save As**.
-
-    ![Picture 18](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image7.png)
-
-1. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
-
-1. Click **Save**.
-
-    ![Picture 15](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image9.png)
 
 1. If prompted to apply changes, click **Apply Later**.
 
@@ -465,7 +417,7 @@ In this task you will configure the **Sales** query.
 
    >**Note:** This expression tests if the **TotalProductCost** value is missing. If it is, produces a value by multiplying the **OrderQuantity** value by the **StandardCost** value; otherwise, it uses the existing **TotalProductCost** value.
 
-   > **Note:** Alternatively, you can copy the expression from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\02-load-data-with-power-query-in-power-bi-desktop\Assets\Snippets.txt** file.
+   > **Note:** Alternatively, you can copy the expression from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-transform-data\02-Snippets.txt** file.
 
 8. Click **OK (3)**.
 
