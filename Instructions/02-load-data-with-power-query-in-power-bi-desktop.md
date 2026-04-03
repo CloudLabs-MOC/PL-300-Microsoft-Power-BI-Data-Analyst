@@ -15,7 +15,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 1. Prepare Data in Power BI Desktop
 
-2. **Load Data in Power BI Desktop**
+2. **Clean, transform, and load data in Power BI**
 
 3. Model Data in Power BI Desktop
 
@@ -117,9 +117,9 @@ In this task, you'll use Power Query Editor to configure the **Salesperson** que
 
 	![](./images/lab2-04-5.png)
 
-	>**Note:** In the Power Query Editor window, in the Queries pane. If you see that the all the queries showing warning then, select **Edit credentials**, 
+	> **Note:** In the Power Query Editor window, in the Queries pane. If you see that the all the queries showing warning then, select **Edit credentials**, 
 	
-	![](./images/lab2-04-2.png)
+	 ![](./images/lab2-04-2.png)
 
 	- In the **SQL Server database** pane, select **Use my current credentials (1)**, and then click **Connect (2)**.
 
@@ -133,19 +133,19 @@ In this task, you'll use Power Query Editor to configure the **Salesperson** que
 
 	![](./images/lab2-04-6.png)
 
-	> *The query name determines the model table name. It’s recommended to define concise and user-friendly names.*
+	> **Note:** The query name determines the model table name. It’s recommended to define concise and user-friendly names.
 
-1. To locate a specific column, on the **Home** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns** down-arrow, and then select **Go to Column**.
+1. To locate a specific column, on the **Home** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns (1)** down-arrow, and then select **Go to Column (2)**.
 
 	![](./images/lab2-04-7.png)
 
-	> _**Go to Column** is a useful feature with many columns. Otherwise, you can horizontally scroll to find columns._
+	> **Note:** **Go to Column** is a useful feature with many columns. Otherwise, you can horizontally scroll to find columns.
 
-1. In the **Go to Column** window, to order the list by column name, select the **AZ** sort button, and then select **Name**. 
+1. In the **Go to Column** window, to order the list by column name, select the **AZ (1)** sort button, and then select **Name (2)**. 
 
 	![](./images/lab2-04-8.png)
 
-1. In the field selection list, scroll to locate **SalesPersonFlag**, select it, and click **OK**.
+1. In the field selection list, scroll to locate **SalesPersonFlag (1)**, select it, and click **OK (2)**.
 
 	![](./images/lab2-04-9.png)
 
@@ -157,7 +157,7 @@ In this task, you'll use Power Query Editor to configure the **Salesperson** que
 
 	![](./images/lab2-04-11.png)
 
-	> *Each transformation you create results in another step logic. It’s possible to edit or delete steps. It’s also possible to select a step to preview the query results at that stage of the query transformation.*
+	> **Note:** Each transformation you create results in another step logic. It’s possible to edit or delete steps. It’s also possible to select a step to preview the query results at that stage of the query transformation.
 
 1. To remove columns, on the **Home** ribbon tab, from inside the **Manage Columns** group, select the **Choose Columns** icon.
 
@@ -188,7 +188,7 @@ In this task, you'll use Power Query Editor to configure the **Salesperson** que
 
 	![](./images/lab2-04-16.png)
 
-	>**Note:** Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.
+	> **Note:** Many common transformations can be applied by right-clicking the column header, and then choosing them from the context menu. Note that additional transformations are available in the ribbon.
 
 1. In the **Merge Columns** window, in the **Separator** dropdown list, select **Space (1)**.
 
@@ -230,7 +230,7 @@ In this task you will configure the **SalespersonRegion** query.
 
 	![](./images/lab2-04-23.png)
 
-6. In the status bar, verify that the query has two columns and 39 rows.
+6. In the status bar, verify that the query has 2 columns and 39 rows.
 
 	![](./images/lab2-04-24.png)
 
@@ -246,7 +246,7 @@ In this task you will configure the **Product** query.
 
 2. Rename the query to **Product**.
 
-3. Locate the **FinishedGoodsFlag** column, and then filter the column to retrieve products that are finished goods (i.e. TRUE).
+3. Locate the **FinishedGoodsFlag (1)** column, and then filter the column to retrieve products that are finished goods i.e. TRUE **(2)**, and click **OK (3)**.
 
 	![](./images/lab2-04-26.png)
 
@@ -282,9 +282,9 @@ In this task you will configure the **Product** query.
 
 	![](./images/lab2-04-29.png)
 
-	> *By selecting these two columns, a transformation will be applied to join to the **DimProductSubcategory** table, and then include these columns. The **DimProductCategory** column is, in fact, another related table in the data source.*
+	> **Note:** By selecting these two columns, a transformation will be applied to join to the **DimProductSubcategory** table, and then include these columns. The **DimProductCategory** column is, in fact, another related table in the data source.
 
-	> *Query column names must always be unique. If left checked, this checkbox would prefix each column with the expanded column name (in this case **DimProductSubcategory**). Because it’s known that the selected column names don’t collide with column names in the **Product** query, the option is deselected.*
+	> **Note:** Query column names must always be unique. If left checked, this checkbox would prefix each column with the expanded column name (in this case **DimProductSubcategory**). Because it’s known that the selected column names don’t collide with column names in the **Product** query, the option is deselected.
 
 11. Notice that the transformation resulted in the addition of two columns, and that the **DimProductSubcategory** column has been removed.
 
@@ -366,7 +366,7 @@ In this task you will configure the **Reseller** query.
 
 	- **EnglishCountryRegionName** to **Country-Region**
 
-10. In the status bar, verify that the query has six columns and 701 rows.
+10. In the status bar, verify that the query has 6 columns and 701 rows.
 
 	![](./images/lab2-04-37.png)
 
@@ -380,7 +380,7 @@ In this task you will configure the **Region** query.
 
 2. Rename the query to **Region**.
 
-3. Apply a filter to the **SalesTerritoryAlternateKey** column to remove the value 0 (zero).
+1. In the **SalesTerritoryAlternateKey** column, select the filter dropdown **(1)**, uncheck **0 (2)**, and then choose **OK (3)**.
 
 	![](./images/lab2-04-39.png)
 
@@ -404,7 +404,7 @@ In this task you will configure the **Region** query.
 
 	- **SalesTerritoryGroup** to **Group**
 
-6. In the status bar, verify that the query has four columns and 10 rows.
+6. In the status bar, verify that the query has 4 columns and 10 rows.
 
 	![](./images/lab2-04-40.png)
 
@@ -446,13 +446,13 @@ In this task you will configure the **Sales** query.
 
 	>**Note:** You may recall in the **Prepare Data in Power BI Desktop** lab that a small percentage of **FactResellerSales** rows had missing **TotalProductCost** values. The **DimProduct** column has been included to retrieve the product standard cost column to assist fixing the missing values.
 
-4. Expand the **DimProduct** column, uncheck all columns, and then include only the **StandardCost** column.
+4. Expand the **DimProduct (1)** column, uncheck all columns, and then check only the **StandardCost (2)** and **OK (3)**:
 
 	![](./images/lab2-04-42.png)
 
 5. To create a custom column, on the **Add Column (1)** ribbon tab, from inside the **General** group, click **Custom Column (2)**.
 
-	![](./images/lab2-04-42.png)
+	![](./images/lab2-04-43.png)
 
 6. In the **Custom Column** window, in the **New Column Name** box, replace the text with **Cost (2)**.
 
@@ -539,11 +539,11 @@ In this task you will configure the **Targets** query.
 
 7. Rename the following two columns:
 
-	- **Attribute** to **MonthNumber** (there is no space between the two words—it will be removed later)
+	- **Attribute** to **MonthNumber** (there is no space between the two words it will be removed later)
 
 	- **Value** to **Target**
 
-	>**Note**: You’ll now apply transformations to produce a date column. The date will be derived from the **Year** and **MonthNumber** columns. You’ll create the column by using the **Columns From Examples** feature.
+	> **Note:** You’ll now apply transformations to produce a date column. The date will be derived from the **Year** and **MonthNumber** columns. You’ll create the column by using the **Columns From Examples** feature.
 
 8. To prepare the **MonthNumber** column values, right-click the **MonthNumber** column header, and then select **Replace Values**.
 
@@ -611,7 +611,7 @@ In this task you will configure the **Targets** query.
 
 	![](./images/lab2-04-58.png)
 
-25. In the status bar, verify that the query has three columns and 809 rows.
+25. In the status bar, verify that the query has 3 columns and 809 rows.
 
 	![](./images/lab2-04-59n.png)
 
@@ -629,7 +629,7 @@ In this task you will configure the **ColorFormats** query.
 
 	![](./images/lab2-04-61.png)
 
-4. In the status bar, verify that the query has three columns and 10 rows.
+4. In the status bar, verify that the query has 3 columns and 10 rows.
 
 	![](./images/lab2-04-62n.png)
 
@@ -641,11 +641,11 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	![](./images/lab2-04-63n.png)
 
-2. To merge the **ColorFormats** query, on the **Home** ribbon tab, click the **Combine** down-arrow, then click **Merge Queries**.
+2. To merge the **ColorFormats** query, on the **Home** ribbon tab, click the **Combine (1)** down-arrow, then click **Merge Queries (2)**.
 
 	![](./images/lab2-04-64.png)
 
-	>**Note**: Merging queries allows integrating data, in this case from different data sources (SQL Server and a CSV file).
+	>**Note:** Merging queries allows integrating data, in this case from different data sources (SQL Server and a CSV file).
 
 3. In the **Merge** window, in the **Product** query grid, select the **Color (1)** column header.
 
@@ -663,7 +663,7 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	![](./images/lab2-04-66.png)
 
-9. Expand the **ColorFormats** column to include the following two columns **(2)** and click **OK (3)**
+9. Expand the **ColorFormats (1)** column to include the following two columns **(2)** and click **OK (3)**
 
 	- Background Color Format
 
@@ -671,7 +671,7 @@ In this task you will update the **Product** query by merging the **ColorFormats
 
 	  ![](./images/lab2-04-67.png)
 
-10. In the status bar, verify that the query now has eight columns and 397 rows.
+10. In the status bar, verify that the query now has 8 columns and 397 rows.
 
 	![](./images/lab2-04-68n.png)
 
@@ -687,11 +687,11 @@ In this task you will update the **ColorFormats** to disable its load.
 
 	![](./images/lab2-04-70.png)
 
-3. In the **Query Properties** window, uncheck the **Enable Load To Report** checkbox.
+3. In the **Query Properties** window, uncheck the **Enable Load To Report (1)** checkbox.
 
-	>**Note**: Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the **Product** query, which is enabled to load to the data model.
+	>**Note:** Disabling the load means it will not load as a table to the data model. This is done because the query was merged with the **Product** query, which is enabled to load to the data model.
 
-4. Click **OK**.
+4. Click **OK (2)**.
 
 	![](./images/lab2-04-71.png)
 
