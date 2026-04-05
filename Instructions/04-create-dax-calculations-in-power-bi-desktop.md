@@ -21,7 +21,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-4. **Create DAX Calculations in Power BI Desktop, Part 1**
+4. Create DAX Calculations in Power BI Desktop, Part 1
 
 5. Create DAX Calculations in Power BI Desktop, Part 2
 
@@ -76,9 +76,9 @@ In this task you will setup the environment for the lab.
 
  	![Picture 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
 
-6. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** folder.
+6. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\04-create-dax-calculations** folder.
 
-7. Select the **Sales Analysis** file.
+7. Select the **04-Starter Sales Analysis** file.
 
 8. Click **Open**.
 
@@ -108,7 +108,7 @@ In this task you will setup the environment for the lab.
 
 	![Picture 22](images/applylater.png)
 
-16. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
+16. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Resources** folder.
 
 17. Click **Save**.
 
