@@ -1,45 +1,18 @@
-# Lab 01: Prepare Data in Power BI Desktop
+# Lab 01: Get data in Power BI
 
 ## Lab scenario 
-In this lab you commence the development of a Power BI Desktop solution for the Adventure Works company. It involves connecting to source data, previewing the data, and using data preview techniques to understand the characteristics and quality of the source data.
 
-In this lab you learn how to:
+This lab is designed to introduce you to Power BI Desktop application and how to connect to data and how to use data preview techniques to understand the characteristics and quality of the source data.
 
-- Open Power BI Desktop
+In this lab, you learn how to:
 
-- Set Power BI Desktop options
-
-- Connect to source data
-
-- Preview source data
-
-- Use data preview techniques to better understand the data
-
-## Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. **Prepare Data in Power BI Desktop**
-
-2. Load Data in Power BI Desktop
-
-3. Model Data in Power BI Desktop
-
-4. Create DAX Calculations in Power BI Desktop
-
-5. Create Advanced DAX Calculations in Power BI Desktop
-
-6. Design a Report in Power BI Desktop
-
-7. Enhance a Report in Power BI Desktop
-
-8. Create a Power BI Dashboard
-
-9. Perform Data Analysis in Power BI Desktop
-
-10. Enforce Row-Level Security
+- Open Power BI Desktop.
+- Connect to different data sources.
+- Preview source data with Power Query.
+- Use data profiling features in Power Query.
 
 ## Lab objectives
+
 In this lab, you will perform:
 
 - Set Power BI Desktop options
@@ -60,45 +33,27 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
-- Data Load > Import relationships from data sources on first load
-- Data Load > Autodetect new relationships after data is loaded
+### Open the Starter Power BI File
 
-> **Note**: While having these two options enabled can be helpful when developing a data model, you disabled them earlier to support the lab experience. When you create relationships in the **Load Data in Power BI Desktop** lab, you’ll learn why you're adding each one.
+To begin the exercise, follow these steps:
 
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+1. Open **File Explorer** on your machine.
 
- 	![Picture 2](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image1.png)
+2. Navigate to the following path:
 
-1. To close the getting started window, at the top-right of the window, click **X**.
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\01-get-data-in-power-bi
+   ```
+3. Locate the file named: **01-Starter-Sales Analysis.pbix**
 
- 	![Picture 3](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image2.png)
-
-1. To save the file, click the **File** ribbon tab to open the backstage view.
-
-1. Select **Save**.
-
- 	![Picture 4](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image3.png)
-
-1. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
-
-1. In the **File Name** box, enter **Sales Analysis**.
-
- 	![Picture 14](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(4).png)
-
-1. Click **Save**.
-
-	![Picture 17](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image-(5).png)
-
-	> **Note**: You can also save the file by click the **Save** icon located at the top-left.
-
-	![Picture 18](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(6).png)
-
-	  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+	![Picture 19](images/pl3n1.png)
 	
-	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+4. Double-click the file to open it in **Power BI Desktop**.
+
+   > **Note:** This starter file has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
+
+   - Data Load > Import relationships from data sources on first load
+   - Data Load > Autodetect new relationships after data is loaded
 
 ### Task 2: Get data from SQL Server
 
@@ -118,9 +73,9 @@ In this task you will create queries based on SQL Server tables.
 
 	![Picture 22](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(13).png)
 
-4. If prompted for credentials, in the **SQL Server Database** window, select **Use my current credentials**. Then click on **Connect**.
+4. If prompted for credentials, in the **SQL Server Database** window, select **Windows > Use my current credentials**, and then **Connect**.
 
-	>**Note**: if Pop-up appears click on **Ok**.
+	>**Note**: Select **OK** if encrypted connection warning appears
 
 5. In the **Navigator** window, at the left, expand the **AdventureWorksDW2020** database.
 
@@ -282,7 +237,6 @@ In this task you will create a query based on a CSV file.
 
 	![Picture 71](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(36).png)
  
-
 6. In the **Queries** pane, notice the addition of the **ResellerSalesTargets** query.
 
 	![Picture 72](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(37).png)
@@ -299,32 +253,14 @@ In this task you will create a query based on a CSV file.
 
 	> **Note**: The icons represent the column data type. **123** is whole number, and **ABC** is text.
 
-	> **Note**: You’ll apply many transformations to achieve a different shaped result consisting of only three columns: **Date**, **EmployeeKey**, and **TargetAmount** in the **Load Data in Power BI Desktop** lab.
+9. Repeat the steps to create a query based on the **ColorFormats.csv** file.
 
-### Task 5: Finish up
+    > *The **ColorFormats** CSV file contains one row per product color. Each row records the HEX codes to format background and font colors.*
 
-In this task you will complete the lab.
+10. You should now have two new queries, **ResellerSalesTargets** and **ColorFormats**.
 
-1. On the **View** ribbon tab, from inside the **Data Preview** group, uncheck the three data preview options that were previously enabled in this lab:
-
-	- Column quality
-
-	- Column distribution
-
-	- Column profile
-
-	![Picture 76](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(40).png)
-
-2. To save the Power BI Desktop file, in the **Power Query Editor** window, on the **File** backstage view, select **Save**.
-
-	![Picture 77](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(41).png)
-
-3. When prompted to apply the queries, click **Apply Later**.
-
-	![Picture 86](Linked_image_Files/01-prepare-data-with-power-query-in-power-bi-desktop_image(42).png)
-
-	> **Note**: Applying the queries will load their data to the data model. You’re not ready to do that, as there are many transformations that must be applied first.
-
+	![Picture 19](images/pl3n2.png)
+	
 ### Review
  In this lab, you have completed the following :
 - Get started with Power BI Desktop
