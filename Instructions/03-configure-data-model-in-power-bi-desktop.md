@@ -1,47 +1,18 @@
-# Lab 03: Model Data in Power BI Desktop
+# Lab 03: Configure a semantic model in Power BI
 
 ## Lab scenario
 
-In this lab you will commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You will also create hierarchies and create quick measures.
-
-In this lab you learn how to:
-
-- Create model relationships
-
-- Configure table and column properties
-
-- Create hierarchies
-
-### Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. Prepare Data in Power BI Desktop
-
-2. Load Data in Power BI Desktop
-
-3. **Model Data in Power BI Desktop**
-
-4. Create DAX Calculations in Power BI Desktop
-
-5. Create Advanced DAX Calculations in Power BI Desktop
-
-6. Design a Report in Power BI Desktop
-
-7. Enhance a Report in Power BI Desktop
-
-8. Create a Power BI Dashboard
-
-9. Perform Data Analysis in Power BI Desktop
-
-10. Enforce Row-Level Security
+In this lab, you'll commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You'll also create hierarchies and quick measures.
 
 ## Lab objectives
-In this lab, you will perform:
 
-- Create model relationships
-- Configure table and column properties
-- Create hierarchies
+In this lab, you learn how to:
+
+- Create model relationships.
+- Configure table and column properties.
+- Create hierarchies.
+- Create quick measures.
+- Configure a many-to-many relationship.
 
 ## Estimated timing: 60 minutes  
 
@@ -57,108 +28,30 @@ In this exercise you will create model relationships.
 
 In this task you will setup the environment for the lab.
 
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+### Open the Starter Power BI File
 
-    ![Picture 12](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image1.png)
+To begin the exercise, follow these steps:
 
-1. To close the getting started window, at the top-right of the window, click **X**.
+1. Open **File Explorer** on your machine.
 
- 	![Picture 11](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image2.png)
+2. Navigate to the following path:
+
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\03-configure-semantic-model
+   ```
+3. Locate the file named: **03-Starter-Sales Analysis.pbix**
+
+	![Picture 19](images/pl3n3.png)
 	
-1. To sign in to the Power BI service, at the top-right, click **Sign In**.
+4. Double-click the file to open it in **Power BI Desktop**.
 
-	![Picture 8](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image6.png)
-	
-1. Select work or school account. Complete the sign in process using the same account used to sign in to the Azure portal.
-
-1. Enter the Lab username in **Enter your email address** page.
-    * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
-    
-      ![](Linked_image_Files/lab7-image1.png)
-
-    * Complete the sign up process by selecting the username
-  
-      ![](Linked_image_Files/lab7-image2.png)
-  
-1. Enter the password.
-    * Azure Password: <inject key="AzureAdUserPassword"></inject>
-      
-      ![](Linked_image_Files/lab7-image3.png)
-       
-1. Complete the sign in process by clicking on **Continue**
-
-   ![](Linked_image_Files/lab6-image-T01.png)
-   
-1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
-   
-   ![](Linked_image_Files/lab6-image-(T02).png)
-   
-   ![](Linked_image_Files/lab6-image-(T003).png)
-   
-1. Leave the Microsoft Edge browser window open.
-
-1. Navigate back to **Power BI Desktop**
-
-
-1. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
-
-1. Select **Open Report**.
-
- 	![Picture 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(3).png)
-
-1. Click **Browse Reports**.
-
- 	![Picture 8](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image4.png)
-
-1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\03-configure-data-model-in-power-bi-desktop\Starter** folder.
-
-1. Select the **Sales Analysis** file.
-
-1. Click **Open**.
-
- 	![Picture 7](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(5).png)
-
-1. Close any informational windows that may open.
-
-1. Notice the yellow warning message beneath the ribbon.
-
-   **Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
-
-1. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
-
-	![Picture 8](Linked_image_Files/discard-changes-(1).png)
-
-1. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Linked_image_Files/discard-changes-(2).png)
-
-
-1. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-1. Select **Save As**.
-
- 	![Picture 5](Linked_image_Files/saveas.png)
-
-1. If prompted to apply changes, click **Apply Later**.
-
-    ![Picture 22](Linked_image_Files/applychanges.png)
-
-1. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
-
-1. Click **Save**.
-
-   ![Picture 3](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(8).png)
-
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-     - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-     - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-     - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-     - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+   >**Note**: You may see a sign-in dialog as the file loads. Select **Cancel** to dismiss the sign-in dialog. Close any other informational windows. Select **Apply Later**, if prompted to apply changes._
 
 ### Task 2: Create model relationships
 
-In this task you will create model relationships.
+In this task, you'll create model relationships. The file was configured to not identify relationships between tables, which isn't the default setting, but is recommended to prevent extra work creating the correct relationships for your model.
+
+>**Note**: The labs use a shorthand notation to reference a field. It will look like this: `Product | Category`. In this example, `Product` is the table name and `Category` is the field name.
 
 1. In Power BI Desktop, at the left, click the **Model** view icon.
 
@@ -178,13 +71,11 @@ In this task you will create model relationships.
 
 	![Picture 328](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(11).png)
 
-5. To create a table visual, in the **Data** pane, from inside the **Product** table, check the **Category** field.
+5. To create a table visual, in the **Data** pane, from inside the `Product` table, check the `Category` field.
 
 	![Picture 329](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(12).png)
 
-	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Product \| Category**. In this example, **Product** is the table name and **Category** is the field name.
-
-6. To add an additional column to the table, in the **Data** pane, check the **Sales \| Sales** field.
+6. To add another column to the table, in the **Data** pane, check the `Sales | Sales` field.
 
 7. Notice that the table visual lists four product categories, and that the sales value is the same for each, and the same for the total.
 
@@ -198,9 +89,7 @@ In this task you will create model relationships.
 
 9. In the **Manage Relationships** window, notice that no relationships are yet defined.
 
-10. To create a relationship, click **New**.
-
-	![Picture 332](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(15).png)
+10. To create a relationship, click **+ New relationship**.
 
 11. In the **Create Relationship** window, in the first dropdown list, select the **Product** table.
 
@@ -260,9 +149,8 @@ In this task you will create model relationships.
 
 24. Use the new technique to create the following two model relationships:
 
-	- **Region \| SalesTerritoryKey** to **Sales \| SalesTerritoryKey**
-
-	- **Salesperson \| EmployeeKey** to **Sales \| EmployeeKey**
+     - `Region | SalesTerritoryKey` to `Sales | SalesTerritoryKey`
+     - `Salesperson | EmployeeKey` to `Sales | EmployeeKey`
 
 25. In the diagram, arrange the tables so that the **Sales** table is positioned in the center of the diagram, and the related tables are arranged about it. Position the disconnected tables to the side.
 
@@ -271,59 +159,57 @@ In this task you will create model relationships.
 
 26. Save the Power BI Desktop file.
 
-## Exercise 2: Configure Tables
+### Task 3: Configure the Product table
 
-In this exercise you will configure each table by creating hierarchies, and hiding, formatting, and categorizing columns.
+In this task, you'll configure the `Product` table with a hierarchy and display folder.
 
-### Task 1: Configure the Product table
-
-In this task you will configure the **Product** table.
+1. Switch to **Model view**.
 
 1. In Model view, in the **Data** pane, if necessary, expand the **Product** table to reveal all fields.
 
-2. To create a hierarchy, in the **Data** pane, right-click the **Category** column, and then select **Create Hierarchy**.
+1. To create a hierarchy, in the **Data** pane, right-click the **Category** column, and then select **Create Hierarchy**.
 
-	![Picture 341](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(24).png)
+	![Picture 341](images/pl3n4.png)
 
-3. In the **Properties** pane (to the left of the **Data** pane), in the **Name** box, replace the text with **Products**.
+1. In the **Properties** pane (to the left of the **Data** pane), in the **Name** box, replace the text with **Products**.
 
 	![Picture 344](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(25).png)
 
-4. To add the second level to the hierarchy, in the **Properties** pane, in the **Hierarchy** dropdown list, select **Subcategory** (you might need to scroll down inside the pane).
+1. To add the second level to the hierarchy, in the **Properties** pane, in the **Hierarchy** dropdown list, select **Subcategory** (you might need to scroll down inside the pane).
 
-5. To add the third level to the hierarchy, in the **Hierarchy** dropdown list, select **Product**.
+1. To add the third level to the hierarchy, in the **Hierarchy** dropdown list, select **Product**.
 
-6. To complete the hierarchy design, click **Apply Level Changes**.
+1. To complete the hierarchy design, click **Apply Level Changes**.
 
 	![Picture 343](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(26).png)
 
 	**Tip**: Don’t forget to click **Apply Level Changes**—it’s a common mistake to overlook this step.
 
-7. In the **Data** pane, notice the **Products** hierarchy.
+1. In the **Data** pane, notice the **Products** hierarchy.
 
 	![Picture 347](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(27).png)
 
-8. To reveal the hierarchy levels, expand the **Products** hierarchy.
+1. To reveal the hierarchy levels, expand the **Products** hierarchy.
 
 	![Picture 346](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(28).png)
 
-9. To organize columns into a display folder, in the **Data** pane, first select the **Background Color Format** column.
+1. To organize columns into a display folder, in the **Data** pane, first select the **Background Color Format** column.
 
-10. While pressing the **Ctrl** key, select the **Font Color Format** column.
+1. While pressing the **Ctrl** key, select the **Font Color Format** column.
 
-11. In the **Properties** pane, in the **Display Folder** box, enter **Formatting**.
+1. In the **Properties** pane, in the **Display Folder** box, enter **Formatting**.
 
 	![Picture 348](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(29).png)
 
-12. In the **Data** pane, notice that the two columns are now inside a folder.
+1. In the **Data** pane, notice that the two columns are now inside a folder.
 
 	![Picture 349](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(30).png)
 
-	**Note**: Display folders are a great way to declutter tables—especially for tables that comprise many fields.
+	>**Note**: Display folders are a great way to declutter tables—especially for tables that comprise many fields.
 
-### Task 2: Configure the Region table
+### Task 4: Configure the Region table
 
-In this task you will configure the **Region** table.
+In this task, you'll configure the `Region` table with a hierarchy and updated categories.
 
 1. In the **Region** table, create a hierarchy named **Regions**, with the following three levels:
 
@@ -343,34 +229,35 @@ In this task you will configure the **Region** table.
 
 	**Note**: Data categorization can provide hints to the report designer. In this case, categorizing the column as country or region provides more accurate information to Power BI when it renders a map visualization.
 
-### Task 3: Configure the Reseller table
+### Task 5: Configure the Reseller table
 
 In this task you will configure the **Reseller** table.
 
 1. In the **Reseller** table, create a hierarchy named **Resellers**, with the following two levels:
 
-	- Business Type
-
-	- Reseller
-
+     - `Business Type`
+     - `Reseller`
+	 
 	![Picture 351](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(33).png)
 
 2. Create a second hierarchy named **Geography**, with the following four levels:
 
-	- Country-Region
-
-	- State-Province
-
-	- City
-
-	- Reseller
+     - `Country-Region`
+     - `State-Province`
+     - `City`
+     - `Reseller`
 
 	![Picture 353](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(34).png)
 
+1. Set the data category for the following columns (not within the hierarchy):
 
-### Task 4: Configure the Sales table
+    - `Country-Region` to **Country/Region**
+    - `State-Province` to **State or Province**
+    - `City` to **City**
 
-In this task you will configure the **Sales** table.
+### Task 6: Configure the Sales table
+
+In this task, you'll configure the `Sales` table with updated descriptions, formatting, and summarization.
 
 1. In the **Sales** table, select the **Cost** column.
 
@@ -396,41 +283,29 @@ In this task you will configure the **Sales** table.
 
 	**Note**: By default, numeric columns will summarize by summing values together. This default behavior is not suitable for a column like **Unit Price**, which represents a rate. Setting the default summarization to average will produce a meaningful result.
 
-### Task 5: Bulk update properties
+### Task 7: Bulk update properties
 
 In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
 1. In the **Data** pane, select the **Product \| ProductKey** column.
 
-2. While pressing the **Ctrl** key, select the following 13 columns (spanning multiple tables):
+1. While pressing the **Ctrl** key, select the following 13 columns (spanning multiple tables):
 
-	- Region \| SalesTerritoryKey
+     - `Region | SalesTerritoryKey`
+     - `Reseller | ResellerKey`
+     - `Sales | EmployeeKey`
+     - `Sales | ProductKey`
+     - `Sales | ResellerKey`
+     - `Sales | SalesOrderNumber`
+     - `Sales | SalesTerritoryKey`
+     - `Salesperson | EmployeeID`
+     - `Salesperson | EmployeeKey`
+     - `Salesperson | UPN`
+     - `SalespersonRegion | EmployeeKey`
+     - `SalespersonRegion | SalesTerritoryKey`
+     - `Targets | EmployeeID`
 
-	- Reseller \| ResellerKey
-
-	- Sales \| EmployeeKey
-	
-	- Sales \| ProductKey
-
-	- Sales \| ResellerKey
-
-	- Sales \| SalesOrderNumber
-
-	- Sales \| SalesTerritoryKey
-
-	- Salesperson \| EmployeeID
-
-	- Salesperson \| EmployeeKey
-
-	- Salesperson \| UPN
-
-	- SalespersonRegion \| EmployeeKey
-
-	- SalespersonRegion \| SalesTerritoryKey
-
-	- Targets \| EmployeeID
-
-3. In the **Properties** pane, slide the **Is Hidden** property to **Yes**.
+1. In the **Properties** pane, slide the **Is Hidden** property to **Yes**.
 
 	![Picture 355](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(38).png)
 
@@ -438,25 +313,21 @@ In this task you will update multiple columns using single bulk updates. You wil
 
 	**Note**: You’ll use the **SalesOrderNumber** in a calculation in the **Create DAX Calculations in Power BI Desktop** lab.
 
-4. Multi-select the following three columns:
 
-	- Product \| Standard Cost
+1. Multi-select the following three columns:
 
-	- Sales \| Cost
+     - `Product | Standard Cost`
+     - `Sales | Cost`
+     - `Sales | Sales`
 
-	- Sales \| Sales
 
-5. In the **Properties** pane, from inside the **Formatting** section, set the **Decimal Places** property to **0** (zero).
+1. In the **Properties** pane, from inside the **Formatting** section, set the **Decimal Places** property to **0** (zero).
 
 	![Picture 356](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(39).png)
 
-## Exercise 3: Review the Model Interface
+### Task 8: Explore the model interface
 
-In this exercise you will switch to Report view, and review the model interface.
-
-### Task 1: Review the model interface
-
-In this task you will switch to Report view, and review the model interface.
+In this task you'll switch to **Report view**, review the data model interface, and configure the auto date/time setting.
 
 1. Switch to Report view.
 
@@ -472,13 +343,13 @@ In this task you will switch to Report view, and review the model interface.
 
 	- Fields adorned with the sigma symbol (Ʃ) will summarize, by default
 
-	- A tooltip appears when hovering the cursor over the **Sales \| Cost** field
+	- A tooltip appears when hovering the cursor over the **Sales | Cost** field
 
-3. Expand the **Sales \| OrderDate** field, and then notice that it reveals a date hierarchy.
+3. Expand the **Sales | OrderDate** field, and then notice that it reveals a **Date hierarchy**.
 
 	![Picture 359](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(40).png)
 
-	**Note**: The **Targets \| TargetMonth** field delivers a similar hierarchy. These hierarchies were not created by you. They were created automatically. There is a problem, however. The Adventure Works financial year commences on July 1 of each year. But, in these automatically created date hierarchies, the date hierarchy year commences on January 1 of each year.
+	**Note**: The **Targets | TargetMonth** field delivers a similar hierarchy. These hierarchies were not created by you. They were created automatically. There is a problem, however. The Adventure Works financial year commences on July 1 of each year. But, in these automatically created date hierarchies, the date hierarchy year commences on January 1 of each year.
 
 	**Note**: You’ll now turn this automatic behavior off. In the **Create DAX Calculations in Power BI Desktop** lab, you’ll use DAX to create a date table, and configure it define the Adventure Works’ calendar.
 
@@ -504,14 +375,9 @@ In this task you will switch to Report view, and review the model interface.
 
 	![Picture 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(45).png)
 
+### Task 9: Create quick measures
 
-## Exercise 4: Create Quick Measures
-
-In this exercise you will create two quick measures.
-
-### Task 1: Create quick measures
-
-In this task you will create two quick measures to calculate profit and profit margin.
+In this task, you'll create two quick measures to calculate profit and profit margin. A quick measure creates the calculation formula for you. They're easy and fast to create for simple and common calculations.
 
 1. In the **Data** pane, right-click the **Sales** table, and then select **New Quick Measure**.
 
@@ -553,9 +419,9 @@ In this task you will create two quick measures to calculate profit and profit m
 
 	- Use the **Division** mathematical operation
 
-	- Set the **Numerator** to the **Sales \| Profit** field
+	- Set the **Numerator** to the **Sales | Profit** field
 
-	- Set the **Denominator** to **Sales \| Sales** field
+	- Set the **Denominator** to **Sales | Sales** field
 
 	- Rename the measure as **Profit Margin**
 
@@ -569,7 +435,7 @@ In this task you will create two quick measures to calculate profit and profit m
 
 12. To test the two measures, first select the table visual on the report page.
 
-13. In the **Fields** pane, check the two measures.
+13. In the **Data** pane, check the `Profit` and `Profit Margin` measures to add them to the table.
 
 	![Picture 375](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(55).png)
 
@@ -579,19 +445,18 @@ In this task you will create two quick measures to calculate profit and profit m
 
 15. Verify that the measures produce reasonable results that are correctly formatted.
 
-	![Picture 378](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(57).png)
+	![Picture 378](images/pl3n5.png)
 
-### Task 2: Create a many-to-many relationship
+### Task 10: Create a many-to-many relationship
 
 In this task you will create a many-to-many relationship between the **Salesperson** table and the **Sales** table.
 
 1. In Power BI Desktop, in Report view, in the **Data** pane, check the follow two fields to create a table visual:
 
-	- Salesperson \| Salesperson
+     - `Salesperson | Salesperson`
+     - `Sales | Sales`
 
-	- Sales \| Sales
-
-	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Salesperson \| Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.
+	**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Salesperson | Salesperson** . In this example, **Salesperson**  is the table name and **Salesperson**  is the field name.
 
 	![Picture 1](Linked_image_Files/image-(9).png)
 
@@ -609,9 +474,8 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 5. Use the drag-and-drop technique to create the following two model relationships:
 
-	- **Salesperson \| EmployeeKey** to **SalespersonRegion \| EmployeeKey**
-
-	- **Region \| SalesTerritoryKey** to **SalespersonRegion \| SalesTerritoryKey**
+    - `Salesperson | EmployeeKey` to `SalespersonRegion | EmployeeKey`
+    - `Region | SalesTerritoryKey` to `SalespersonRegion | SalesTerritoryKey`
 
 	**Note**: The **SalespersonRegion** table can be considered to be a bridging table.
 
@@ -677,27 +541,23 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	**Note**: The renamed table now reflects its purpose: it’s used to report and analyze the performance of salespeople based on the sales of their assigned sales regions.
 
-### Task 3: Relate the Targets table
+### Task 10: Relate the Targets table
 
 In this task you will create a relationship to the **Targets** table
 
-1. Create a relationship from the **Salesperson (Performance) \| EmployeeID** column and the **Targets \| EmployeeID** column.
+1. Create a relationship from the **Salesperson (Performance) | EmployeeID** column and the **Targets \| EmployeeID** column.
 
-2. In Report view, add the **Targets \| Target** field to the table visual.
+1. In Report view, add the **Targets | Target** field to the table visual.
 
-3. Resize the table visual so all columns are visible.
+1. Resize the table visual so all columns are visible.
 
 	![Picture 5699](Linked_image_Files/image-(19).png)
 
-	**Note**: It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creating a target measure in the **Create Advanced DAX Calculations in Power BI Desktop** lab that’ll return BLANK when more than one salesperson is filtered.
-
-### Task 4: Finish up
-
-In this task you will complete the lab.
+	**Note**: It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic.
 
 1. Save the Power BI Desktop file.
 
-2. If prompted to apply queries, click **Apply Later**.
+1. If prompted to apply queries, click **Apply Later**.
 
 ### Review
 In this lab, you have completed the following :
