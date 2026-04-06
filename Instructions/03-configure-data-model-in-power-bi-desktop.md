@@ -4,6 +4,8 @@
 
 In this lab, you'll commence developing the data model. It will involve creating relationships between tables, and then configuring table and column properties to improve the friendliness and usability of the data model. You'll also create hierarchies and quick measures.
 
+## Lab objectives
+
 In this lab, you learn how to:
 
 - Create model relationships.
@@ -11,13 +13,6 @@ In this lab, you learn how to:
 - Create hierarchies.
 - Create quick measures.
 - Configure a many-to-many relationship.
-
-## Lab objectives
-In this lab, you will perform:
-
-- Create model relationships
-- Configure table and column properties
-- Create hierarchies
 
 ## Estimated timing: 60 minutes  
 
@@ -32,7 +27,6 @@ In this exercise you will create model relationships.
 ### Task 1: Get started
 
 In this task you will setup the environment for the lab.
-
 
 ### Open the Starter Power BI File
 
@@ -165,11 +159,7 @@ In this task, you'll create model relationships. The file was configured to not 
 
 26. Save the Power BI Desktop file.
 
-## Exercise 2: Configure Tables
-
-In this exercise you will configure each table by creating hierarchies, and hiding, formatting, and categorizing columns.
-
-### Task 1: Configure the Product table
+### Task 3: Configure the Product table
 
 In this task, you'll configure the `Product` table with a hierarchy and display folder.
 
@@ -217,7 +207,7 @@ In this task, you'll configure the `Product` table with a hierarchy and display 
 
 	>**Note**: Display folders are a great way to declutter tables—especially for tables that comprise many fields.
 
-### Task 2: Configure the Region table
+### Task 4: Configure the Region table
 
 In this task, you'll configure the `Region` table with a hierarchy and updated categories.
 
@@ -239,7 +229,7 @@ In this task, you'll configure the `Region` table with a hierarchy and updated c
 
 	**Note**: Data categorization can provide hints to the report designer. In this case, categorizing the column as country or region provides more accurate information to Power BI when it renders a map visualization.
 
-### Task 3: Configure the Reseller table
+### Task 5: Configure the Reseller table
 
 In this task you will configure the **Reseller** table.
 
@@ -265,7 +255,7 @@ In this task you will configure the **Reseller** table.
     - `State-Province` to **State or Province**
     - `City` to **City**
 
-### Task 4: Configure the Sales table
+### Task 6: Configure the Sales table
 
 In this task, you'll configure the `Sales` table with updated descriptions, formatting, and summarization.
 
@@ -293,7 +283,7 @@ In this task, you'll configure the `Sales` table with updated descriptions, form
 
 	**Note**: By default, numeric columns will summarize by summing values together. This default behavior is not suitable for a column like **Unit Price**, which represents a rate. Setting the default summarization to average will produce a meaningful result.
 
-### Task 5: Bulk update properties
+### Task 7: Bulk update properties
 
 In this task you will update multiple columns using single bulk updates. You will use this approach to hide columns, and format column values.
 
@@ -335,11 +325,7 @@ In this task you will update multiple columns using single bulk updates. You wil
 
 	![Picture 356](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(39).png)
 
-## Exercise 3: Review the Model Interface
-
-In this exercise you will switch to Report view, and review the model interface.
-
-### Task 1: Review the model interface
+### Task 8: Explore the model interface
 
 In this task you'll switch to **Report view**, review the data model interface, and configure the auto date/time setting.
 
@@ -389,12 +375,7 @@ In this task you'll switch to **Report view**, review the data model interface, 
 
 	![Picture 363](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(45).png)
 
-
-## Exercise 4: Create Quick Measures
-
-In this exercise you will create two quick measures.
-
-### Task 1: Create quick measures
+### Task 9: Create quick measures
 
 In this task, you'll create two quick measures to calculate profit and profit margin. A quick measure creates the calculation formula for you. They're easy and fast to create for simple and common calculations.
 
@@ -466,7 +447,7 @@ In this task, you'll create two quick measures to calculate profit and profit ma
 
 	![Picture 378](images/pl3n5.png)
 
-### Task 2: Create a many-to-many relationship
+### Task 10: Create a many-to-many relationship
 
 In this task you will create a many-to-many relationship between the **Salesperson** table and the **Sales** table.
 
@@ -560,7 +541,7 @@ In this task you will create a many-to-many relationship between the **Salespers
 
 	**Note**: The renamed table now reflects its purpose: it’s used to report and analyze the performance of salespeople based on the sales of their assigned sales regions.
 
-### Task 3: Relate the Targets table
+### Task 10: Relate the Targets table
 
 In this task you will create a relationship to the **Targets** table
 
@@ -572,8 +553,7 @@ In this task you will create a relationship to the **Targets** table
 
 	![Picture 5699](Linked_image_Files/image-(19).png)
 
-	**Note**: It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic. You’ll follow the second approach by creating a target measure in the **Create Advanced DAX Calculations in Power BI Desktop** lab that’ll return BLANK when more than one salesperson is filtered.
-
+	**Note**: It’s now possible to visualize sales and targets—but take care for two reasons. First, there’s no filter on a time period, and so targets also include future target amounts. Second, targets are not additive, and so the total should not be displayed. They can either be disabled by formatting the visual or removed by using calculation logic.
 
 1. Save the Power BI Desktop file.
 
