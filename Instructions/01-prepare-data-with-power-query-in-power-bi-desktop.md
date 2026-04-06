@@ -259,7 +259,7 @@ In this task you will create a query based on a CSV file.
 
 10. You should now have two new queries, **ResellerSalesTargets** and **ColorFormats**.
 
-	![Picture 19](images/pl3n2.png)
+	![Picture 19](images/pl3n2n.png)
 	
 ### Review
  In this lab, you have completed the following :
