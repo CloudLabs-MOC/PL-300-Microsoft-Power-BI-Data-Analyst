@@ -46,7 +46,7 @@ In this task you will setup the environment for the lab.
 
 In this task, you'll use Power Query Editor to configure the **Salesperson** query.
 
-> **Important:** When instructed to rename columns, it’s important that you rename them exactly as described.*
+> **Important:** When instructed to rename columns, it’s important that you rename them exactly as described.
 
 1. To open the **Power Query Editor** window, on the **Home** ribbon tab, from inside the **Queries** group, click the **Transform Data** icon.
 
