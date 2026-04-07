@@ -1,4 +1,4 @@
-# Lab 05: Create DAX Calculations in Power BI Desktop, Part 2
+# Lab 05: Modify DAX filter context in Power BI
 
 ## Lab scenario
 
@@ -22,7 +22,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 4. Create DAX Calculations in Power BI Desktop, Part 1
 
-5. **Create DAX Calculations in Power BI Desktop, Part 2**
+5. **Modify DAX filter context in Power BI**
 
 6. Design a Report in Power BI Desktop, Part 1
 
@@ -35,6 +35,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 10. Enforce Row-Level Security
 
 ## Lab objectives
+
 In this lab, you will perform:
 
 - Use the CALCULATE() function to manipulate filter context
@@ -56,62 +57,21 @@ In this task you will setup the environment for the lab.
 
 **Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+1. Click the Microsoft **Power BI Desktop** shortcut icon to open.
 
-    ![Picture 12](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image1.png)
+ 	![Picture 50](./Linked_image_Files/pl300-lab5-01.png)
 
-2. To close the getting started window, at the top-left of the window, click **X**.
+1. To open the starter Power BI Desktop file, click the **Open (1)** button at left panel and select **Browse this device (2)**.
 
-    ![Picture 11](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image2.png)
+	![](./Linked_image_Files/pl300-lab5-02.png)
 
-3. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\05-modify-dax-filter-context (1)** folder. Select the **05-Starter-Sales Analysis (2)** file and click **Open (3)**.
 
-4. Select **Open Report**.
+ 	![Picture 35](./Linked_image_Files/pl300-lab5-03.png)
 
-    ![Picture 10](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image3.png)
+1. Close any informational windows that may open.
 
-5. Click **Browse Reports**.
-
-    ![Picture 9](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image4.png)
-
-6. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Starter** folder.
-
-7. Select the **Sales Analysis** file.
-
-8. Click **Open**.
-
-    ![Picture 8](images/openimage.png)
-
-9. Close any informational windows that may open.
-
-10. Notice the yellow warning message beneath the ribbon.
-
-    >**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
-
-11. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
-
-	![Picture 8](Linked_image_Files/discard-changes-1.png)
-
-12. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Linked_image_Files/discard-changes-2.png)
-
-
-13. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-14. Select **Save As**.
-
-    ![Picture 7](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image6.png)
-
-15. If prompted to apply changes, click **Apply Later**.
-
-    ![Picture 22](images/applylater.png)
-
-16. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\MySolution** folder.
-
-17. Click **Save**.
-
-    ![Picture 2](images/save.png)
+	![](./Linked_image_Files/pl300-lab5-04.png)
 
 ### Task 2: Create a matrix visual
 
@@ -127,11 +87,15 @@ In this task you will create a matrix visual to support testing your new measure
 
 3. Resize the matrix visual to fill the entire page.
 
-4. To configure the matrix visual fields, from the **Data** pane, drag the **Region \| Regions** hierarchy, and drop it inside the visual.
+4. To configure the matrix visual fields, from the **Data** pane, drag the **Region \| Regions** hierarchy, and drop it under **Rows** in Visualizations panel.
+
+	![](./Linked_image_Files/pl300-lab5-05.png)
 
     >**Note**: The labs use a shorthand notation to reference a field or hierarchy. It will look like this: **Region \| Regions**. In this example, **Region** is the table name and **Regions** is the hierarchy name.
 
-5. Add also the **Sales \| Sales** field.
+5. Similarly, drag the **Sales \| Sales** field and drop it under **Values** in Visualizations panel.
+
+	![](./Linked_image_Files/pl300-lab5-06.png)
 
 6. To expand the entire hierarchy, at the top-right of the matrix visual, click the forked-double arrow icon twice.
 
@@ -143,11 +107,11 @@ In this task you will create a matrix visual to support testing your new measure
 
     ![](images/format_visual.png)
 
-8. In the **Search** box, enter **Stepped**.
+8. In the **Search** box, enter **Layout**.
 
-9. Set the **Stepped Layout** property to **Off**.
+9. Select the **Layout** property to **Tabular**.
 
-    ![Picture 49](images/stepped.png)
+	![](./Linked_image_Files/pl300-lab5-07.png)
 
 10. Verify that the matrix visual now has four column headers.
 
@@ -155,25 +119,28 @@ In this task you will create a matrix visual to support testing your new measure
 
     >**Note**: At Adventure Works, the sales regions are organized into groups, countries, and regions. All countries—except the United States—have just one region, which is named after the country. As the United States is such a large sales territory, it’s divided into five sales regions.
 
-    >**Note**: You’ll create several measures in this exercise, and then test them by adding them to the matrix visual.
+    >**Note**: You'll create various measures in this exercise, and then test them by adding them to the matrix visual.
 
-### **Task 3: Manipulate filter context**
+### Task 3: Manipulate filter context
 
-In this task you will create several measures with DAX expressions that use the CALCULATE() function to manipulate filter context.
+In this task, you'll create several measures with DAX expressions that use the CALCULATE function to manipulate filter context.
 
-1. Right-click on the **Sales** table and select **New measure** option to add a measure to the **Sales** table, based on the following expression:
+> **Note:** The `CALCULATE()` function is a powerful function you can use to manipulate the filter context. The first argument takes an expression or a measure (a measure is just a named expression). Subsequent arguments allow modifying the filter context.
 
-    >**Note**: For your convenience, all DAX definitions in this lab can be copied from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\05-create-dax-calculations-in-power-bi-desktop-advanced\Assets\Snippets.txt** file.
+1. Right-click on the **Sales** table and select **New measure** option to add a measure to the **Sales** table. 
+
+	![](./Linked_image_Files/pl300-lab5-08.png)
+
+1. In the formula bar, add the following measure definition:
+
+    >**Note**: For your convenience, all DAX definitions in this lab can be copied from the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\AllFiles\Labs\05-modify-dax-filter-context\Snippets.txt** file.
 
     ```
     Sales All Region =
-
     CALCULATE(SUM(Sales[Sales]), REMOVEFILTERS(Region))
     ```
 
-    >**Note**: The CALCULATE() function is a powerful function used to manipulate the filter context. The first argument takes an expression or a measure (a measure is just a named expression). Subsequent arguments allow modifying the filter context.
-
-    >**Note**: The REMOVEFILTERS() function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.
+    >**Note**: The `REMOVEFILTERS()` function removes active filters. It can take either no arguments, or a table, a column, or multiple columns as its argument.
 
     >**Note**: In this formula, the measure evaluates the sum of the **Sales** column in a modified filter context, which removes any filters applied to the columns of the **Region** table.
 
@@ -181,28 +148,40 @@ In this task you will create several measures with DAX expressions that use the 
 
     ![Picture 52](images/country.png)
 
+1. Drag the **Sales \| Sales All Region** field and drop it under **Values** in Visualizations panel.
+
+	![](./Linked_image_Files/pl300-lab5-09.png)
+
 3. Notice that the **Sales All Region** measure computes the total of all region sales for each region, country (subtotal) and group (subtotal).
 
     >**Note**: The new measure is yet to deliver a useful result. When the sales for a group, country, or region is divided by this value it will produce a useful ratio known as “percent of grand total”.
 
-4. In the **Data** pane, ensure that the **Sales All Region** measure is selected (when selected, it will have a dark gray background), and then in the formula bar, replace the measure name and formula with the following formula:
+4. In the **Data** pane, ensure that the **Sales All Region (1)** measure is selected (when selected, it will have a dark gray background), and then in the formula bar, replace the **measure name and formula (2)** with the following formula:
 
-    **Tip**: To replace the existing formula, first copy the snippet. Then, click inside the formula bar and press **Ctrl+A** to select all text. Then, press **Ctrl+V** to paste the snippet to overwrite the selected text. Then press **Enter**.
+    > **Tip**: To replace the existing formula, first copy the snippet. Then, click inside the formula bar and press **Ctrl+A** to select all text. Then, press **Ctrl+V** to paste the snippet to overwrite the selected text. Then press **Enter**.
 
-     ```
-     Sales % All Region =
-     DIVIDE(
+    ```
+    Sales % All Region =
+    DIVIDE(
 	SUM(Sales[Sales]),
 	CALCULATE(
 	SUM(Sales[Sales]),
 	REMOVEFILTERS(Region)))
-     ```
+    ```
 
-     >**Note**: The measure has been renamed to accurately reflect the updated formula. The DIVIDE() function divides the **Sales** measure (not modified by filter context) by the **Sales** measure in a modified context, which removes any filters applied to the **Region** table.
+	![](./Linked_image_Files/pl300-lab5-10.png)
+
+    > **Note**: The measure has been renamed to accurately reflect the updated formula. The DIVIDE() function divides the **Sales** measure (not modified by filter context) by the **Sales** measure in a modified context, which removes any filters applied to the **Region** table.
 
 5. In the matrix visual, notice that the measure has been renamed and that a different values now appear for each group, country, and region.
 
-6. Format the **Sales % All Region** measure as a percentage with two decimal places.
+6. Switch to **Model view (1)**. Select **Sales % All Region (2)** field from Data panel and change the Properties as a percentage with **two decimal places (3)**.
+
+	![](./Linked_image_Files/pl300-lab5-11.png)
+
+1. Switch back to Report view.
+
+	![](./Linked_image_Files/pl300-lab5-12.png)
 
 7. In the matrix visual, review the **Sales % All Region** measure values.
 
@@ -225,7 +204,7 @@ In this task you will create several measures with DAX expressions that use the 
 
 10. Add the **Sales % Country** measure to the matrix visual.
 
-11. Notice that only the United States’ regions produce a value which is not 100%.
+11. Notice that only the United States regions produce a value which is not 100%.
 
     ![Picture 54](images/northamrica.png)
 
@@ -281,14 +260,14 @@ In this task you will create several measures with DAX expressions that use the 
              REMOVEFILTERS(
 		Region[Region],
 		Region[Country]))))
-      ```
+    ```
 
 
 17. Notice that the **Sales % Group** measure now only returns a value when a region or country is in scope.
 
 18. In Model view, place the three new measures into a display folder named **Ratios**.
 
-    ![Picture 56](images/rations.png)
+	![](./Linked_image_Files/pl300-lab5-13.png)
 
 19. Save the Power BI Desktop file.
 
@@ -324,7 +303,7 @@ In this task you will create a sales YTD measure.
 
     >**Note** that many Time Intelligence functions are available in DAX to support common time filter manipulations.
 
-### **Task 2: Create a YoY growth measure**
+### Task 2: Create a YoY growth measure
 
 In this task you will create a sales YoY growth measure.
 
@@ -374,36 +353,24 @@ In this task you will create a sales YoY growth measure.
 
     >**Note**: It means that July 2018 sales ($2,411,559) represent a nearly 400% (almost 4x) improvement over the sales achieved at the same time of the prior year ($489,328).
 
-8. In Model view, place the two new measures into a display folder named **Time Intelligence**.
+8. Switch to **Model view (1)**. Place the **two new measures (2)** into a display folder named **Time Intelligence (3)**.
 
-    ![Picture 63](images/timeintee.png)
+	![](./Linked_image_Files/pl300-lab5-15.png)
 
-### **Task 3: Finish up**
+### Task 3: Finish up
 
 In this task you will complete the lab.
 
-1. To clean up the solution ready for report development, at the bottom-left, right-click the **Page 2** tab, and then select **Delete** page.
+1. Save the Power BI Desktop file.
 
-    ![Picture 17](Linked_image_Files/06-create-dax-calculations-in-power-bi-desktop-advanced_image25.png)
+	![](./Linked_image_Files/pl300-lab5-14.png)
 
-2. When prompted to delete the page, click **Delete**.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-    ![Picture 18](images/delete.png)
-
-3. Delete **Page 3** also.
-
-4. On the remaining page, to clear the page, select the table visual, and the press the **Delete** key.
-
-5. Save the Power BI Desktop file.
-
-    >**Note**: You’ll create a report based on the data model in the **Design a Report in Power BI Desktop, Part 1** lab.
-
-    > **Congratulations** on completing the lab! Now, it's time to validate it. Here are the steps:
-	
-	- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-	- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-	- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-	- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  <validation step="c0d90b58-f260-4bbd-939c-659c822e21e6" />
 
 ## Review
 In this lab, you have completed the following:

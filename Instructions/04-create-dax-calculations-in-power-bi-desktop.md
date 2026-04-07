@@ -1,4 +1,4 @@
-# Lab 04: Create DAX Calculations in Power BI Desktop, Part 1
+# Lab 04: Create DAX calculations in semantic models
 
 ## Lab scenario
 In this lab you will create calculated tables, calculated columns, and simple measures using Data Analysis Expressions (DAX).
@@ -21,9 +21,9 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-4. **Create DAX Calculations in Power BI Desktop, Part 1**
+4. Create DAX calculations in semantic models
 
-5. Create DAX Calculations in Power BI Desktop, Part 2
+5. Modify DAX filter context in Power BI
 
 6. Design a Report in Power BI Desktop, Part 1
 
@@ -36,6 +36,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 10. Enforce Row-Level Security
 
 ## Lab objectives
+
 In this lab, you will perform:
 
 - Create calculated tables
@@ -58,75 +59,35 @@ In this task you will setup the environment for the lab.
 
 **Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
 
-1. To open the Power BI Desktop, click the Microsoft Power BI Desktop shortcut.
+1. Click the Microsoft **Power BI Desktop** shortcut icon to open.
 
- 	![Picture 50](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image1.png)
+ 	![Picture 50](./Linked_image_Files/pl300-lab4-01.png)
 
-2. To close the getting started window, at the top-left of the window, click **X**.
+1. To open the starter Power BI Desktop file, click the **Open (1)** button at left panel and select **Browse this device (2)**.
 
- 	![Picture 49](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image2.png)
+	![](./Linked_image_Files/pl300-lab4-02.png)
 
-3. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\04-create-dax-calculations (1)** folder. Select the **04-Starter Sales Analysis (2)** file and click **Open (3)**.
 
-4. Select **Open Report**.
+ 	![Picture 35](./Linked_image_Files/pl300-lab4-03.png)
 
- 	![Picture 48](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image3.png)
+1. Close any informational windows that may open.
 
-5. Click **Browse Reports**.
+	![](./Linked_image_Files/pl300-lab4-04.png)
 
- 	![Picture 47](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image4.png)
-
-6. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Starter** folder.
-
-7. Select the **Sales Analysis** file.
-
-8. Click **Open**.
-
- 	![Picture 35](images/openimage.png)
-
-9. Close any informational windows that may open.
-
-10. Notice the yellow warning message beneath the ribbon.
-
-	>**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
-
-11. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
-
-	![Picture 8](Linked_image_Files/discard-changes-1.png)
-
-12. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Linked_image_Files/discard-changes-2.png)
-
-13. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-14. Select **Save As**.
-
- 	![Picture 34](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image6.png)
-
-15. If prompted to apply changes, click **Apply Later**.
-
-	![Picture 22](images/applylater.png)
-
-16. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
-
-17. Click **Save**.
-
-	![Picture 13](images/save.png)
-
-### Task 2: Create the Salesperson table
+### Task 2: Create the Salesperson calculated table
 
 In this task you will create the **Salesperson** table (direct relationship to **Sales**).
 
-1. In Power BI Desktop, in Report view, on the **Modeling** ribbon, from inside the **Calculations** group, click **New Table**.
+1. In Power BI Desktop, in Report view, on the **Modeling (1)** ribbon, from inside the **Calculations** group, click **New Table (2)**.
 
-	![Picture 1](images/newtable1.png)
+	![Picture 1](./Linked_image_Files/pl300-lab4-05.png)
 
 2. In the formula bar (which opens directly beneath the ribbon when creating or editing calculations), type **Salesperson =**, press **Shift+Enter**, type **'Salesperson (Performance)'**, and then press **Enter**.
 
 	![Picture 4](images/salespersonformula.png)
 
-	>**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.
+	>**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Snippets.txt**.
 
 	>**Note**: A calculated table is created by first entering the table name, followed by the equals symbol (=), followed by a DAX formula that returns a table. Note that the table name cannot already exist in the data model.
 
@@ -138,7 +99,7 @@ In this task you will create the **Salesperson** table (direct relationship to *
 
 3. In the **Data** pane, notice that the table icon is a shade of blue (denoting a calculated table).
 
-	![Picture 10](images/salespersondata.png)
+	![Picture 10](./Linked_image_Files/pl300-lab4-06.png)
 
 	>**Note**: Calculated tables are defined by using a DAX formula which returns a table. It’s important to understand that calculated tables increase the size of the data model because they materialize and store values. They’re recomputed whenever formula dependencies are refreshed, as will be the case for this data model when new (future) date values are loaded into tables.
 
@@ -146,29 +107,29 @@ In this task you will create the **Salesperson** table (direct relationship to *
 
 4. Switch to Model view.
 
-      ![](Linked_image_Files/upd-1.png)
+    ![](Linked_image_Files/upd-1.png)
 
 5. Notice that the **Salesperson** table is available (take care, it might be hidden from view, in which case scroll horizontally to locate it).
 
 6. Click on **Manage relationships** under the Home tab.
     
-      ![](Linked_image_Files/upd-2.png)
+    ![](Linked_image_Files/upd-2.png)
     
-7. Under Manage relationships, select **New**.
+7. Under **Manage relationships**, select **+ New relationship**.
 
-      ![](Linked_image_Files/upd-3.png)
+    ![](Linked_image_Files/pl300-lab4-07.png)
    
-8. Create a relationship from the **Salesperson \| EmployeeKey** column to the **Sales \| EmployeeKey** column.
+8. Create a relationship from the **Salesperson \| EmployeeKey** column to the **Sales \| EmployeeKey** column. Then, click on **Save** and later close the Manage relationships window.
 
-      ![](Linked_image_Files/upd-5.png)
+    ![](Linked_image_Files/pl300-lab4-08.png)
 
 9. Right-click the inactive relationship between the **Salesperson (Performance)** and **Sales (1)** tables, and then select **Delete (2)**.
 
-      ![](Linked_image_Files/upd-4.png)
+    ![](Linked_image_Files/pl300-lab4-09.png)
 
-10. When prompted to confirm the deletion, click **Delete**.
+10. When prompted to confirm the deletion, click **Yes**.
 
-	![Picture 3](Linked_image_Files/upd-6.png)
+	![Picture 3](Linked_image_Files/pl300-lab4-10.png)
 
 11. In the **Salesperson** table, multi-select the following columns, and then hide them (set the **Is Hidden** property to **Yes**):
 
@@ -178,19 +139,23 @@ In this task you will create the **Salesperson** table (direct relationship to *
 
 	- UPN
 
-      ![Picture 3](Linked_image_Files/upd-7.png)
+      ![Picture 3](Linked_image_Files/pl300-lab4-11.png)
 
 12. In the model diagram, select the **Salesperson** table.
 
-13. In the **Properties** pane, in the **Description** box, enter: **Salesperson related to Sales**
+13. In the **Properties** pane, in the **Description** box, enter: **Salesperson related to Sales**.
+
+	![](./Linked_image_Files/pl300-lab4-12.png)
 
 	>**Note**: You may recall that descriptions appear as tooltips in the **Data** pane when the user hovers their cursor over a table or field.
 
-14. For the **Salesperson (Performance)** table, set the description to: **Salesperson related to region(s)**
+14. For the **Salesperson (Performance)** table, set the description to: **Salesperson related to region(s)**.
+
+	![](./Linked_image_Files/pl300-lab4-13.png)
 
 	>**Note**: The data model now provides two alternatives when analyzing salespeople. The **Salesperson** table allows analyzing sales made by a salesperson, while the **Salesperson (Performance)** table allows analyzing sales made in the sales region(s) assigned to the salesperson.
 
-### **Task 3: Create the Date table**
+### Task 3: Create the Date table
 
 In this task you will create the **Date** table.
 
@@ -198,9 +163,9 @@ In this task you will create the **Date** table.
 
    ![Picture 29](images/viewpoint.png)
 
-2. On the **Home** ribbon tab, from inside the **Calculations** group, click **New Table**.
+2. On the **Home (1)** ribbon tab, from inside the **Calculations** group, click **New Table (2)**.
 
-   ![Picture 30](images/newtable.png)
+   ![Picture 30](./Linked_image_Files/pl300-lab4-14.png)
 
 3. In the formula bar, enter the following:
 
@@ -222,17 +187,17 @@ In this task you will create the **Date** table.
  
 5. At the bottom-left corner, in the status bar, notice the table statistics, confirming that 1826 rows of data have been generated, which represents five full years’ data.
 
-	![Picture 9](images/table15.png)
+	![Picture 9](./Linked_image_Files/pl300-lab4-15.png)
 
 ### Task 4: Create calculated columns
 
 In this task you will add additional columns to enable filtering and grouping by different time periods. You will also create a calculated column to control the sort order of other columns.
 
->**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.
+>**Note**: For your convenience, all DAX definitions in this lab can be copied from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Snippets.txt**.
 
-1. On the **Table Tools** contextual ribbon, from inside the **Calculations** group, click **New Column**.
+1. On the **Table Tools (1)** contextual ribbon, from inside the **Calculations** group, click **New Column (2)**.
 
-	![Picture 11](images/newcolumn.png)
+	![Picture 11](./Linked_image_Files/pl300-lab4-16.png)
 
 2. In the formula bar, type the following (or copy from the snippets file), and then press **Enter**:
 
@@ -240,6 +205,8 @@ In this task you will add additional columns to enable filtering and grouping by
 	Year =
 	"FY" & YEAR('Date'[Date]) + IF(MONTH('Date'[Date]) > 6, 1)
 	```
+
+	![](./Linked_image_Files/pl300-lab4-17.png)
 
 	>**Note**: A calculated column is created by first entering the column name, followed by the equals symbol (=), followed by a DAX formula that returns a single-value result. The column name cannot already exist in the table.
 
@@ -249,7 +216,7 @@ In this task you will add additional columns to enable filtering and grouping by
 
 	![Picture 12](images/year15.png)
 
-4. Perform step-1 again, then use the snippets file definitions to create the following two calculated columns for the **Date** table:
+4. Perform same steps starting from step-1 again, then use the snippets file definitions to create the following two calculated columns for the **Date** table:
    
    > **Note:** after creating quarter column, again perform step-1, for creating new column for month.
 	
@@ -259,9 +226,11 @@ In this task you will add additional columns to enable filtering and grouping by
 
    ![Picture 14](images/quartermonth17.png)
 	
-   > **Note:** For creating the mentioned above columns, you can copy the formula from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Assets\Snippets.txt**.
+   > **Note:** For creating the mentioned above columns, you can copy the formula from the snippets file, located in **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\AllFiles\Labs\04-create-dax-calculations-in-power-bi-desktop\Snippets.txt**.
 
-5. To validate the calculations, switch to Report view.
+5. To validate the calculations, switch to **Report view**.
+
+	![](./Linked_image_Files/pl300-lab4-18.png)
 
 6. To create a new report page, at the bottom-left, click the plus icon.
 
@@ -275,11 +244,11 @@ In this task you will add additional columns to enable filtering and grouping by
 
 8. In the **Data** pane, from inside the **Date** table, drag the **Year** field into the **Rows** well/area.
 
-	![Picture 17](images/year.png)
+	![Picture 17](./Linked_image_Files/pl300-lab4-19.png)
 
 9. Drag the **Month** field into the **Rows** well/area, directly beneath the **Year** field.
 
-	![Picture 18](images/year.png)
+	![Picture 18](./Linked_image_Files/pl300-lab4-20.png)
 
 10. At the top-right of the matrix visual (or bottom, depending on the location of the visual), click the forked-double arrow icon (which will expand all years down one level).
 
@@ -308,11 +277,15 @@ In this task you will add additional columns to enable filtering and grouping by
 
 15. Switch back to Report view.
 
+	![](./Linked_image_Files/pl300-lab4-18.png)
+
 16. In the **Data** pane, ensure that the **Month** field is selected (when selected, it will have a dark gray background).
 
-17. On the **Column Tools** contextual ribbon, from inside the **Sort** group, click **Sort by Column**, and then select **MonthKey**.
+	![](./Linked_image_Files/pl300-lab4-21.png)	
 
-	![Picture 22](images/column.png)
+17. On the **Column Tools (1)** contextual ribbon, from inside the **Sort** group, click **Sort by Column (2)**, and then select **MonthKey (3)**.
+
+	![](./Linked_image_Files/pl300-lab4-22.png)
 
 18. In the matrix visual, notice that the months are now chronologically sorted.
 
@@ -324,9 +297,15 @@ In this task, you will complete the design of the **Date** table by hiding a col
 
 1. Switch to Model view.
 
+    ![](Linked_image_Files/upd-1.png)
+
 2. In the **Date** table, hide the **MonthKey** column (set **Is Hidden** to **Yes**).
 
+	![](./Linked_image_Files/pl300-lab4-23.png)
+
 3. On the **Data** right side pane, select the **Date** table, right click on the **Year** column, and select **create hierarchy**. 
+
+	![](./Linked_image_Files/pl300-lab4-24.png)
 
 4. Rename newly created hierarchy to **Fiscal** by right click and **Rename**. 
 5. Add the following two remaining fields to the Fiscal hierarchy by selecting them in the data pane, right-clicking, and selecting **Add to hierarchy** -> **Fiscal**.
@@ -343,6 +322,10 @@ In this task, you will complete the design of the **Date** table by hiding a col
 
 	- **Date \| Date** to **Targets \| TargetMonth**
 
+	![](./Linked_image_Files/pl300-lab4-25.png)
+
+	![](./Linked_image_Files/pl300-lab4-26.png)
+
 7. Hide the following two columns:
 
 	- Sales \| OrderDate
@@ -355,21 +338,25 @@ In this task, you will mark the **Date** table as a date table.
 
 1. Switch to Report view.
 
+	![](./Linked_image_Files/pl300-lab4-18.png)
+
 2. In the **Data** pane, select the **Date** table (not the **Date** field).
 
-3. On the **Table Tools** contextual ribbon, from inside the **Calendars** group, click **Mark as Date Table**, and then select **Mark as Date Table**.
+	![](./Linked_image_Files/pl300-lab4-27.png)
 
-	![Picture 8](images/markasdate.png)
+3. On the **Table Tools** contextual ribbon, from inside the **Calendars** group, click **Mark as Date Table**.
 
-4. In the **Mark as Date Table** window, in the **Date Column** dropdown list, select **Date**.
+	![](./Linked_image_Files/pl300-lab4-28.png)
 
-	![Picture 37](images/datecooo.png)
+4. In the **Mark as Date Table** window, enable the toggle button for **Mark as a date table (1)**, in the **Choose a date column** dropdown list, select **Date (2)**.
 
-5. Click **OK**.
+5. Click **Save (3)**.
 
-	![Picture 26](Linked_image_Files/clickok.png)
+	![](./Linked_image_Files/pl300-lab4-29.png)
 
 6. Save the Power BI Desktop file.
+
+	![](./Linked_image_Files/pl300-lab4-30.png)
 
 	>**Note**: Power BI Desktop now understands that this table defines date (time). It’s important when relying on time intelligence calculations. You’ll work with time intelligence calculations in the **Create DAX Calculations in Power BI Desktop, Part 2** lab.
 
@@ -387,39 +374,41 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Sales \| Unit Price**. In this example, **Sales** is the table name and **Unit Price** is the field name.
 
-	![Picture 27](images/unirprice.png)
+	![](./Linked_image_Files/pl300-lab4-31.png)
 
 	>**Note**: You may recall that in the **Model Data in Power BI Desktop** lab, you set the **Unit Price** column to summarize by **Average**. The result you see in the matrix visual is the monthly average unit price (sum of unit price values divided by the count of unit prices).
 
-2. In the visual fields pane (located beneath the **Visualizations** pane), in the **Values** field well/area, notice that **Unit Price** is listed.
+2. In the visual fields pane (located beneath the **Visualizations** pane), in the **Values** field well/area, notice that **Unit Price** is configured as **Average of Unit Price**.
 
-	![Picture 28](images/values.png)
+	![](./Linked_image_Files/pl300-lab4-32.png)
 
-3. Click the down-arrow for **Unit Price**, and then notice the available menu options.
+3. Select the down-arrow for **Average of Unit Price**, and then notice the available menu options.
 
 	![Picture 30](images/removef.png)
 
-	>**Note**: Visible numeric columns allow report authors at report design time to decide how column values will summarize (or not). It can result in inappropriate reporting. Some data modellers don’t like leaving things to chance, however, and choose to hide these columns and instead expose aggregation logic defined in measures. It’s the approach you will now take in this lab.
+	>**Note**: Visible numeric columns allow report authors at report design time to decide how column values will summarize (or not). However, it can result in inappropriate reporting. Some data modelers don't like leaving things to chance, so they choose to hide these columns and instead expose aggregation logic defined in measures. It's the approach you'll now take in this lab.
 
-4. To create a measure, in the **Data** pane, right-click the **Sales** table, and then select **New Measure**.
+4. To create a measure, in the **Data** pane, right-click the **Sales** table and select **New Measure**.
 
-	![Picture 31](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image38.png)
+	![](./Linked_image_Files/pl300-lab4-33.png)
 
 5. In the formula bar, add the following measure definition:
 
 	```
 	Avg Price =  
-	‎AVERAGE(Sales[Unit Price])
+	AVERAGE(Sales[Unit Price])
 	```
 
 
 6. Add the **Avg Price** measure to the matrix visual.
 
+	![](./Linked_image_Files/pl300-lab4-34.png)
+
 7. Notice that it produces the same result as the **Unit Price** column (but with different formatting).
 
 8. In the **Values** well, open the context menu for the **Avg Price** field, and notice that it is not possible to change the aggregation technique.
 
-	![Picture 32](images/average.png)
+	![](./Linked_image_Files/pl300-lab4-35.png)
 
 	>**Note**: It’s not possible to modify the aggregation behavior of a measure.
 
@@ -441,32 +430,36 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 	![Picture 32](images/L4E2T1S9.png)
 
-10. Switch to Model view, and then multi-select the four price measures: **Avg Price**, **Max Price**, **Median Price**, and **Min Price**.
+10. Switch to **Model view (1)**, and then multi-select the four price measures: **Avg Price**, **Max Price**, **Median Price**, and **Min Price (2)**.
 
 11. For the multi-selection of measures, configure the following requirements:
 
-	- Set the format to two decimal places
+	- Assign to a display folder named **Pricing (3)**.
 
-	- Assign to a display folder named **Pricing**
+	- Set the format to **two decimal places (4)**
 
-       ![Picture 33](Linked_image_Files/L4E2T1S11.png)
+		![](./Linked_image_Files/pl300-lab4-37.png)
         
 
 12. Hide the **Unit Price** column.
 
+	![](./Linked_image_Files/pl300-lab4-36.png)
+
 	>**Note**: The **Unit Price** column is now not available to report authors. They must use the pricing measures you’ve added to the model. This design approach ensures that report authors won’t inappropriately aggregate prices, for example, by summing them.
 
-13. Multi-select the **Order Lines** and **Orders** measures, and then configure the following requirements:
+10. Switch to **Model view (1)**, and then multi-select the **Order Lines** and **Orders (2)** measures.
 
-	- Set the format using the thousands separator
+13. For the multi-selection of measures, configure the following requirements:
 
-	- Assign to a display folder named **Counts**
+	- Assign to a display folder named **Counts (3)**.
 
-	![Picture 36](Linked_image_Files/L4E2T1S13.png)
+	- Toggle on the button for **Thousands separator (4)**.
 
-14. In Report view, in the **Values** well/area of the matrix visual, for the **Unit Price** field, click **X** to remove it.
+		![](./Linked_image_Files/pl300-lab4-38.png)
 
-	![Picture 38](images/valueee.png)
+14. In Report view, in the **Values** well/area of the matrix visual, for the **Average of Unit Price** field, click **X** to remove it.
+
+	![](./Linked_image_Files/pl300-lab4-39.png)
 
 15. Increase the size of the matrix visual to fill the page width and height.
 
@@ -484,7 +477,7 @@ In this task, you will create simple measures. Simple measures aggregate values 
 
 17. Verify that the results looks sensible and are correctly formatted.
 
-	![Picture 39](images/L4E2T1S17.png)
+	![](./Linked_image_Files/pl300-lab4-40.png)
 
 ### Task 2: Create additional measures
 
@@ -532,7 +525,7 @@ In this task you will create additional measures that use more complex formulas.
 
 10. Notice that the **Target** column total is now BLANK.
 
-	![Picture 43](Linked_image_Files/05-create-dax-calculations-in-power-bi-desktop_image47.png)
+	![](./Linked_image_Files/pl300-lab4-41.png)
 
 11. Use the snippets file definitions to create the following two measures for the **Targets** table:
 
@@ -553,7 +546,7 @@ In this task you will create additional measures that use more complex formulas.
 
 15. Resize the table visual so all columns and rows can be seen.
 
-	![Picture 44](Linked_image_Files/L4E2T2S14.png)
+	![](./Linked_image_Files/pl300-lab4-42.png)
 
 	>**Note**: While it appears all salespeople are not meeting target, remember that the table visual isn’t yet filtered by a specific time period. You’ll produce sales performance reports that filter by a user-selected time period in the **Design a Report in Power BI Desktop, Part 1** lab.
 
@@ -575,18 +568,21 @@ In this task you will complete the lab.
 
 1. Save the Power BI Desktop file.
 
+	![](./Linked_image_Files/pl300-lab4-30.png)
+
 2. If you intend to start the next lab, leave Power BI Desktop open.
 
     >**Note**: You’ll enhance the data model with more advanced calculations using DAX in the **Create DAX Calculations in Power BI Desktop, Part 2** lab.
 
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+  <validation step="8f243939-365d-4397-be70-a6ab9a4c58fe" />
       
 ### Review
+
 In this lab, you have completed the following :
  
 - Get started with Power BI Desktop
