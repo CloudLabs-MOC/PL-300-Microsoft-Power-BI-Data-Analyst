@@ -32,28 +32,31 @@ In this exercise you will create a three-page report named **Sales Report**.
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
+1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge.
 
- 	![Picture 65](Linked_image_Files/07-design-report-in-power-bi-desktop_image1.png)
+ 	![](./images/lab8-04-01.png)
 
 1. In the Microsoft Edge browser window, navigate to **https://powerbi.microsoft.com**.
 
- 	**Tip**: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
+ 	**Tip:** You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
 
 1. Click **Sign In** (located at the top-right corner).
 
- 	![Picture 63](Linked_image_Files/lab6-image(2).png)
+ 	![](./images/lab8-04-0.png)
 
 1. Enter the account details 
 
-   - Enter the Lab username on the **Enter your email address** page.
-     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
-     
-   - Complete the signup process by selecting the username
+   - In the **Email (1)** field, enter your email address, and then select **Submit (2)**.
 
-   - Enter the password 
+     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+
+	 	![](./images/lab8-04-1.png)
+
+   - Enter the Temporary Access Pass, and then select **Sign in**.
    
      * Azure Password: <inject key="AzureAdUserPassword"></inject>
+
+	 	![](./images/lab8-04-2.png)
  
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
@@ -61,15 +64,15 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Complete the sign in process by clicking on **Continue**
 
-   ![](Linked_image_Files/lab6-image-T01.png)
+   ![](./images/lab8-04-3.png)
    
-1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
+1. Enter a job titel and 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
    
-   ![](Linked_image_Files/lab6-image-(T02).png)
+   ![](./images/lab8-04-4.png)
    
-   ![](Linked_image_Files/lab6-image-(T003).png)
+   ![](./images/lab8-04-5.png)
 
-1. If prompted by Microsoft Edge to stay signed in, click **Yes**.
+1. If prompted by Microsoft Edge to stay signed in, click **No**.
 
 1. Leave the Microsoft Edge browser window open.
 
@@ -77,11 +80,11 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 In this task you will enable map and filled map visuals in the environment for the lab by updating the Integration settings in the Power BI Admin portal. 
 
-1. To open the Power BI Admin portal, at the top-right corner of the browser, click on the ellipses and then select the **Settings** icon.
+1. To open the Power BI Admin portal, at the top-right corner of the browser, click on the ellipses and then select the **Settings (1)** icon.
 
-1. Select **Admin portal**.
+1. Select **Admin portal (2)**.
 
-   ![Picture 102](Linked_image_Files/lab6-image-(102).png)
+   ![](./images/lab8-04-6.png)
 
 1. Scroll down the page to Integration settings. Click the arrow to expand the Map and filled map visuals option.
 
@@ -89,7 +92,7 @@ In this task you will enable map and filled map visuals in the environment for t
 
 1. Set the Map and filled map visuals option to **Enabled**.
 
-   >**Note**: If the Map and filled map visuals is **Enabled** skip the step.
+   >**Note:** If the Map and filled map visuals is **Enabled** skip the step.
 
 1. Click **Apply**, to apply the changes. 
 
@@ -105,18 +108,17 @@ In this task you will enable map and filled map visuals in the environment for t
 
 In this task you will setup the environment for the lab by opening the starter report.
 
-1. Open **File Explorer** on your machine.
+1. Click the Microsoft **Power BI Desktop** shortcut icon to open.
 
-2. Navigate to the following path:
+ 	![Picture 50](./Linked_image_Files/pl300-lab4-01.png)
 
-   ```
-   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\08-design-power-bi-reports
-   ```
-3. Locate the file named: **02-Starter-Sales Analysis.pbix**
+1. To open the starter Power BI Desktop file, click the **Open (1)** button at left panel and select **Browse this device (2)**.
 
-	![Picture 19](images/lab8pl300-1.png)
-	
-4. Double-click the file to open it in **Power BI Desktop**.
+	![](./Linked_image_Files/pl300-lab4-02.png)
+
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\08-design-power-bi-reports (1)** folder. Select the **08-Starter-Sales Analysis (2)** file and click **Open (3)**.
+
+   ![](./images/lab8-04-7.png)
 
 1. Close any informational windows that may open.
 
@@ -143,6 +145,26 @@ In this task you will design the first report page. When you’ve completed the 
 1. To add an image, on the **Insert** ribbon tab, from inside the **Elements** group, click **Image**.
 
 	![](./images/lab8pl300-3.png)
+
+1. In the **Email** field, enter your email address, and then select **Continue**.
+
+	 * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
+
+	  ![](./images/lab8-04-8.png)
+
+1. Enter your email address, and then select **Next**. 
+
+	![](./images/lab8-04-9.png)
+
+1. Enter the Temporary Access Pass, and then select **Sign in**.
+   
+     * Azure Password: <inject key="AzureAdUserPassword"></inject>
+
+	   ![](./images/lab8-04-2.png)
+
+1. On the **Sign in to all apps and websites on this device?** screen, select **No, this app only**.
+
+	![](./images/lab8-04-10.png)
 
 1. In the **Format image** pane, expand **Style (1)**, expand **Image (2)**, and then select **Browse... (3)** to upload an image.
 
