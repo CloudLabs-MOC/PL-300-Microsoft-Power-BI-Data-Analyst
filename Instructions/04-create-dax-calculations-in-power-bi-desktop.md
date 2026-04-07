@@ -1,6 +1,7 @@
 # Lab 04: Create DAX calculations in semantic models
 
 ## Lab scenario
+
 In this lab you will create calculated tables, calculated columns, and simple measures using Data Analysis Expressions (DAX).
 
 In this lab you learn how to:
@@ -21,7 +22,7 @@ This lab is one of many in a series of labs that was designed as a complete stor
 
 3. Model Data in Power BI Desktop
 
-4. Create DAX calculations in semantic models
+4. **Create DAX calculations in semantic models**
 
 5. Modify DAX filter context in Power BI
 
@@ -573,13 +574,6 @@ In this task you will complete the lab.
 2. If you intend to start the next lab, leave Power BI Desktop open.
 
     >**Note**: You’ll enhance the data model with more advanced calculations using DAX in the **Create DAX Calculations in Power BI Desktop, Part 2** lab.
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-  <validation step="8f243939-365d-4397-be70-a6ab9a4c58fe" />
       
 ### Review
 
