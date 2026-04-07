@@ -1,37 +1,16 @@
-# Lab 06: Design a Report in Power BI Desktop
+# Lab 08: Design Power BI reports
 
 ## Lab scenario
-In this lab you will create a three-page report. You will then publish it to Power BI, whereupon you will open and interact with the report.
+
+In this lab, you'll create a three-page report. You'll then publish it to the Power BI service, where you'll open and interact with the report.
 
 In this lab you learn how to:
 
-- Design a report
-
-- Configure visual fields and format properties
-
-### Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. Prepare Data in Power BI Desktop
-
-2. Load Data in Power BI Desktop
-
-3. Model Data in Power BI Desktop
-
-4. Create DAX Calculations in Power BI Desktop
-
-5. Create Advanced  DAX Calculations in Power BI Desktop
-
-6. **Design a Report in Power BI Desktop**
-
-7. Enhance a Report in Power BI Desktop
-
-8. Create a Power BI Dashboard
-
-9. Perform Data Analysis in Power BI Desktop
-
-10. Enforce Row-Level Security
+- Design a report.
+- Configure visual fields and format properties.
+- Sync slicers.
+- Publish the report to the Power BI service.
+- Interact with a report and its visuals.
 
 ## Lab objectives
 In this lab, you will perform:
@@ -39,7 +18,7 @@ In this lab, you will perform:
 - Design a report
 - Configure visual fields and format properties
   
-## Estimated timing: 60 minutes    
+## Estimated timing: 60 Minutes    
 
 ## Architecture Diagram
 
@@ -126,77 +105,24 @@ In this task you will enable map and filled map visuals in the environment for t
 
 In this task you will setup the environment for the lab by opening the starter report.
 
-**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
+1. Open **File Explorer** on your machine.
 
-1. To open the Power BI Desktop, click the Microsoft Power BI Desktop shortcut.
+2. Navigate to the following path:
 
-   ![](Linked_image_Files/powerbi.png)
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\08-design-power-bi-reports
+   ```
+3. Locate the file named: **02-Starter-Sales Analysis.pbix**
 
-2. To close the getting started window, at the top-right of the window, click **X**.
+	![Picture 19](images/lab8pl300-1.png)
+	
+4. Double-click the file to open it in **Power BI Desktop**.
 
-	![Picture 47](Linked_image_Files/close.png)
+1. Close any informational windows that may open.
 
-3. To sign in to the Power BI service, at the top-right, click **Sign In**.
+1. If prompted to apply changes, click **Apply Later**.
 
-	![Picture 66](Linked_image_Files/07-design-report-in-power-bi-desktop_image5.png)
-
-5. Enter the account details 
-
-   - Enter the Lab username on the **Enter your email address** page.
-     * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
-     
-   - Complete the signup process by selecting the username
-
-   - Enter the password 
-   
-     * Azure Password: <inject key="AzureAdUserPassword"></inject>
- 
-6.  If prompted, choose the "Work or school account" option.
-
-7. Follow the prompts to complete the sign-in process.
-
-8. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
-
-9. Select **Open Report**.
-
-	![Picture 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(3).png)
-
-10. Click **Browse Reports**.
-
-	![Picture 30](Linked_image_Files/07-design-report-in-power-bi-desktop_image7.png)
-
-11. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\06-design-report-in-power-bi-desktop\Starter** folder.
-
-12. Select the **Sales Analysis** file.
-
-13. Click **Open**.
-
-	![Picture 16](Linked_image_Files/image(8).png)
-
-14. Close any informational windows that may open.
-
-15. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
-
-	![Picture 8](Linked_image_Files/discard-changes-(1).png)
-
-16. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Linked_image_Files/discard.png)
-
-17. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-18. Select **Save As**.
-
-	![Picture 8](Linked_image_Files/07-design-report-in-power-bi-desktop_image9.png)
-
-19. If prompted to apply changes, click **Apply Later**.
-
-20. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\MySolution** folder.
-
-21. Click **Save**.
-
-	![Picture 4](Linked_image_Files/image(11).png)
-
+    ![Picture 19](images/lab2pl300-2.png)
 
 ### Task 4: Design page 1
 
@@ -206,9 +132,9 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. In Power BI Desktop, to rename the page, at the bottom-left, right-click **Page 1**, and then select **Rename**.
 
-	![Picture 36](Linked_image_Files/image(13).png)
+	 ![](./images/lab8pl300-2.png)
 
-	*Tip: You can also double-click the page name to rename it.*
+	 *Tip: You can also double-click the page name to rename it.*
 
 1. Rename the page as **Overview**, and then press **Enter**.
 
@@ -216,32 +142,39 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. To add an image, on the **Insert** ribbon tab, from inside the **Elements** group, click **Image**.
 
-	![Picture 1](Linked_image_Files/image(15).png)
+	![](./images/lab8pl300-3.png)
 
-1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Resources** folder.
+1. In the **Format image** pane, expand **Style (1)**, expand **Image (2)**, and then select **Browse... (3)** to upload an image.
 
-1. Select the **AdventureWorksLogo.jpg** file, and then click **Open**.
+	![](./images/lab8pl300-4.png)
 
-	![Picture 11](Linked_image_Files/image(16).png)
+1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\08-design-power-bi-reports (1)** folder.
+
+1. Select the **AdventureWorksLogo (2)** file, and then click **Open (3)**.
+
+	![](./images/lab8pl300-5.png)
 
 1. Drag the image to position it at the top-left corner, and also drag the guide markers to resize it.
 
 	![Picture 12](Linked_image_Files/07-design-report-in-power-bi-desktop_image17.png)
 
 1. To add a slicer, first de-select the image by clicking an empty area of the report page.
+
 1. In the **Data** pane, select the **Date \| Year** field (not the **Year** level of the hierarchy).
 	
-	>**Note**: The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.
+	![](./images/lab8pl300-6.png)
+
+	>**Note:** The labs use a shorthand notation to reference a field. It will look like this: **Date \| Year**. In this example, **Date** is the table name and **Year** is the field name.
 
 1. Notice that a table of year values has been added to the report page.
 
 1. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
 
-	![Picture 49](Linked_image_Files/image(18).png)
+	![](./images/lab8pl300-9.png)
 
-1. To convert the slicer from a list to a dropdown, navigate to Visualizations > Format visual > Visual > Slicer Settings > Style, and then select Dropdown from the dropdown menu.
+1. To convert the slicer from a list to a dropdown, in the **Visualizations** pane, select **Format visual (1)**. Expand **Slicer settings (2)**, and then set the **Style** dropdown to **Dropdown (3)**.
 
-	![Picture 18](Linked_image_Files/06_slicer_style-1.png)
+	![](./images/lab8pl300-7.png)
 
 1. Resize and position the slicer so it sits beneath the image and is the same width as the image.
 
@@ -257,16 +190,21 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. Create a second slicer, based on the **Region \| Region** field (not the **Region** level of the hierarch).
 
+	![](./images/lab8pl300-8n.png)
+
+1. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
+
+	![](./images/lab8pl300-9.png)
+
 1. Leave the slicer as a list, and then resize and position the slicer beneath the **Year** slicer.
 
 	![Picture 21](Linked_image_Files/07-design-report-in-power-bi-desktop_image22.png)
-
 
 1. De-select the slicer by clicking an empty area of the report page.
 
 1. To add a chart to the page, in the **Visualizations** pane, click the **Line and Stacked Column Chart** visual type.
 
-	![Picture 51](Linked_image_Files/image(26).png)
+	![](./images/lab8pl300-10.png)
 
 1. Resize and position the visual so it sits to the right of the logo, and so it fills the width of the report page.
 
@@ -280,21 +218,21 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. In the visual fields pane (located beneath the **Visualizations** pane), notice that the fields are assigned to the **X-axis** and **Column y-axis** wells/areas.
 
-	![Picture 27](Linked_image_Files/image(28).png)
+	![](./images/lab8pl300-11.png)
 
-	>**Note**: By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.
+	>**Note:** By dragging fields into a visual, they will be added to default wells/areas. For precision, you can drag fields directly into the wells/areas, as you will do next.
 
 1. From the **Data** pane, drag the **Sales \| Profit Margin** field into the **Line y-axis** well/area.
 
-	![Picture 28](Linked_image_Files/image(29).png)
+	![](./images/lab8pl300-12.png)
 
 1. Notice that the visual has 11 months only.
 
-	>**Note**: The last month of the year, 2020 June, does not have any sales (yet). By default, the visual has eliminated months with BLANK sales. You will now configure the visual to show all months.
+	>**Note:** The last month of the year, 2020 June, does not have any sales (yet). By default, the visual has eliminated months with BLANK sales. You will now configure the visual to show all months.
 
-1. In the visual fields pane, in the **X-axis** well/area, for the **Month** field, click the down-arrow, and then select **Show Items With No Data**.
+1. In the visual fields pane, in the **X-axis** well/area, for the **Month (1)** field, click the down-arrow, and then select **Show Items With No Data (2)**.
 
-	![Picture 52](Linked_image_Files/image(30).png)
+	![](./images/lab8pl300-13.png)
 
 1. Notice that the month **2020 June** now appears.
 
@@ -302,7 +240,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. To add a chart to the page, in the **Visualizations** pane, click the **Stacked column chart** visual type.
 
-	![Picture 53](Linked_image_Files/E1T4S27.png)
+	![](./images/lab8pl300-14.png)
 
 1. Resize and position the visual so it sits beneath the column/line chart, and so it fills half the width of the chart above.
 
@@ -320,7 +258,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 1. To add a chart to the page, in the **Visualizations** pane, click the **Stacked Bar Chart** visual type.
 
-	![Picture 54](Linked_image_Files/image-(33).png)
+	![](./images/lab8pl300-15.png)
 
 1. Resize and position the visual so it fills the remaining report page space.
 
@@ -332,19 +270,21 @@ In this task you will design the first report page. When you’ve completed the 
 
 	- X-axis: **Sales \| Quantity**
 
-1. To format the visual, open the **Format** pane.
+1. To format the visual, open the **Format (1)** pane.
 
-	![Picture 3](Linked_image_Files/formatvisual.png)
+1. Expand the **Bars (2)** and then the **Colors** group, and then set the **Default Color** property to a suitable color (to complement the column/line chart).
 
-1. Expand the **Bars** and then the **Colors** group, and then set the **Default Color** property to a suitable color (to complement the column/line chart).
+	![](./images/lab8pl300-16.png)
 
 1. Set the **Data Labels** property to **On**.
 
-	![Picture 2](Linked_image_Files/image(36).png)
+	![](./images/lab8pl300-17.png)
 
 1. Save the Power BI Desktop file.
 
-	>**Note**: The design of the first page is now complete.
+	![](./images/lab8pl300-18.png)
+
+	>**Note:** The design of the first page is now complete.
  
 ### Task 5: Design page 2
 
@@ -358,33 +298,37 @@ In this task you will design the second report page. When you’ve completed the
 
 	![Picture 42](Linked_image_Files/overview-1.png)
 
-2. Rename the page to **Profit**.
+2. Right-click **Page 1**, select **Rename**, and then enter **Profit**.
 
 	![Picture 43](Linked_image_Files/profit.png)
 
 3. Add a slicer based on the **Region \| Region** field.
 
+	![](./images/lab8pl300-8n.png)
+
 1. To convert the visual from a table to a slicer, in the **Visualizations** pane, select the **Slicer**.
 
-	![Picture 49](Linked_image_Files/image(18).png)
+	![](./images/lab8pl300-9.png)
 
-4. Use the **Visualizations > Format visual > Visual > Slicer Settings > Selection** pane to enable the “**Select All**” option.
+4. Use the **Visualizations > Format visual (1)> Visual > Slicer Settings (2) > Selection (3)** pane to enable the “**Select All (4)**” option.
 
-	![Picture 43](images/M6-T5-S4.png)
+	![](./images/lab8pl300-19.png)
 
 5. Resize and position the slicer so it sits at the left side of the report page, and so it is about half the page height.
 
 	![Picture 44](Linked_image_Files/07-design-report-in-power-bi-desktop_image40.png)
 
-6. Add a matrix visual, and resize and position it so it fills the remaining space of the report page
+1. De-select the slicer by selecting an empty area of the report page.
+
+6. Add a **Matrix** visual, and resize and position it so it fills the remaining space of the report page
+
+	![](./images/lab8pl300-20.png)
 
 	![Picture 45](Linked_image_Files/07-design-report-in-power-bi-desktop_image41.png)
-	
-	![](Linked_image_Files/matrix.png)
 
 7. Add the **Date \| Fiscal** hierarchy to the matrix **Rows** well/area.
 
-	![Picture 46](Linked_image_Files/image(42).png)
+	![](./images/lab8pl300-21.png)
 
 8. Add the following five **Sales** table fields to the **Values** well/area:
 
@@ -398,13 +342,17 @@ In this task you will design the second report page. When you’ve completed the
 
 	- Profit Margin
 
-	![Picture 55](Linked_image_Files/image(43).png)
+	  >**Note:** The fields will show in the visual with a prefix showing the aggregation type; "Sum of Sales."
+
+	 ![](./images/lab8pl300-22.png)
 
 9. In the **Filters** pane (located at the left of the **Visualizations** pane), notice the **Filter On This Page** well/area (you may need to scroll down).
 
-	![Picture 57](Linked_image_Files/image(44).png)
+	![](./images/lab8pl300-23.png)
 
 10. From the **Data** pane, drag the **Product \| Category** field into the **Filter On This Page** well/area.
+
+	![](./images/lab8pl300-24.png)
 
 11. Inside the filter card, at the top-right, click the arrow to collapse the card.
 
@@ -420,11 +368,13 @@ In this task you will design the second report page. When you’ve completed the
 
 	- Color
 
-	![Picture 60](Linked_image_Files/image(46).png)
+	  ![Picture 60](Linked_image_Files/image(46).png)
 
 13. Save the Power BI Desktop file.
 
-	>**Note**: The design of the second page is now complete.
+	![](./images/lab8pl300-25.png)
+
+	>**Note:** The design of the second page is now complete.
 
 ### Task 6: Design page 3
 
@@ -438,17 +388,17 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. To simulate the performance of row-level security filters, drag the **Salesperson (Performance) \| Salesperson** field to the page level filters in the filter pane.
 	
-	![Image of Salesperson field in filter pane.](Linked_image_Files/image(999).png) 
+	![](./images/lab8pl300-26.png)
 
 1. Select **Michael Blythe**. Data on the **My Performance** report page will now be filtered to display data for Michael Blythe only.
 
-1. Add a dropdown slicer based on the **Date \| Year** field, and then resize and position it so it sits at the top-left corner of the page.
+1. From the **Visualizations** pane, select **Slicer**, drag **Date | Year** into the field well.
 
 	![Picture 70](Linked_image_Files/07-design-report-in-power-bi-desktop_image49.png)
 
-1. To convert the slicer from a list to a dropdown, navigate to Visualizations > Format visual > Visual > Slicer Settings > Style, and then select Dropdown from the dropdown menu.
+1. To convert the slicer from a list to a dropdown, in the **Visualizations** pane, select **Format visual (1)**. Expand **Slicer settings (2)**, and then set the **Style** dropdown to **Dropdown (3)**.
 
-	![Picture 18](Linked_image_Files/06_slicer_style-1.png)
+	![](./images/lab8pl300-7.png)
 	
 1. In the slicer, set the page to filter by **FY2019**.
 
@@ -456,7 +406,7 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. Add a **Multi-row Card** visual, and then resize and reposition it so it sits to the right of the slicer and fills the remaining width of the page.
 
-	![Picture 56](Linked_image_Files/image(51).png)
+	![](./images/lab8pl300-27.png)
 
 	![Picture 74](Linked_image_Files/07-design-report-in-power-bi-desktop_image52.png)
 
@@ -472,17 +422,17 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. To format the visual, open the **Format visual** pane.
    
-   ![Picture 3](Linked_image_Files/formatvisual.png)
+   ![](./images/lab8pl300-28.png)
 
-	- In the **Values** group, increase the **Size** to **28**
-
-	-  Set the **Background** group **Color** to a light gray color
-
-	  ![Picture 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
+	 - In the **Callout values** section, increase the font size property to **28pt**.
+     
+	 - In the **General** tab, in the **Effects** section, set the background color property to a light gray color (such as _White, 10% Darker_) to provide contrast.
+	  
+	   ![Picture 79](Linked_image_Files/07-design-report-in-power-bi-desktop_image53.png)
 
 1. Add a **Clustered Bar Chart** visual, and then resize and position it so it sits beneath the multi-row card visual and fills the remaining height of the page, and half the width of the multi-row card visual.
 
-	![Picture 59](Linked_image_Files/image(54).png)
+	![](./images/lab8pl300-30.png)
 
 	![Picture 78](Linked_image_Files/07-design-report-in-power-bi-desktop_image55.png)
 
@@ -502,12 +452,42 @@ In this task you will design the third—and final—report page. When you’ve 
 
 1. To modify the visualization type, in the **Visualizations** pane, select **Clustered Column Chart**.
 
-	![Picture 61](Linked_image_Files/image(58).png)
+	![](./images/lab8pl300-29.png)
 
-	>**Note**: It’s now possible to see the same data expressed by two different visualization types. This isn’t a good use of the page layout, however, you’ll improve it in the **Enhance a Report in Power BI Desktop** lab by superimposing the visuals. By adding buttons to the page, you’ll allow the report user to determine which of the two visuals is visible.
+	>**Note:** It's now possible to see the same data expressed by two different visualization types
 
-	>**Note**: The design of the third—and final—page is now complete.
+	>**Note**: The design of the third and final page is now complete.
 	
+## Task 7: Sync slicers
+
+In this task, you'll sync the _Year_ and _Region_ slicers.
+
+1. On the _Overview_ page, set the _Year_ slicer to **FY2018**.
+
+1. Go to the _My Performance_ page, and then notice that the _Year_ slicer has a different value.
+
+    > _When slicers aren't synced, it can contribute to misrepresentation of data and frustration for report users. You'll now sync the report slicers._
+
+1. Return to the _Overview_ page, and then select the _Year_ slicer.
+
+1. On the **View** ribbon tab, from inside the **Show Panes** group, select **Sync Slicers**.
+
+    ![](./images/lab8pl300-31.png)
+
+1. In the **Sync Slicers** pane (at the left of the **Visualizations** pane), in the second column (which represents syncing), check the checkboxes for the _Overview_ and _My Performance_ pages.
+
+    ![](./images/lab8pl300-32.png)
+
+1. On the _Overview_ page, select the _Region_ slicer.
+
+1. Sync the slicer with the _Overview_ and _Profit_ pages.
+
+    ![](./images/lab8pl300-33.png)
+
+1. Test the sync slicers by selecting different filter options, and then verifying that the synced slicers filter by the same selection.
+
+1. To close the **Sync Slicer** pane, select the **Sync Slicer** option located on the **View** ribbon tab.
+
 ## Exercise 2: Explore the Report
 
 In this exercise you will explore the report that was published to Power BI.
@@ -524,35 +504,35 @@ In this task you will publish the report.
 
 	![Picture 67](Linked_image_Files/image(59).png)
 
-4. In the **Publish to Power** BI window, notice that **My Workspace** is selected.
+4. In the **Publish to Power** BI window, notice that **My Workspace (1)** is selected.
 
-5. To publish the report, click **Select**.
+5. To publish the report, click **Select (2)**.
 
-	![](Linked_image_Files/select-1.png)
+	![](./images/lab8pl300-34.png)
 
 6. When the publication has succeeded, click **Got It**.
 
-	![](Linked_image_Files/got-it.png)
+	![](./images/lab8pl300-35.png)
 
 7. Leave Power BI Desktop open.
 
-	>**Note**: You’ll explore the report in the Power BI service in the next exercise.
+	>**Note:** You’ll explore the report in the Power BI service in the next exercise.
 
 ### Task 2: Explore the report
 
 In this task you will explore the report that was published to Power BI.
 
-1. In the Microsoft Edge browser window, in the Power BI service, in the **Navigation** pane (located at the left, and it could be collapsed), Select **My Workspace**.
+1. In the Microsoft Edge browser window, in the Power BI service, in the **Navigation** pane (located at the left, and it could be collapsed), Select **My Workspace (1)**.
 
-2. Review the contents of the workspace, noticing the **Sales Analysis** report and Semantic models.
+2. Review the contents of the workspace, noticing the **08-Starter-Sales Analysis (2)** report and Semantic models.
 
-	>**Note**: When you published the Power BI Desktop file, the data model was published as a Semantic models.
+	>**Note:** When you published the Power BI Desktop file, the data model was published as a Semantic models.
 
-	>**Note**: If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.
+	>**Note:** If you don’t see it, press **F5** to reload the browser, and then expand the workspace again.
 
-	![Picture 94](Linked_image_Files/workspace-2.png)
+	![](./images/lab8pl300-36.png)
 
-3. To open the report, click the **Sales Analysis** report.
+3. To explore the report, select the **08-Starter-Sales Analysis** report.
 
 4. At the left, in the **Pages** pane, select the **Overview** page. 
 
@@ -568,7 +548,7 @@ In this task you will explore the report that was published to Power BI.
 
 9. Hover the cursor over the bar chart visual, and then at the top-right, hover the cursor over the filter icon.
 
-	![Picture 95](images/M6-Ex2-T2-S9.png)
+	![](./images/lab8pl300-37.png)
 
 	>**Note**: The filter icon allows you to understand all filters that are applied to the visual, including slicers and cross filters from other visual.
 
@@ -578,7 +558,7 @@ In this task you will explore the report that was published to Power BI.
 
 12. Hover the cursor over the Stacked column visual, and then at the top-right, click the **Focus mode** icon.
 
-	![Picture 96](images/M6-Ex2-T2-S12.png)
+	![](./images/lab8pl300-38.png)
 
 	>**Note**: Focus mode zooms the visual to full page size.
 
@@ -586,17 +566,17 @@ In this task you will explore the report that was published to Power BI.
 
 14. To return to the report page, at the top-left, click **Back to Report**.
 
-	![Picture 86](Linked_image_Files/image(66).png)
+	![](./images/lab8pl300-39.png)
 
-15. Try out each of the options, except **Chat in Teams**.
+15. Hover the cursor over one of the visuals again, then at the top-right, select the ellipsis (…), and then notice the menu options. Try out each of the options, except the ones within **Share**.
+
+	![](./images/lab8pl300-40.png)
 
 16. At the left, in the **Pages** pane, select the **Profit** page.
 
 	![Picture 84](Linked_image_Files/image(68).png)
 
-17. Notice that the **Region** slicer has a different selection to the **Region** slicer on the **Overview** page.
-
-	>**Note**: The slicers are not synchronized. You’ll modify the report design to ensure they sync between pages in the **Enhance a Report in Power BI Desktop** lab.
+17. Notice that the **Region** slicer has the same selection as made on the **Overview** page, thanks to synced slicers.
 
 18. In the **Filters** pane (located at the right), expand a filter card, and apply some filters.
 
@@ -608,9 +588,9 @@ In this task you will explore the report that was published to Power BI.
 
 	![Picture 89](Linked_image_Files/image(69).png)
 
-21. At the top-right on the menu bar, click **View**, and then select **Full Screen**.
+21. At the top-right on the menu bar, click **View (1)**, and then select **Full Screen (2)**.
 
-	![Picture 98](Linked_image_Files/image(70).png)
+	![](./images/lab8pl300-40.png)
 
 22. Interact with the page by modifying the slicer, and cross filtering the page.
 
@@ -620,25 +600,6 @@ In this task you will explore the report that was published to Power BI.
 
     ![Picture 91](Linked_image_Files/image(71).png)
 
-### Task 2: Finish up
-
-In this task you will complete the lab.
-
-1. To return to your workspace, click on **My Workspace**.
-
-	![Picture 99](Linked_image_Files/07-design-report-in-power-bi-desktop_imagea72.png)
-
-2. Leave the Microsoft Edge browser window open.
-
-   >**Note**: You will enhance the report design with advanced features in the **Enhance a Report in Power BI Desktop** lab.
-
-    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-	
-    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-    - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-  
 ## Review
  In this lab, you have completed the following :
 - Get started – Sign in

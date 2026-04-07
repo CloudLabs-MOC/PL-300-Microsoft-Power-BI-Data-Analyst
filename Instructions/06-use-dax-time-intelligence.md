@@ -29,6 +29,9 @@ In this task, you will open the provided starter Power BI (.pbix) file and prepa
    ```
    C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\06-use-dax-time-intelligence
    ```
+
+   ![](./images/lab6pl300-1.png)
+
 3. Locate the file named: **06-Starter-Sales Analysis.pbix**
 	
 4. Double-click the file to open it in **Power BI Desktop**.

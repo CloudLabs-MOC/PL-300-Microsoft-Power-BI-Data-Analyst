@@ -23,37 +23,24 @@ In this exercise you will apply transformations to each of the queries created i
 
 In this task you will setup the environment for the lab.
 
-1. To open the Power BI Desktop, click the Microsoft Power BI Desktop shortcut.
+1. Open **File Explorer** on your machine.
 
-    ![Picture 8](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image1.png)
+2. Navigate to the following path:
 
-1. To close the getting started window, at the top-left of the window, click **X**.
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\02-transform-data-power-bi
+   ```
+3. Locate the file named: **02-Starter-Sales Analysis.pbix**
 
-    ![Picture 7](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image2.png)
-
-1. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
-
-1. Select **Open Report**.
-
-	![Picture 10](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image3.png)
-
-1. Click **Browse Reports**.
-
-    ![Picture 11](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image4.png)
-
-1. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\Allfiles\Labs\02-transform-data** folder.
-
-1. Select the **02-Starter-Sales Analysis** file.
-
-1. Click **Open**.
-
-	![Picture 12](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image5.png)
+	![Picture 19](images/lab2pl300-1.png)
+	
+4. Double-click the file to open it in **Power BI Desktop**.
 
 1. Close any informational windows that may open.
 
 1. If prompted to apply changes, click **Apply Later**.
 
-    ![Picture 22](Linked_image_Files/02-load-data-with-power-query-in-power-bi-desktop_image8.png)
+    ![Picture 19](images/lab2pl300-2.png)
 
 ### Task 2: Configure the Salesperson query
 
