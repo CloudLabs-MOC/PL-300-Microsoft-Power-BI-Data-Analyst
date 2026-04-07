@@ -16,7 +16,7 @@ In this lab, you will perform:
 - Create a YTD measure
 - Create a YoY growth measure
 
-## Estimated timing: 30 Minutes   
+## Estimated timing: 45 Minutes   
 
 ## Task 1: Get started
 
