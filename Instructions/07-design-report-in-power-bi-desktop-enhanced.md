@@ -3,42 +3,15 @@
 ## Lab scenario
 In this lab you will enhance the **Sales Analysis** with advanced design features.
 
-In this lab you learn how to:
+In this lab, you learn how to:
 
-- Sync slicers
-
-- Create a drillthrough page
-
-- Apply conditional formatting
-
-- Create and use bookmarks
-
-## Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. Prepare Data in Power BI Desktop
-
-2. Load Data in Power BI Desktop
-
-3. Model Data in Power BI Desktop
-
-4. Create DAX Calculations in Power BI Desktop
-
-5. Create Advanced DAX Calculations in Power BI Desktop
-
-7. Design a Report in Power BI Desktop
-
-8. **Enhance a Report in Power BI Desktop**
-
-9. Create a Power BI Dashboard
-
-10. Enforce Row-Level Security
+- Create a drill through page.
+- Apply conditional formatting.
+- Create and use bookmarks and buttons.
 
 ## Lab objectives
 In this lab, you will perform:
 
-- Sync slicers
 - Create a drill through page
 - Apply conditional formatting
 - Create and use bookmarks
@@ -49,38 +22,36 @@ In this lab, you will perform:
 
  ![Picture 1](Linked_image_Files/Mod7-PL300.png)
 
-## Exercise 1: Configure Sync Slicers
-
-In this exercise you will sync the report page slicers.
 
 ### Task 1: Get started – Sign in
 
 In this task you will setup the environment for the lab by signing in to Power BI.
 
-**Important**: If you have already signed in to Power BI, continue from the next task.
+1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge.
 
-1. To open Microsoft Edge, on the taskbar, click the Microsoft Edge program shortcut.
-
- 	![Picture 12](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image1.png)
+ 	![](./images/lab8-04-01.png)
 
 1. In the Microsoft Edge browser window, navigate to **https://powerbi.microsoft.com**.
 
- 	**Tip**: You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
+ 	**Tip:** You can also use the Power BI Service favorite on the Microsoft Edge favorites bar.
 
 1. Click **Sign In** (located at the top-right corner).
 
- 	![Picture 63](Linked_image_Files/lab6-image(2).png)
+ 	![](./images/lab8-04-0.png)
 
-1. If prompted, enter the account details 
+1. Enter the account details 
 
-   - Enter the Lab username in **Enter your email address** page.
+   - In the **Email (1)** field, enter your email address, and then select **Submit (2)**.
+
      * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
-     
-   - Complete the sign up process by selecting the username
 
-   - Enter the password 
+	 	![](./images/lab8-04-1.png)
+
+   - Enter the Temporary Access Pass, and then select **Sign in**.
    
      * Azure Password: <inject key="AzureAdUserPassword"></inject>
+
+	 	![](./images/lab8-04-2.png)
  
 1. If prompted to update the password, reenter the provided password, and then enter and confirm a new password.
 
@@ -88,15 +59,17 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Complete the sign in process by clicking on **Continue**
 
-   ![](Linked_image_Files/lab6-image-T01.png)
+   ![](./images/lab8-04-3.png)
    
-1. Enter a 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
+1. Enter a job title and 10 digit phone number and select Get started. Select Get started once more. You will be redirected to Power BI.
    
-   ![](Linked_image_Files/lab6-image-(T02).png)
+   ![](./images/lab8-04-4.png)
    
-   ![](Linked_image_Files/lab6-image-(T003).png)
+   ![](./images/lab8-04-5.png)
 
-1. If prompted by Microsoft Edge to stay signed in, click **Yes**.
+1. If prompted by Microsoft Edge to stay signed in, click **No**.
+
+1. Leave the Microsoft Edge browser window open.
 
 1. In the Microsoft Edge browser window, in the Power BI service, in the **Navigation** pane, select **My Workspace**.
 
@@ -104,123 +77,30 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Leave the Microsoft Edge browser window open.
 
-### Task 2: Get started – Open report
+### Task 1: Get started with Power BI Desktop
 
-In this task you will setup the environment for the lab by opening the starter report.
+In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
-**Important**: If you are continuing on from the previous lab (and you completed that lab successfully), do not complete this task; instead, continue from the next task.
+### Open the Starter Power BI File
 
-1. To open the Power BI Desktop, on the taskbar, click the Microsoft Power BI Desktop shortcut.
+To begin the exercise, follow these steps:
 
-	![Picture 10](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image4.png)
+1. Open **File Explorer** on your machine.
 
-2. To close the getting started window, at the top-left of the window, click **X**.
+2. Navigate to the following path:
 
-	![Picture 9](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image5.png)
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\07-create-visual-calculations
+   ```
+3. Locate the file named: **07-Starter-Sales Analysis.pbix**
 
-3. To sign in to the Power BI service, at the top-right, click **Sign In**.
+	![Picture 19](images/pl3n17.png)
+	
+4. Double-click the file to open it in **Power BI Desktop**.
 
-	![Picture 8](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image6.png)
-
-4. Complete the sign in process using the same account used to sign in to the Power BI service.
-
-5. Enter the Lab username in **Enter your email address** page.
-    * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
-    
-      ![](Linked_image_Files/lab7-image1.png)
-
-    * Complete the sign up process by selecting the username
-  
-      ![](Linked_image_Files/lab7-image2.png)
-  
-6. Enter the password.
-    * Azure Password: <inject key="AzureAdUserPassword"></inject>
-         
-       ![](Linked_image_Files/lab7-image3.png)
- 
-
-7. To open the starter Power BI Desktop file, click the **File** ribbon tab to open the backstage view.
-
-8. Select **Open Report**.
-
-	![Picture 10](Linked_image_Files/03-configure-data-model-in-power-bi-desktop_image(3).png)
-
-9. Click **Browse Reports**.
-
-	![Picture 6](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image8.png)
-
-10. In the **Open** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\Labs\07-design-report-in-power-bi-desktop-enhanced\Starter** folder.
-
-11. Select the **Sales Analysis** file.
-
-12. Click **Open**.
-
-	![Picture 5](Linked_image_Files/Lab7-image(9).png)
-
-13. Close any informational windows that may open.
-
-14. Notice the yellow warning message beneath the ribbon.
-
-	>**Note**: The message alerts you to the fact that the queries have not been applied to load as model tables.
-
-15. On the **"There are pending changes in your queries that haven't been applied"** warning message, select **Discard Changes**.
-
-	![Picture 8](Linked_image_Files/discard-changes-(1).png)
-
-16. Now you will see another pop up as shown below, select **Discard**.
-
-	![Picture 8](Linked_image_Files/discard-changes-(2).png)
+> _**Note**: You may see a sign-in dialog as the file loads. Select **Cancel** to dismiss the sign-in dialog. Close any other informational windows. Select **Apply Later**, if prompted to apply changes._
 
 
-17. To create a copy of the file, click the **File** ribbon tab to open the backstage view.
-
-18. Select **Save As**.
-
-	![Picture 4](Linked_image_Files/Lab7-image(10).png)
-
-19. If prompted to apply changes, click **Apply**.
-
-	![Picture 3](Linked_image_Files/Lab7-image(11).png)
-
-20. In the **Save As** window, navigate to the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-prod\AllFiles\MySolution** folder.
-
-21. Click **Save**.
-
-	![Picture 2](Linked_image_Files/Lab7-image(12).png)
-
-### Task 3: Sync slicers
-
-In this task you will sync the **Year** and **Region** slicers.
-
->**Note**: You will continue the development of the report created in the **Design a Report in Power BI Desktop** lab.
-
-1. In Power BI Desktop, on the **Overview** page, set the **Year** slicer to **FY2018**.
-
-2. Go to the **My Performance** page, and then notice that the **Year** slicer is a different value.
-
-	>**Note**: When slicers aren’t synced it can contribute to misrepresentation of data and frustration for report users. You’ll now sync the report slicers.
-
-3. Return to the **Overview** page, and then select the **Year** slicer.
-
-4. On the **View** ribbon tab, from inside the **Show Panes** group, click **Sync Slicers**.
-
-	![Picture 1](Linked_image_Files/Lab7-image(13).png)
-
-5. In the **Sync Slicers** pane (at the left of the **Visualizations** pane), in the second column (which represents syncing), check the checkboxes for the **Overview** and **My Performance** pages.
-
-	![Picture 93](Linked_image_Files/Lab7-image(14).png)
-
-6. On the **Overview** page, select the **Region** slicer.
-
-7. Sync the slicer with the **Overview** and **Profit** pages.
-
-	![Picture 94](Linked_image_Files/Lab7-image(15).png)
-
-8. Test the sync slicers by selecting different filter options, and then verifying that the synced slicers filter by the same selection.
-
-9. To close the **Sync Slicer** page, click the **X** located at the top-right of the pane.
-
-	![Picture 98](Linked_image_Files/Lab7-image(16).png)
 
 ## Exercise 2: Configure Drill Through
 
@@ -228,7 +108,7 @@ In this exercise you will create a new page and configure it as a drill through 
 
 ![Image of the new page, comprising a card visual and table visual.](Linked_image_Files/Lab7-image(17).png)
 
-### Task 1: Create a drill through page
+### Task 1: Configure a drillthrough page
 
 In this task you will create a new page and configure it as a drill through page.
 
@@ -508,13 +388,6 @@ In this task you will publish the report.
 
 	>**Note**: You’ll explore the report in the Power BI service in the next exercise.
 
- 	> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-
-       - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-       - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-       - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-       - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 ## Exercise 5: Explore the Report
 
 In this exercise you will explore the report in the Power BI service.
@@ -537,20 +410,9 @@ In this task you will explore the report in the Power BI service.
 
 6. Click each of the buttons, and then notice that a different visual is displayed.
 
-### Task 2: Finish up
-
-In this task you will complete the lab.
-
-1. To return to your workspace, in the banner across the window web page, click **My Workspace**.
-
-	![Picture 23](Linked_image_Files/08-design-report-in-power-bi-desktop-enhanced_image56.png)
-
-2. Leave the Microsoft Edge browser window open.
-
 ## Review
 In this lab, you have completed the following :
 
-- Configure Sync Slicers
 - Configure Drill Through
 - Add Conditional Formatting
 - Add Bookmarks and Buttons
