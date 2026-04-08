@@ -42,7 +42,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
 1. In the **Visualizations** pane, select the clustered bar chart visual type.
 
-   ![Picture 01](Linked_image_Files/07-create-visual-calculations_image01.png)
+   ![Picture 01](images/07-create-visual-calculations_image01.png)
 
 1. In the **Data** pane, from inside the **Date** table, drag the **Year** field into the **Y-axis** well/area.
 
@@ -52,7 +52,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
 1. Sort the resulting bar chart by **Year** ascending by using the three-dot menu and selecting **Year** followed by **Sort ascending**:
 
-   ![Picture 02](Linked_image_Files/07-create-visual-calculations_image02.png)
+   ![Picture 02](images/07-create-visual-calculations_image02.png)
 
     > You now have a bar chart showing the Sum of Sales and Sum of Cost by Year sorted chronologically.
 
@@ -60,7 +60,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
 1. With the bar chart selected, select **New visual calculation** in the ribbon:
 
-   ![Picture 03](Linked_image_Files/07-create-visual-calculations_image03.png)
+   ![Picture 03](images/07-create-visual-calculations_image03.png)
 
 1. The visual calculations edit window opens. In the formula bar above the visual matrix enter the following expression and then Enter to commit the calculation:
 
@@ -70,13 +70,13 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
 1. Confirm you now see a Profit column on the visual matrix at the bottom of the screen:
 
-   ![Picture 04](Linked_image_Files/07-create-visual-calculations_image04.png)
+   ![Picture 04](images/07-create-visual-calculations_image04.png)
 
 1. Expand the menu under **New visual calculation** and select **Versus previous** from the template options:
 
     > **Versus Previous** compares a value to a preceding value, so we see the Profit compared to the previous value for Year.
 
-   ![Picture 05](Linked_image_Files/07-create-visual-calculations_image05.png)
+   ![Picture 05](images/07-create-visual-calculations_image05.png)
 
 1. In the formula bar, replace the `[Field]` placeholder with `[Profit]` twice and commit the calculation.
 
@@ -88,7 +88,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
     > **Moving average** calculates an average of a set of values in a given window by dividing the sum of the values by the size of the window. By setting the window size to 2, we are calculating the average of two consecutive values. In this example, the values are yearly profits, so we see the moving average for FY2019 is the average of the profits for FY2018 and FY2019.
 
-   ![Picture 06](Linked_image_Files/07-create-visual-calculations_image06.png)
+   ![Picture 06](images/07-create-visual-calculations_image06.png)
 
 1. Under the **X-axis** well/area, select the visibility icon of the following fields to hide them from the visual:
 
@@ -96,7 +96,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
     - Sum of Cost
     - Profit
 
-   ![Picture 07](Linked_image_Files/07-create-visual-calculations_image07.png)
+   ![Picture 07](images/07-create-visual-calculations_image07.png)
 
     > Notice how the fields and calculations you hid are now no longer shown on the visual.
 
@@ -104,7 +104,7 @@ In this task, you’ll create a bar chart showing sales amount, total product co
 
 1. Confirm the visual now meets the goals. Exit out of the visual calculations edit screen to your report:
 
-   ![Picture 08](Linked_image_Files/07-create-visual-calculations_image08.png)
+   ![Picture 08](images/07-create-visual-calculations_image08.png)
 
     > You now have a bar chart with the following values: Sum of Sales, Sum of Cost, Profit, and Profit *versus previous* with tooltips for Profit *running sum* and Profit *moving average*.
 
@@ -146,7 +146,7 @@ In this task, you'll create a matrix visual that compares the sales amount per c
 
 1. Replace ROWS with COLUMNS and observe that the calculation now compares the sales amount per category against the first fiscal year:
 
-   ![Picture 11](Linked_image_Files/07-create-visual-calculations_image11.png)
+   ![Picture 11](images/07-create-visual-calculations_image11.png)
 
     > Notice how the **Versus first** column for the **Total Sales** returns zero instead of the difference against the first fiscal year. **Total Sales** is on a different hierarchical level than the yearly sums, and therefore, considered the first column on that level.
 
@@ -171,7 +171,7 @@ In this task, you'll create a line chart that shows the running sum for sales. T
 
 1. Replace the `[Field]` placeholder with `[Sum of Sales]` and commit the change. The visual should look as follows:
 
-   ![Picture 09](Linked_image_Files/07-create-visual-calculations_image09.png)
+   ![Picture 09](images/07-create-visual-calculations_image09.png)
 
 ## Update running sum to restart every new fiscal year
 
@@ -183,4 +183,4 @@ In this task, you'll create a line chart that shows the running sum for sales. T
 
 Verify that the running sum indeed restarts for every new fiscal year:
 
-   ![Picture 10](Linked_image_Files/07-create-visual-calculations_image10.png)
+   ![Picture 10](images/07-create-visual-calculations_image10.png)
