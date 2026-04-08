@@ -9,7 +9,7 @@
         "Order": 1
       },
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/refs/heads/prod/Instructions/07-create-visual-calculations.md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/06-use-dax-time-intelligence.md",
         "Order": 2
       }
     ]
