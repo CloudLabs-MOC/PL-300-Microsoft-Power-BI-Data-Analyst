@@ -114,7 +114,7 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 1. Leave the Microsoft Edge browser window open.
 
-### **Task 2: Get started – Open report**
+### Task 2: Get started – Open report
 
 In this task you will setup the environment for the lab by opening the starter report.
 
@@ -258,7 +258,7 @@ In this task you will create the **Sales Monitoring** dashboard. You will pin a 
 
 22. Click **Next (2)**.
 
-   ![](./images/lab12-04-18.png)
+     ![](./images/lab12-04-18.png)
 
 1. Open **File Explorer** on your machine.
 
@@ -317,7 +317,7 @@ In this task you will edit the details of two tiles.
 
 In this exercise you will first load sales order data for June 2020 into the **AdventureWorksDW2020** database. You will then open your Power BI Desktop file, perform a data refresh, and then upload the file to your workspace.
 
-> **Note:** If you're unable to connect to the database, you can use the **12-Solution-Sales-Analysis.pbix** file. Instead of updating the database and refreshing the semantic model, upload the solution file to **My workspace** and see the changes referenced in the following tasks.*
+> **Note:** If you're unable to connect to the database, you can use the **12-Solution-Sales-Analysis.pbix** file. Instead of updating the database and refreshing the semantic model, upload the solution file to **My workspace** and see the changes referenced in the following tasks.
 
 ### Task 1: Update the lab database
 
@@ -333,7 +333,13 @@ In this task you will run a PowerShell script to update data in the **AdventureW
 
     ![](./images/lab12-04-32.png)
 
-1. In File Explorer, inside the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\12-create-power-bi-dashboard** folder, right-click the **UpdateDatabase-2-AddSales.ps1** file, and then select **Run with PowerShell**.
+1. In File Explorer, inside the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\12-create-power-bi-dashboard** folder, right-click the **UpdateDatabase-2-AddSales.ps1** file, and then open in notepad.
+
+1. In Notepad, locate the `Invoke-SqlCmd` command, add `-TrustServerCertificate` at the end of the line, then **Save (CTRL + S)** the file and close Notepad.
+
+    ![](./images/lab12-04-44.png)
+
+1. Navidate File Explorer, inside the **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\12-create-power-bi-dashboard** folder, right-click the **UpdateDatabase-2-AddSales.ps1** file, and then select **Run with PowerShell**.
 
     ![](./images/lab12-04-25.png)
 
@@ -355,6 +361,8 @@ In this task you will open the **Sales Analysis** Power BI Desktop file, perform
 
     ![](./images/lab12-04-27.png)
 
+1. In the **Encryption Support** dialog, select **OK**.
+
 2. Save the Power BI Desktop file.
 
 3. To publish the file to your workspace, on the **Home** ribbon tab, from inside the **Share** group, click **Publish** and then click **Select** to publish.
@@ -371,9 +379,9 @@ In this task you will open the **Sales Analysis** Power BI Desktop file, perform
 
     >**Note:** The Semantic model in the Power BI service now has June 2020 sales data.
 
-1. In the **Publishing to Power BI** dialog, select **Open '12-Starter-Sales Analysis.pbix' in Power BI**.
+1. In the **Publishing to Power BI** dialog, select **Got it**.
 
-    ![](./images/lab12-04-31.png)
+    ![](./images/lab12-04-47.png)
 
 ## Exercise 3: Review the Dashboard
 
@@ -385,13 +393,15 @@ In this task you will review the dashboard to notice updated sales.
 
 1. In the Microsoft Edge browser window, in the Power BI service, review the **Sales Monitoring** dashboard.
 
+    > **Note:** If you don’t see the June 2020 data, refresh the browser.
+
 2. In the **Sales, Profit Margin** tile, in the subtitle, notice that the data was **REFRESHED:NOW**.
 
 3. Notice also that there is now a column for **2020 Jun**.
 
-    >**Note**: If you don’t see the June 2020 data, you might need to press **F5** to reload the web browser.
+    >**Note:** If you don’t see the June 2020 data, you might need to press **F5** to reload the web browser.
 
-    ![Picture 33](Linked_image_Files/module9.30.png)
+    ![](./images/lab12-04-41.png)
 
 ## Review
  

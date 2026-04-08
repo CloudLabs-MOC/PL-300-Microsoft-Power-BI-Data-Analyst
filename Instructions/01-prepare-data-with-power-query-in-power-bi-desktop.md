@@ -29,6 +29,44 @@ In this lab, you will perform:
 
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
+## Pre-requisites
+
+1. In the search bar of your **LabVM**, enter **SQL Server Management Studio**, and then select **SQL Server Management Studio** to open it.
+
+1. In the **Connect to Server** dialog, verify the **Server name**, and then select **Connect**.
+
+    ![img](./images/lab12-04-33.png)
+
+1. In **Object Explorer**, expand **Databases (1)** and verify that **AdventureWorksDW2020 (2)** is available.
+
+    ![img](./images/lab12-04-34.png)
+
+    > **Note:** If **AdventureWorksDW2020** is not available under **Databases**, follow the below steps to restore it; otherwise, skip the prerequisites and proceed to Task 1.
+
+1. In **Object Explorer**, right click **Databases** folder on the **Object Explorer** window. Then select **Restore Database**.
+
+    ![img](./images/lab12-04-36.png)
+
+1. On the **Restore Database** window, select **Device (1)**, then click on the **Ellipsis(...) (2)** button.
+
+    ![img](./images/lab12-04-37.png)
+
+1. On **Select backup devices** window, select **Add**.
+
+    ![img](./images/lab12-04-38.png)
+
+1. On **Locate backup file** window, select **C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\DatabaseBackup (1)**, then select **AdventureWorksDW2020.bak (2)** backup. Click **Ok (3)**.
+
+    ![img](./images/lab12-04-35.png)
+
+1. On **Select backup devices** window select **Ok**. And on the **Restore Database** window, select **Ok**.
+
+    ![img](./images/lab12-04-39.png)
+
+1. After a while you will get a window showing **Database Adventureworks 2020 restored successfully**. Click on **Ok**.
+
+    ![img](./images/lab12-04-40.png)
+
 ### Task 1: Get started with Power BI Desktop
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
