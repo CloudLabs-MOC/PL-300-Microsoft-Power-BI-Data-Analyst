@@ -1,15 +1,3 @@
----
-lab:
-  title: Create visual calculations in Power BI Desktop
-  module: Create visual calculations in Power BI Desktop
-  description: In this hands-on lab, you'll learn to create and edit visual calculations using DAX functions like PREVIOUS(), RUNNINGSUM(), and MOVINGAVERAGE() to build comparison metrics between fiscal years. You'll gain practical experience using optional Axis and Reset parameters to customize cumulative calculations in multi-leveled axes, enabling you to create dynamic, context-aware calculations directly within your Power BI visuals.
-  duration: 30 minutes
-  level: 300
-  islab: true
-  primarytopics:
-    - Power BI
----
-
 # Create visual calculations in Power BI Desktop
 
 ## Lab story
@@ -25,15 +13,26 @@ In this lab, you learn how to:
 
 **This lab should take approximately 30 minutes.**
 
-## Get started
+### Task 1: Get started with Power BI Desktop
 
-To complete this exercise, first open a web browser and enter the following URL to download the zip folder:
+In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
-`https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst/raw/Main/Allfiles/Labs/07-create-visual-calculations/07-visual-calculations.zip`
+### Open the Starter Power BI File
 
-Extract the folder to the **C:\Users\Student\Downloads\07-visual-calculations** folder.
+To begin the exercise, follow these steps:
 
-Open the **07-Starter-Sales Analysis.pbix** file.
+1. Open **File Explorer** on your machine.
+
+2. Navigate to the following path:
+
+   ```
+   C:\PL300\PL-300-Microsoft-Power-BI-Data-Analyst-Main\Allfiles\Labs\07-create-visual-calculations
+   ```
+3. Locate the file named: **07-Starter-Sales Analysis.pbix**
+
+	![Picture 19](images/pl3n1.png)
+	
+4. Double-click the file to open it in **Power BI Desktop**.
 
 > _**Note**: You may see a sign-in dialog as the file loads. Select **Cancel** to dismiss the sign-in dialog. Close any other informational windows. Select **Apply Later**, if prompted to apply changes._
 
