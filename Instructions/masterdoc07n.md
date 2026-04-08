@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Module 07 - Design a Report in Power BI Desktop",
+    "Language": "English",
+    "BaseURL": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/LabIntro(v2).md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "[https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/06-use-dax-time-intelligence.md](https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/refs/heads/prod/Instructions/07-create-visual-calculations.md)",
+        "Order": 2
+      }
+    ]
+  }
+]
