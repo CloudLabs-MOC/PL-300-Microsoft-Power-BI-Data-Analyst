@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Module 07 - Design a Report in Power BI Desktop",
+    "Name": "Module 07 - Create visual calculations in Power BI Desktop",
     "Language": "English",
     "BaseURL": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
     "Files": [
