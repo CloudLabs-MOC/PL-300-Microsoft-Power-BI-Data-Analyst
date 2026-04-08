@@ -30,7 +30,7 @@ To begin the exercise, follow these steps:
    ```
 3. Locate the file named: **07-Starter-Sales Analysis.pbix**
 
-	![Picture 19](images/pl3n1.png)
+	![Picture 19](images/pl3n17.png)
 	
 4. Double-click the file to open it in **Power BI Desktop**.
 
