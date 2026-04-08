@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "Module 09 - Enhance Power BI report design",
+    "Language": "English",
+    "BaseURL": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/LabIntro(v2).md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/refs/heads/prod/Instructions/09-Enhance-Power-BI-report-design.md",
+        "Order": 2
+      }
+    ]
+  }
+]
