@@ -181,6 +181,6 @@ In this task, you'll create a line chart that shows the running sum for sales. T
    Running sum = RUNNINGSUM([Sum of Sales], HIGHESTPARENT)
     ```
 
-Verify that the running sum indeed restarts for every new fiscal year:
+1. Verify that the running sum indeed restarts for every new fiscal year:
 
    ![Picture 10](images/07-create-visual-calculations_image10.png)
