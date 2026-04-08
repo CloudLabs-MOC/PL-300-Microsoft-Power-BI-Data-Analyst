@@ -1,4 +1,4 @@
-# Create visual calculations in Power BI Desktop
+# Lab 07: Create visual calculations in Power BI Desktop
 
 ## Lab story
 
