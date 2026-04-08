@@ -150,7 +150,7 @@ In this task you will design the first report page. When you’ve completed the 
 
 	 * Azure Username/Email: <inject key="AzureAdUserEmail"></inject> 
 
-	  ![](./images/lab8-04-8.png)
+	   ![](./images/lab8-04-8.png)
 
 1. Enter your email address, and then select **Next**. 
 

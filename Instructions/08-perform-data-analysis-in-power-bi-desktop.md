@@ -1,4 +1,4 @@
-# Lab 10: Perform Data Analysis in Power BI Desktop
+# Lab 10: Perform analytics in Power BI
 
 ## Lab scenario
 In this lab you will create the **Sales Exploration** report.
