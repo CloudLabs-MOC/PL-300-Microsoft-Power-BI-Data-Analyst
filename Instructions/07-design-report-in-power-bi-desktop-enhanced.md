@@ -1,4 +1,4 @@
-# Lab 07: Enhance a Report in Power BI Desktop
+# Lab 09: Enhance Power BI report design
 
 ## Lab scenario
 In this lab you will enhance the **Sales Analysis** with advanced design features.
