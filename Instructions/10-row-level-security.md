@@ -1,4 +1,4 @@
-# Lab 10: Secure data access in Power BI
+# Lab 11: Secure data access in Power BI
 
 ## Lab scenario
 In this lab, you'll enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
@@ -88,7 +88,7 @@ In this task you will enforce row-level security to ensure a salesperson can onl
 
     > **Note:** USERPRINCIPALNAME() is a Data Analysis Expressions (DAX) function that returns the name of the authenticated user. It means that the **Salesperson (Performance)** table will filter by the User Principal Name (UPN) of the user querying the model.
 
-1. Select **Save (1)** and **Close**.
+1. Select **Save (2)** and **Close**.
 
 	![](./images/lab11-04-8.png)
 
