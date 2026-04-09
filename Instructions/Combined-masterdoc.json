@@ -1,0 +1,61 @@
+[
+  {
+    "Name": "Module 06 - Design a Report in Power BI Desktop",
+    "Language": "English",
+    "BaseURL": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/LabIntro(v2).md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/01-prepare-data-with-power-query-in-power-bi-desktop.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/02-load-data-with-power-query-in-power-bi-desktop.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/03-configure-data-model-in-power-bi-desktop.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/04-create-dax-calculations-in-power-bi-desktop.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/05-create-dax-calculations-in-power-bi-desktop-advanced.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/06-use-dax-time-intelligence.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/07-create-visual-calculations.md",
+        "Order": 8
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/06-design-report-in-power-bi-desktop.md",
+        "Order": 9
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/09-Enhance-Power-BI-report-design.md",
+        "Order": 10
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/08-perform-data-analysis-in-power-bi-desktop.md",
+        "Order": 11
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/10-row-level-security.md",
+        "Order": 12
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/09-create-power-bi-dashboard.md",
+        "Order": 13
+      }
+    ]
+  }
+]
