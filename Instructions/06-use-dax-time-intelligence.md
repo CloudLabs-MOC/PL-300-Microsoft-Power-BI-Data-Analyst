@@ -18,6 +18,10 @@ In this lab, you will perform:
 
 ## Estimated timing: 45 Minutes   
 
+## Architecture Diagram
+
+![](./images/lab6-arch.png)
+
 ## Task 1: Get started
 
 In this task, you will open the provided starter Power BI (.pbix) file and prepare the environment for building time intelligence measures.

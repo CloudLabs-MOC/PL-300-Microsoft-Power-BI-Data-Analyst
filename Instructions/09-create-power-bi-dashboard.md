@@ -4,16 +4,12 @@
  
 In this lab you will create the **Sales Monitoring** dashboard in the Power BI service using an existing report.
 
+## Lab objectives
+
 In this lab you learn how to:
 
 - Pin visuals to a dashboard
 
-- Use Q&A to create dashboard tiles
-
-## Lab objectives
-In this lab, you will perform:
-
-- Pin visuals to a dashboard
 - Use Q&A to create dashboard tiles
 
 ## Estimated timing: 60 Minutes    
@@ -29,6 +25,8 @@ In this exercise, you will create the **Sales Monitoring** dashboard. The comple
 ![Image of the completed dashboard, comprising three tiles.](Linked_image_Files/module9.1.png)
 
 ## Pre-requisites
+
+In this task, you will verify that the AdventureWorksDW2020 database is available.
 
 1. In the search bar of your **LabVM**, enter **SQL Server Management Studio**, and then select **SQL Server Management Studio** to open it.
 

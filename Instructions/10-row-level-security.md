@@ -1,20 +1,16 @@
 # Lab 11: Secure data access in Power BI
 
 ## Lab scenario
+
 In this lab, you'll enforce row-level security to ensure that a salesperson can only analyze sales data for their assigned region(s).
+
+## Lab objectives
 
 In this lab you learn how to:
 
 - Implement dynamic row-level security (RLS) in Power BI.
 
 - Create and test a role using USERPRINCIPALNAME().
-
-## Lab objectives
-
-In this lab, you will perform:
-
-- Configure many-to-many relationships
-- Enforce row-level security
 
 ## Estimated timing: 60 Minutes    
 

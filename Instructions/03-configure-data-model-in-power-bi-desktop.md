@@ -28,9 +28,9 @@ In this exercise you will create model relationships.
 
 In this task you will setup the environment for the lab.
 
-### Open the Starter Power BI File
+### Task 1.1: Open the Starter Power BI File
 
-To begin the exercise, follow these steps:
+In this task, you will open the starter Power BI Desktop file to begin the lab.
 
 1. Open **File Explorer** on your machine.
 

@@ -4,39 +4,9 @@
 
 In this lab you will create measures with DAX expressions involving filter context manipulation.
 
-In this lab you learn how to:
-
-- Use the CALCULATE() function to manipulate filter context
-
-- Use Time Intelligence functions
-
-### Lab story
-
-This lab is one of many in a series of labs that was designed as a complete story from data preparation to publication as reports and dashboards. You can complete the labs in any order. However, if you intend to work through multiple labs, for the first 10 labs, we suggest you do them in the following order:
-
-1. Prepare Data in Power BI Desktop
-
-2. Load Data in Power BI Desktop
-
-3. Model Data in Power BI Desktop
-
-4. Create DAX Calculations in Power BI Desktop, Part 1
-
-5. **Modify DAX filter context in Power BI**
-
-6. Design a Report in Power BI Desktop, Part 1
-
-7. Design a Report in Power BI Desktop, Part 2
-
-8. Create a Power BI Dashboard
-
-9. Perform Data Analysis in Power BI Desktop
-
-10. Enforce Row-Level Security
-
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab you learn how to:
 
 - Use the CALCULATE() function to manipulate filter context
 - Use Time Intelligence functions

@@ -3,25 +3,19 @@
 ## Lab scenario
 In this lab you will enhance the **Sales Analysis** with advanced design features.
 
+## Lab objectives
+
 In this lab, you learn how to:
 
 - Create a drill through page.
 - Apply conditional formatting.
 - Create and use bookmarks and buttons.
 
-## Lab objectives
-In this lab, you will perform:
-
-- Create a drill through page
-- Apply conditional formatting
-- Create and use bookmarks
-
 ## Estimated timing: 60 minutes    
 
 ## Architecture Diagram
 
  ![Picture 1](Linked_image_Files/Mod7-PL300.png)
-
 
 ### Task 1: Get started – Sign in
 
@@ -81,9 +75,9 @@ In this task you will setup the environment for the lab by signing in to Power B
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
-### Open the Starter Power BI File
+### Task 1.1: Open the Starter Power BI File
 
-To begin the exercise, follow these steps:
+In this task, you will open the starter Power BI Desktop file to begin the lab.
 
 1. Open **File Explorer** on your machine.
 

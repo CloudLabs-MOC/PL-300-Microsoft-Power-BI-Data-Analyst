@@ -4,6 +4,8 @@
 
 In this lab, you'll create a three-page report. You'll then publish it to the Power BI service, where you'll open and interact with the report.
 
+## Lab objectives
+
 In this lab you learn how to:
 
 - Design a report.
@@ -12,12 +14,6 @@ In this lab you learn how to:
 - Publish the report to the Power BI service.
 - Interact with a report and its visuals.
 
-## Lab objectives
-In this lab, you will perform:
-
-- Design a report
-- Configure visual fields and format properties
-  
 ## Estimated timing: 60 Minutes    
 
 ## Architecture Diagram

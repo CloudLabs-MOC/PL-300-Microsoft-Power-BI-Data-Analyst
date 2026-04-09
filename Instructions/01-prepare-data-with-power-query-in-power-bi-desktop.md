@@ -4,20 +4,17 @@
 
 This lab is designed to introduce you to Power BI Desktop application and how to connect to data and how to use data preview techniques to understand the characteristics and quality of the source data.
 
-In this lab, you learn how to:
-
-- Open Power BI Desktop.
-- Connect to different data sources.
-- Preview source data with Power Query.
-- Use data profiling features in Power Query.
-
 ## Lab objectives
 
-In this lab, you will perform:
+In this lab you learn how to:
 
-- Set Power BI Desktop options
-- Connect and preview to source data
-- Use data preview techniques to better understand the data
+- Open Power BI Desktop.
+
+- Connect to different data sources.
+
+- Preview source data with Power Query.
+
+- Use data profiling features in Power Query.
 
 ## Estimated timing: 60 minutes    
 
@@ -30,6 +27,8 @@ In this lab, you will perform:
 In this exercise you will create eight Power BI Desktop queries. Six queries will source data from SQL Server, and two from CSV files.
 
 ## Pre-requisites
+
+In this task, you will verify that the AdventureWorksDW2020 database is available.
 
 1. In the search bar of your **LabVM**, enter **SQL Server Management Studio**, and then select **SQL Server Management Studio** to open it.
 
@@ -71,9 +70,9 @@ In this exercise you will create eight Power BI Desktop queries. Six queries wil
 
 In this task, you start by opening a starter Power BI file (.pbix). The starter file doesn't contain any data, but has been specially configured to help you complete the lab. The following report-level settings have been disabled in the starter file:
 
-### Open the Starter Power BI File
+### Task 1.1 Open the Starter Power BI File
 
-To begin the exercise, follow these steps:
+In this task, you will open the starter Power BI Desktop file to begin the lab.
 
 1. Open **File Explorer** on your machine.
 
@@ -293,7 +292,7 @@ In this task you will create a query based on a CSV file.
 
 9. Repeat the steps to create a query based on the **ColorFormats.csv** file.
 
-    > *The **ColorFormats** CSV file contains one row per product color. Each row records the HEX codes to format background and font colors.*
+    > **Note:** The **ColorFormats** CSV file contains one row per product color. Each row records the HEX codes to format background and font colors.
 
 10. You should now have two new queries, **ResellerSalesTargets** and **ColorFormats**.
 

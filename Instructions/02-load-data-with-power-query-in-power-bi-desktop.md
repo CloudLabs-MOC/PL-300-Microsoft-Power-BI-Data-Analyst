@@ -3,13 +3,15 @@
 ## Lab scenario
 In this lab, you'll use data cleansing and transformation techniques to start shaping your data model. You'll then apply the queries to load each as a table to the semantic model.
 
+## Lab objectives
+
 In this lab you learn how to:
 
 - Apply various data transformations.
 
 - Load queries to the semantic model.
-  
-## Estimated timing: 90 Minutes  
+
+## Estimated timing: 120 Minutes  
 
 ## Architecture Diagram
 

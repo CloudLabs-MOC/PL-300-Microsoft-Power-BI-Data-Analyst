@@ -3,23 +3,19 @@
 ## Lab scenario
 In this lab you will create the **Sales Exploration** report.
 
+## Lab objectives
+
 In this lab you learn how to:
 
 - Create animated scatter charts
 
 - Use a visual to forecast values
 
-## Lab objectives
-In this lab, you will perform:
-
-- Create animated scatter charts
-- Use a visual to forecast values
-  
 ## Estimated timing: 60 Minutes    
 
 ## Architecture Diagram
 
-![Picture 1](Linked_image_Files/Mod8-PL300.png)
+![](./images/lab10-arch.png)
  
 ## Exercise 1: Create a Scatter Chart
 
@@ -123,7 +119,7 @@ In this task you will create a scatter chart that can be animated.
 
 In this exercise you will create a forecast to determine possible future sales revenue.
 
-### **Task 1: Create a forecast**
+### Task 1: Create a forecast
 
 In this task you will create a forecast to determine possible future sales revenue.
 
