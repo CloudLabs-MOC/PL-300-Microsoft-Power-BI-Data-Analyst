@@ -5,7 +5,7 @@
     "BaseURL": "https://github.com/MicrosoftLearning/PL-300-Microsoft-Power-BI-Data-Analyst",
     "Files": [
       {
-        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/LabIntro(v2).md",
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabs-MOC/PL-300-Microsoft-Power-BI-Data-Analyst/prod/Instructions/combined_gettingstarted_page.md",
         "Order": 1
       },
       {

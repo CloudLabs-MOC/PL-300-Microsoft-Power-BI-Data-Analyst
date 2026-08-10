@@ -16,19 +16,19 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-   ![Picture1.](images/lab2-g1.png)
+   ![Picture1.](images/envtab.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-   ![Picture1.](images/lab2-g2.png)
+   ![Picture1.](images/splittab.png)
 
 ## Utilizing the Zoom In/Out Feature
 
 To adjust the zoom level for the environment page, navigate to the **Guide** tab then  click the **A↕ : 100% (2)** icon located next to the timer in the lab environment.
 
-![Use the Zoom In/Out Feature](images/zoomin.png)
+![Use the Zoom In/Out Feature](images/Zoomtab.png)
 
 ## Managing Your Virtual Machine
  
@@ -36,11 +36,17 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
  
    ![Picture1.](images/lab2-g3.png)
 
+## Lab Progress
+
+You can use the **Progress** tab to track your progress while working on the lab. A score will be provided after successful validation.
+
+![](images/progresstab.png)
+
 ## **Lab Duration Extension**
 
 1. To extend the duration of the lab, kindly click the **Hourglass** icon in the top right corner of the lab environment. 
 
-    ![Manage Your Virtual Machine](images/new-pl-300-gettingstarted-5.png)
+    ![Manage Your Virtual Machine](images/timextend.png)
 
     >**Note:** You will get the **Hourglass** icon when 10 minutes are remaining in the lab.
 
@@ -56,7 +62,7 @@ The CloudLabs support team is available 24/7, 365 days a year, via email and liv
 
 Learner Support Contacts:
 
-   - Email Support: labs-support@spektrasystems.com
+   - Email Support: cloudlabs-support@spektrasystems.com
 
    - Live Chat Support: https://cloudlabs.ai/labs-support
 
@@ -66,3 +72,5 @@ Click **Next** from the bottom right corner to embark on your Lab journey!
 ![Picture1.](images/5.png)
 
 Now you're all set to explore the powerful world of technology. Feel free to reach out if you have any questions along the way. Enjoy your workshop!
+
+## Happy Learning!!
