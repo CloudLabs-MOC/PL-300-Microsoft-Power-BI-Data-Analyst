@@ -4,73 +4,69 @@ Welcome to your PL-300-Microsoft-Power-BI-Data-Analyst workshop! We've prepared 
 
 ## Objectives
 
-By the end of these labs, you will be able to:
+By the end of the labs you will be able to:
 
-1. **Provision and configure Azure AI infrastructure:** Deploy and manage Azure AI resources, Azure Functions, Azure Container Apps, Azure Container Registry, and supporting Azure services required for AI-powered applications.
-
-2. **Develop cloud-native AI applications:** Build serverless APIs, containerized applications, and backend services that integrate Azure AI capabilities using the Azure SDKs, REST APIs, and modern application development patterns.
-
-3. **Implement event-driven and distributed architectures:** Design and integrate applications using Azure Service Bus, Azure Event Grid, and asynchronous messaging to enable scalable, loosely coupled AI workflows.
-
-4. **Work with AI-ready data platforms:** Store, retrieve, and manage structured, unstructured, and vectorized data using Azure Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector, Azure Managed Redis, and Azure Storage.
-
-5. **Build intelligent search and retrieval solutions:** Implement vector search, semantic retrieval, and Retrieval-Augmented Generation (RAG) scenarios by combining Azure AI Search with vector-enabled databases and AI models.
-
-6. **Deploy and manage containerized workloads:** Build, publish, deploy, and maintain container images using Azure Container Registry, Azure Container Apps, and Azure Container Registry Tasks.
-
-7. **Secure AI applications and cloud resources:** Configure authentication, authorization, secrets management, managed identities, and network security to protect applications and Azure resources.
-
-8. **Monitor, troubleshoot, and optimize applications:** Collect telemetry, diagnose failures, monitor application health, and improve the performance, scalability, and reliability of AI-powered cloud solutions using Azure monitoring and diagnostic tools.
-
-9. **Integrate Azure services into end-to-end AI workflows:** Connect compute, messaging, storage, databases, and AI services to build automated, scalable, and production-ready intelligent applications.
-
-10. **Apply cloud-native development best practices:** Build resilient, maintainable, and observable AI applications by following modern Azure development patterns, automation techniques, and operational best practices.
+1. **Connect and preview data:** Connect to common data sources (SQL Server, CSV), import data into Power BI Desktop, and assess data quality using Power Query profiling tools.
+2. **Cleanse and transform data:** Apply Power Query transformations to shape, clean, and prepare query tables and load them into the semantic model.
+3. **Design the semantic model:** Create relationships, hierarchies, display folders, and configure table and column properties to make the model author-friendly.
+4. **Create DAX calculations:** Implement calculated tables, calculated columns, and measures for aggregations, business logic, and reporting.
+5. **Manipulate filter context & time intelligence:** Use DAX (e.g., `CALCULATE()`, TOTALYTD, PARALLELPERIOD) to build YTD, YoY, and other advanced measures.
+6. **Build visual calculations & analytics:** Create visual-level calculations (running totals, moving averages), animated visuals, and forecasts to analyze trends.
+7. **Design interactive reports:** Build multi-page reports with slicers, synced slicers, formatted visuals, and user-friendly layouts.
+8. **Publish and share:** Publish datasets and reports to the Power BI service, create dashboards, pin tiles, and use Q&A for ad-hoc queries.
+9. **Perform analytics and forecasting:** Use built-in analytics features such as animated scatter charts and forecasting to explore and predict outcomes.
+10. **Secure report access:** Implement row-level security (RLS) using dynamic filters (e.g., `USERPRINCIPALNAME()`), test roles, and validate access in the Power BI service.
 
 ## Pre-requisites
 
-- Experience with Azure development concepts.
-- Proficiency in a programming language such as C# or Python is recommended.
-- Familiarity with Azure compute, containerization, serverless development, event-driven architectures, data services, and REST APIs will help learners get the most from this course.
+- **Basic Power BI knowledge:** Familiarity with the Power BI Desktop interface, report canvas, creating visuals, and basic measures or queries.
+
+- **Database Knowledge:** The sample database is used throughout the labs, restore steps and backup files are included in the workspace.
+
+- **Basic data skills:** Familiarity with tables, keys, and basic SQL or Excel concepts makes the labs easier to follow.
+
+- **Power BI Desktop:** Ensure Power BI Desktop is available and the starter PBIX files can be opened during the labs.
+
+- **Basic Power Query familiarity:** Comfortable with basic Get & Transform operations such as filtering, merging, and reviewing applied steps.
+
 
 ## Architecture
 
-The lab architecture demonstrates how Azure's cloud-native services work together to build, deploy, integrate, and operate intelligent AI applications. Throughout these labs, you will provision compute resources, implement serverless and containerized workloads, connect applications using event-driven messaging, manage AI-ready data stores, and build secure, scalable, and observable AI-powered solutions.
+The labs demonstrate the typical Power BI authoring-to-deployment architecture used in analytics projects:
 
-1. **Azure AI Services and Azure OpenAI:** Provide the intelligence layer for AI-powered applications, enabling capabilities such as natural language processing, document understanding, embeddings, and generative AI experiences.
+1. **Data sources:** An on-premises or lab-hosted SQL Server instance containing AdventureWorksDW2020 and supporting CSV files used to build the model.
 
-2. **Azure Compute Services:** Azure Functions, Azure Container Apps, and Azure Container Registry host and execute serverless APIs, containerized applications, and background processing workloads that power AI solutions.
+2. **Power Query:** Power BI Desktop's Get & Transform layer extracts, profiles, and applies transformations to source data, producing query tables.
 
-3. **Azure Messaging and Integration Services:** Azure Service Bus and Azure Event Grid enable reliable, asynchronous communication between distributed services, allowing applications to respond to events and orchestrate AI workflows.
+3. **Semantic model:** Tables, relationships, hierarchies, and measures defined in Power BI Desktop form the dataset that underpins reports and dashboards.
 
-4. **Azure Data Services:** Azure Cosmos DB for NoSQL, Azure Database for PostgreSQL with pgvector, Azure Managed Redis, and Azure Storage provide persistent storage, vector search, caching, streaming, and document storage for AI-enabled applications.
+4. **DAX calculation engine:** Performs calculated columns, calculated tables, measures, and time-intelligence logic used by visuals and service calculations.
 
-5. **Azure Developer Tools:** Azure Portal, Azure CLI, Visual Studio Code, Azure SDKs, and REST APIs are used to provision infrastructure, deploy applications, manage cloud resources, monitor workloads, and troubleshoot AI solutions throughout the labs.
+5. **Authoring & report canvas:** Report pages and visuals are created and formatted in Power BI Desktop for interactive analysis.
+
+6. **Power BI service:** Published datasets and reports are hosted in the service, where dashboards, Q&A tiles, refresh, and sharing are managed.
+
+7. **Security & governance:** Row-level security is configured in the model and mapped to identities and workspace permissions in the service.
 
 ## Explanation of Components
 
-1. **Azure AI Services & Azure OpenAI:** Provide prebuilt and generative AI capabilities that enable applications to understand, generate, and process text, images, documents, and other content using REST APIs and Azure SDKs.
+Below are the primary Power BI components and how they map to the lab activities:
 
-2. **Azure Functions:** Executes event-driven, serverless code that processes requests, orchestrates AI workflows, and integrates Azure services without managing infrastructure.
+1. **Power Query:** Labs 01–02 demonstrate connecting to SQL Server and CSV files, previewing data, profiling columns, and applying transformations to prepare query tables for the model.
 
-3. **Azure Container Apps:** Hosts containerized AI applications and APIs, providing scalable, managed execution for microservices and background processing workloads.
+2. **Dataflows:** Queries defined in Power Query become dataset tables when loaded, the labs show how to design queries for reliability and reuse.
 
-4. **Azure Container Registry (ACR):** Stores and manages container images used by Azure Container Apps and other Azure compute services, supporting secure image versioning and deployment.
+3. **Semantic Model:** Labs 03–04 cover creating relationships, hierarchies, display folders, and configuring metadata to make the model consumable.
 
-5. **Azure Service Bus:** Provides reliable message queues and publish/subscribe messaging that decouple application components and enable asynchronous communication between AI services.
+4. **DAX Calculations & Measures:** Labs 04–06 teach calculated tables/columns, measures, `CALCULATE()` usage, and time-intelligence functions (TOTALYTD, PARALLELPERIOD) for business calculations.
 
-6. **Azure Event Grid:** Delivers events from Azure resources and applications, allowing services to react automatically to changes and trigger downstream AI workflows.
+5. **Visual Calculations & Analytics:** Labs 07 and 10 show creating visual-level calculations (running totals, moving averages), animated scatter visuals, and forecasting techniques.
 
-7. **Azure Cosmos DB for NoSQL:** Stores application data, conversation history, metadata, and other structured information using a globally distributed NoSQL database.
+6. **Report Design & Interactivity:** Lab 08 guides report layout, slicers, synced slicers, formatting, and interactive visual authoring best-practices.
 
-8. **Azure Database for PostgreSQL with pgvector:** Stores relational data while enabling vector similarity search, supporting Retrieval-Augmented Generation (RAG) and semantic search scenarios.
+7. **Power BI Service & Dashboards:** Lab 09 explains publishing datasets/reports, pinning visuals to dashboards, creating Q&A tiles, and performing dataset refreshes.
 
-9. **Azure Managed Redis:** Improves application performance through distributed caching, streaming, session management, and vector search capabilities.
-
-10. **Azure Storage:** Provides secure storage for documents, images, datasets, application assets, and other files processed by AI applications.
-
-11. **Azure SDKs & REST APIs:** Enable developers to integrate Azure services into applications, automate workflows, and interact programmatically with Azure resources.
-
-12. **Azure Portal & Azure CLI:** Provide graphical and command-line tools for provisioning resources, deploying applications, monitoring services, and managing Azure infrastructure throughout the labs.
+8. **Row-Level Security :** Lab 11 demonstrates implementing dynamic RLS with `USERPRINCIPALNAME()`, testing roles, and validating restricted views for users.
 
 ## Accessing Your Lab Environment
  
